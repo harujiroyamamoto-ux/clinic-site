@@ -1,0 +1,75 @@
+/* 下層ページ共通スタイル（診療案内・医師紹介・アクセスなど） */
+
+.page-header {
+  background: var(--color-primary-light);
+  padding: var(--space-lg) 0;
+}
+
+.page-header h1 {
+  margin: 0;
+}
+
+.page-lead {
+  color: var(--color-text-light);
+  font-size: 1.1rem;
+  max-width: 720px;
+}
+
+.content-section h2 {
+  border-left: 6px solid var(--color-primary);
+  padding-left: var(--space-sm);
+}
+
+.notice-box {
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  margin: var(--space-md) 0;
+}
+
+.notice-box p:first-child {
+  margin-top: 0;
+}
+
+.cta-box {
+  background: var(--color-primary-dark);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+  text-align: center;
+  margin-top: var(--space-lg);
+}
+
+.cta-box h2 {
+  color: #fff;
+  margin-top: 0;
+}
+
+.cta-box .btn {
+  margin: var(--space-sm);
+}
+
+.doctor-block {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  align-items: start;
+}
+
+.doctor-block .img-placeholder {
+  aspect-ratio: 3 / 4;
+  min-height: auto;
+}
+
+.doctor-role {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+@media (max-width: 640px) {
+  .doctor-block {
+    grid-template-columns: 1fr;
+  }
+}
