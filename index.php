@@ -22,7 +22,9 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
         <a href="/access.php" class="btn btn-primary">アクセスを見る</a>
       </div>
     </div>
-    <div class="hero-image img-placeholder">クリニック外観・診療風景の写真<br>（準備中）</div>
+    <div class="hero-image">
+      <img src="/assets/images/clinic_exterior_day.jpg" alt="山本内科クリニック外観">
+    </div>
   </div>
 </section>
 

@@ -20,6 +20,8 @@ include __DIR__ . '/partials/head.php';
 
 <section class="content-section">
   <div class="container">
+    <img src="/assets/images/egao_224.jpg" alt="ヘルパーチームえがお マスコット" class="related-mascot">
+
     <h2>サービス内容</h2>
     <p>
       ホームヘルパーがご自宅へ伺い、食事・入浴・排せつなどの介助や、掃除・買い物などの生活援助を行います。

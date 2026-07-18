@@ -87,14 +87,19 @@
 - sitemap.xml / robots.txt: プロジェクトルートに作成済み（公開時に一緒にアップロード）
 - Googleビジネスプロフィール・サーチコンソールへの登録は、独自ドメイン公開後にご自身のGoogleアカウントで行う（第5部の後）
 
-## ロゴ・OGP画像(対応済み)
+## ロゴ・写真・OGP画像(対応済み)
 - ロゴ本体: assets/images/logo.jpg（ユーザー提供、190x40、ヘッダーで使用）
-- OGP画像: assets/images/ogp.jpg（1200x630。ネイビー背景にロゴを配置し、PHP(GD)で自動生成したもの。生成スクリプトは使い捨てのため保存していない）
-- favicon: 未対応（ロゴが横長バナーのため、favicon用には別途正方形のマーク画像が必要。犬のマーク部分だけ切り出すなどの対応が必要になれば依頼する）
+- OGP画像: assets/images/ogp.jpg（1200x630。ネイビー背景にロゴを配置し、PHP(GD)で自動生成したもの）
+- favicon: assets/images/favicon.png・apple-touch-icon.png（旧サイトのロゴマーク単体画像 pic_clinic_224.jpg を正方形に切り出して生成）
+- 外観写真(昼): assets/images/clinic_exterior_day.jpg → トップページのヒーロー画像で使用（旧サイト pic_banner2.jpg より取得）
+- 外観写真(夜): assets/images/clinic_exterior_night.jpg → クリニック紹介ページの院内案内カードで使用（旧サイト pic_banner3.jpg より取得）
+- たんぽぽ/えがお 入口写真: assets/images/tanpopo_224.jpg → tanpopo.phpで使用（旧サイト pic_tanpopo_224.jpg より取得）
+- えがおマスコット: assets/images/egao_224.jpg → egao.phpで使用（旧サイト pic_egao_224.jpg より取得）
+- 上記はすべて旧サイト(www.yamamoto-naika.com、同じ運営者の既存サイト)から本人の許可を得て転用したもの
+- 未使用のまま残っている画像プレースホルダー: 受付・待合室、診察室（clinic.php）、院長・副院長の写真（doctor.php）
 
 ## 未着手・今後の対応(次のステップ)
-- 実際の写真の差し替え(現在は仮のプレースホルダー表示)、WebP最適化
-- favicon(タブアイコン)用に、ロゴから正方形のマーク部分を切り出す
+- 受付・待合室・診察室・院長/副院長の実写差し替え、WebP最適化
 - 医師の経歴詳細(出身大学・勤務歴)の追記(doctor.php内にコメントで場所を明記済み)
 - 構造化データの緯度・経度(geo)は、Googleビジネスプロフィール登録後に追記する
 - 第5部・公開運用編:さくらのレンタルサーバー契約・SSH接続・独自ドメイン・SSL・公開作業

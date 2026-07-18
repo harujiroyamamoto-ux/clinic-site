@@ -20,6 +20,8 @@ include __DIR__ . '/partials/head.php';
 
 <section class="content-section">
   <div class="container">
+    <img src="/assets/images/tanpopo_224.jpg" alt="たんぽぽ訪問看護ステーション・ヘルパーチームえがお 入口" class="clinic-photo related-photo">
+
     <h2>サービス内容</h2>
     <p>
       看護師がご自宅へ伺い、療養上のお世話や病状の観察、医師の指示に基づく医療処置などを行います。
