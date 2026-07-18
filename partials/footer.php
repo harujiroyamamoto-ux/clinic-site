@@ -37,4 +37,5 @@
     </div>
   </div>
 </footer>
+<?php include __DIR__ . '/floating_cta.php'; ?>
 <script src="/assets/js/main.js"></script>

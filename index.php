@@ -9,17 +9,20 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
 ?>
 
 <section class="hero">
-  <div class="container hero-inner">
-    <p class="hero-eyebrow">横浜市中区本牧町</p>
-    <h1>地域のかかりつけ医として<br>予防・治療から在宅医療まで</h1>
-    <p class="hero-lead">
-      外来では予防・治療・検査を行い、総合病院と連携しながら、
-      訪問診療でご自宅での療養を支えています。
-    </p>
-    <div class="hero-actions">
-      <a href="tel:0456223331" class="btn btn-accent">📞 045-622-3331</a>
-      <a href="/access.php" class="btn btn-primary">アクセスを見る</a>
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <p class="hero-eyebrow">平成3年開院　横浜市中区本牧町</p>
+      <h1>地域のホームドクターとして<br>35年以上、皆さまの健康を支えています</h1>
+      <p class="hero-lead">
+        外来では予防・治療・検査を行い、総合病院と連携しながら、
+        訪問診療でご自宅での療養を支えています。
+      </p>
+      <div class="hero-actions">
+        <a href="tel:0456223331" class="btn btn-accent">📞 045-622-3331</a>
+        <a href="/access.php" class="btn btn-primary">アクセスを見る</a>
+      </div>
     </div>
+    <div class="hero-image img-placeholder">クリニック外観・診療風景の写真<br>（準備中）</div>
   </div>
 </section>
 

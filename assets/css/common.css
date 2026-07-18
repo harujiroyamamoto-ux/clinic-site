@@ -3,21 +3,21 @@
    ============================================ */
 
 :root {
-  /* メインカラー：暖かい緑 */
-  --color-primary: #5f8a4f;
-  --color-primary-dark: #3f6136;
-  --color-primary-light: #eef4e8;
+  /* メインカラー：落ち着いた深青 */
+  --color-primary: #2c4a6e;
+  --color-primary-dark: #1c3350;
+  --color-primary-light: #eef1f5;
 
-  /* 差し色：あたたかいオレンジ（電話・予約などの導線に使用） */
-  --color-accent: #d9873f;
-  --color-accent-dark: #b96f2f;
+  /* 差し色：落ち着いたグリーン（電話・予約などの導線に使用） */
+  --color-accent: #4a7c59;
+  --color-accent-dark: #375d43;
 
   /* 文字・背景 */
   --color-text: #2b2b2b;
   --color-text-light: #5a5a5a;
   --color-bg: #ffffff;
-  --color-bg-soft: #f7faf5;
-  --color-border: #dde5d5;
+  --color-bg-soft: #f6f7f8;
+  --color-border: #dde1e6;
   --color-alert: #c0392b;
 
   /* 文字サイズ（高齢の患者さんも多いため、やや大きめに設定） */
@@ -151,6 +151,42 @@ section:nth-of-type(even) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: var(--space-md);
+}
+
+/* 診療案内バナー（カテゴリ別の大きめボタン） */
+.shinryo-card {
+  color: var(--color-text);
+  border-left: 6px solid var(--color-primary);
+  padding: var(--space-md) var(--space-lg) var(--space-md) var(--space-md);
+  position: relative;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.shinryo-card::after {
+  content: "\203A";
+  position: absolute;
+  right: var(--space-md);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.6rem;
+  color: var(--color-primary);
+}
+
+.shinryo-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  text-decoration: none;
+  border-left-color: var(--color-accent);
+}
+
+.shinryo-card h3 {
+  margin: 0 0 var(--space-sm);
+  font-size: 1.2rem;
+}
+
+.shinryo-card p {
+  margin: 0;
+  color: var(--color-text-light);
 }
 
 /* 表（診療時間など） */
@@ -322,6 +358,53 @@ table.info-table th {
   font-size: var(--font-size-small);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: var(--space-sm);
+}
+
+/* ============================================
+   固定電話・予約ボタン（スマホ画面下部に常時表示）
+   ============================================ */
+.floating-cta {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .floating-cta {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 200;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .floating-cta-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 14px 8px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.95rem;
+  }
+
+  .floating-cta-item:hover {
+    text-decoration: none;
+  }
+
+  .floating-cta-tel {
+    background: var(--color-accent);
+  }
+
+  .floating-cta-visit {
+    background: var(--color-primary);
+  }
+
+  body {
+    padding-bottom: 58px;
+  }
 }
 
 /* レスポンシブ */
