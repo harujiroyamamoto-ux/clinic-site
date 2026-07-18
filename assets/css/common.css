@@ -1,0 +1,336 @@
+/* ============================================
+   山本内科クリニック - 共通デザインルール
+   ============================================ */
+
+:root {
+  /* メインカラー：暖かい緑 */
+  --color-primary: #5f8a4f;
+  --color-primary-dark: #3f6136;
+  --color-primary-light: #eef4e8;
+
+  /* 差し色：あたたかいオレンジ（電話・予約などの導線に使用） */
+  --color-accent: #d9873f;
+  --color-accent-dark: #b96f2f;
+
+  /* 文字・背景 */
+  --color-text: #2b2b2b;
+  --color-text-light: #5a5a5a;
+  --color-bg: #ffffff;
+  --color-bg-soft: #f7faf5;
+  --color-border: #dde5d5;
+  --color-alert: #c0392b;
+
+  /* 文字サイズ（高齢の患者さんも多いため、やや大きめに設定） */
+  --font-size-base: 18px;
+  --font-size-small: 16px;
+  --font-size-h1: 2.2rem;
+  --font-size-h2: 1.75rem;
+  --font-size-h3: 1.4rem;
+
+  /* 余白 */
+  --space-sm: 12px;
+  --space-md: 24px;
+  --space-lg: 48px;
+  --space-xl: 80px;
+
+  --radius: 10px;
+  --max-width: 1080px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "游ゴシック", Meiryo, sans-serif;
+  font-size: var(--font-size-base);
+  line-height: 1.8;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+a {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+h1, h2, h3 {
+  line-height: 1.4;
+  color: var(--color-primary-dark);
+}
+
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+
+section {
+  padding: var(--space-lg) 0;
+}
+
+section:nth-of-type(even) {
+  background: var(--color-bg-soft);
+}
+
+/* ボタン */
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: var(--radius);
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+.btn-accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.btn-accent:hover {
+  background: var(--color-accent-dark);
+  text-decoration: none;
+}
+
+/* 電話番号（タップで発信） */
+.tel-link {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--color-accent-dark);
+}
+
+/* パンくずリスト */
+.breadcrumb {
+  font-size: var(--font-size-small);
+  color: var(--color-text-light);
+  padding: var(--space-sm) 0;
+}
+
+.breadcrumb a {
+  color: var(--color-text-light);
+}
+
+/* カード共通 */
+.card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md);
+}
+
+/* 表（診療時間など） */
+table.info-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.info-table th,
+table.info-table td {
+  border: 1px solid var(--color-border);
+  padding: var(--space-sm);
+  text-align: left;
+}
+
+table.info-table th {
+  background: var(--color-primary-light);
+  width: 30%;
+}
+
+.closed {
+  color: var(--color-alert);
+  font-weight: bold;
+}
+
+/* 画像プレースホルダー（写真未取得の間の仮表示） */
+.img-placeholder {
+  background: var(--color-primary-light);
+  border: 1px dashed var(--color-primary);
+  color: var(--color-text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  border-radius: var(--radius);
+  font-size: var(--font-size-small);
+  text-align: center;
+  padding: var(--space-md);
+}
+
+/* ============================================
+   ヘッダー・グローバルナビゲーション
+   ============================================ */
+.site-header {
+  border-bottom: 3px solid var(--color-primary);
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-sm);
+  padding-bottom: var(--space-sm);
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--color-primary-dark);
+}
+
+.site-logo img {
+  height: 48px;
+  width: auto;
+}
+
+.header-contact {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-toggle span {
+  display: block;
+  height: 3px;
+  background: var(--color-primary-dark);
+  border-radius: 2px;
+}
+
+.global-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: var(--space-sm) 0;
+  gap: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.global-nav a {
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+.global-nav a:hover {
+  color: var(--color-primary-dark);
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .global-nav {
+    display: none;
+  }
+
+  .global-nav.is-open {
+    display: block;
+  }
+
+  .global-nav ul {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .header-contact .tel-link span.tel-caption {
+    display: none;
+  }
+}
+
+/* ============================================
+   フッター
+   ============================================ */
+.site-footer {
+  background: var(--color-primary-dark);
+  color: #fff;
+  padding: var(--space-lg) 0 var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.site-footer a {
+  color: #fff;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.footer-grid h3 {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: var(--font-size-small);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: var(--space-sm);
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+  :root {
+    --font-size-h1: 1.7rem;
+    --font-size-h2: 1.4rem;
+    --font-size-h3: 1.2rem;
+    --space-lg: 32px;
+    --space-xl: 48px;
+  }
+}

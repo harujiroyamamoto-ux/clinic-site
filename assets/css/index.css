@@ -1,0 +1,77 @@
+.hero {
+  background: linear-gradient(135deg, var(--color-primary-light), #fff);
+  padding: var(--space-xl) 0;
+}
+
+.hero-inner {
+  max-width: 720px;
+}
+
+.hero-eyebrow {
+  color: var(--color-primary);
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin: 0 0 var(--space-sm);
+}
+
+.hero-lead {
+  font-size: 1.15rem;
+  color: var(--color-text-light);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-md) 0;
+}
+
+.news-list li {
+  display: flex;
+  gap: var(--space-md);
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.news-date {
+  color: var(--color-text-light);
+  white-space: nowrap;
+}
+
+.news-more {
+  font-weight: bold;
+}
+
+.shinryo-card {
+  color: var(--color-text);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.shinryo-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.shinryo-card h3 {
+  margin-top: 0;
+}
+
+.access-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .access-grid {
+    grid-template-columns: 1fr;
+  }
+}
