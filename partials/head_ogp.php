@@ -8,5 +8,7 @@
 <meta property="og:url" content="<?= htmlspecialchars($canonical_url) ?>">
 <meta property="og:title" content="<?= htmlspecialchars($title_tag) ?>">
 <meta property="og:description" content="<?= htmlspecialchars($description_tag) ?>">
-<!-- アイキャッチ画像。ロゴ・外観写真が用意でき次第 /assets/images/ogp.jpg に配置する -->
+<!-- アイキャッチ画像。ロゴ入りのカード画像（1200x630）。外観写真が用意できたら差し替え可 -->
 <meta property="og:image" content="<?= htmlspecialchars(SITE_BASE_URL) ?>/assets/images/ogp.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
