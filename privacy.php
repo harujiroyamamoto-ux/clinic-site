@@ -6,7 +6,7 @@ include __DIR__ . '/partials/head.php';
 ?>
 
 <div class="breadcrumb container">
-  <a href="/index.php">ホーム</a> &raquo; プライバシーポリシー
+  <a href="/">ホーム</a> &raquo; プライバシーポリシー
 </div>
 
 <section class="page-header">

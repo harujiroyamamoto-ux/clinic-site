@@ -8,7 +8,7 @@ $shinryo = include __DIR__ . '/../data/shinryo.php';
 ?>
 
 <div class="breadcrumb container">
-  <a href="/index.php">ホーム</a> &raquo; 診療案内
+  <a href="/">ホーム</a> &raquo; 診療案内
 </div>
 
 <section class="page-header">

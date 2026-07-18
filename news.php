@@ -8,7 +8,7 @@ $news = include __DIR__ . '/data/news.php';
 ?>
 
 <div class="breadcrumb container">
-  <a href="/index.php">ホーム</a> &raquo; お知らせ
+  <a href="/">ホーム</a> &raquo; お知らせ
 </div>
 
 <section class="page-header">

@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="container">
-    <a href="/index.php" class="site-logo">
+    <a href="/" class="site-logo">
       <img src="/assets/images/logo.png" alt="山本内科クリニック" onerror="this.style.display='none'">
       山本内科クリニック
     </a>
@@ -16,7 +16,7 @@
   <nav class="global-nav">
     <div class="container">
       <ul>
-        <li><a href="/index.php">ホーム</a></li>
+        <li><a href="/">ホーム</a></li>
         <li><a href="/news.php">お知らせ</a></li>
         <li><a href="/shinryo/index.php">診療案内</a></li>
         <li><a href="/doctor.php">医師紹介</a></li>

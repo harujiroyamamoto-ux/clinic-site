@@ -72,9 +72,24 @@
 - [x] 採用情報・プライバシーポリシー・お知らせページ
 - [x] スマホ対応・最終調整(ハンバーガーメニュー動作確認済み)
 
+## 本番ドメイン
+- https://www.yamamoto-naika.com （既存サイトを継続使用予定。partials/head.php の SITE_BASE_URL 定数で一元管理）
+
+## GitHub
+- https://github.com/harujiroyamamoto-ux/clinic-site （Private）
+- 公開のたびに push → さくらのサーバーで git pull、という運用を予定（第5部）
+
+## 第4部・集客編（対応済み）
+- タイトル/meta description: partials/head.php で「ページ名｜山本内科クリニック（横浜市中区本牧町）」の形に統一
+- canonical: head.php が現在のパスから自動生成（index.php は "/" 側に正規化し重複を防止）
+- OGP: partials/head_ogp.php（og:image は /assets/images/ogp.jpg を用意でき次第有効に）
+- 構造化データ(JSON-LD): partials/head_jsonld.php に MedicalClinic 型で医院名・住所・電話・診療時間を記述
+- sitemap.xml / robots.txt: プロジェクトルートに作成済み（公開時に一緒にアップロード）
+- Googleビジネスプロフィール・サーチコンソールへの登録は、独自ドメイン公開後にご自身のGoogleアカウントで行う（第5部の後）
+
 ## 未着手・今後の対応(次のステップ)
 - 実際の写真の差し替え(現在は仮のプレースホルダー表示)、WebP最適化
-- ロゴ画像の設置(既存サイトから取得して /assets/images/logo.png に配置)
+- ロゴ画像の設置(既存サイトから取得して /assets/images/logo.png と /assets/images/ogp.jpg に配置)
 - 医師の経歴詳細(出身大学・勤務歴)の追記(doctor.php内にコメントで場所を明記済み)
-- 第4部・集客編:OGP画像、構造化データ(JSON-LD)、sitemap.xml、robots.txtの作成
-- 第5部・公開運用編:サーバー契約・独自ドメイン・SSL・公開作業
+- 構造化データの緯度・経度(geo)は、Googleビジネスプロフィール登録後に追記する
+- 第5部・公開運用編:さくらのレンタルサーバー契約・SSH接続・独自ドメイン・SSL・公開作業
