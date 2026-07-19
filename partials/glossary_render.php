@@ -16,12 +16,15 @@ if ($item === null) {
 }
 
 $related_pages = [
-  'naika' => ['url' => '/shinryo/naika.php', 'label' => '一般内科・生活習慣病'],
+  'naika' => ['url' => '/shinryo/naika.php', 'label' => '一般内科'],
+  'shokaki' => ['url' => '/shinryo/shokaki.php', 'label' => '消化器外来'],
   'ikamera' => ['url' => '/shinryo/ikamera.php', 'label' => '胃カメラ検査'],
   'daichokamera' => ['url' => '/shinryo/daichokamera.php', 'label' => '大腸カメラ検査'],
-  'pylori' => ['url' => '/shinryo/pylori.php', 'label' => 'ピロリ菌外来'],
+  'tonyobyo' => ['url' => '/shinryo/tonyobyo.php', 'label' => '糖尿病'],
+  'seikatsu' => ['url' => '/shinryo/seikatsu.php', 'label' => '生活習慣病'],
   'kosso' => ['url' => '/shinryo/kosso.php', 'label' => '骨粗しょう症診療'],
-  'homon' => ['url' => '/shinryo/homon.php', 'label' => '訪問診療'],
+  'homon' => ['url' => '/shinryo/homon.php', 'label' => '訪問診療(往診)'],
+  'kenshin' => ['url' => '/shinryo/kenshin.php', 'label' => '各種健診・ワクチン'],
 ];
 $related = $related_pages[$item['related']];
 

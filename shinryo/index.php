@@ -1,6 +1,6 @@
 <?php
 $page_title = '診療案内';
-$page_description = '山本内科クリニックの診療案内。一般内科・生活習慣病、内視鏡検査、特定健診・がん検診、ピロリ菌外来、骨粗しょう症診療、訪問診療に対応しています。';
+$page_description = '山本内科クリニックの診療案内。一般内科、消化器外来、内視鏡検査、糖尿病、生活習慣病、骨粗しょう症診療、訪問診療、各種健診・ワクチンに対応しています。';
 $page_css = 'page.css';
 include __DIR__ . '/../partials/head.php';
 
@@ -15,8 +15,8 @@ $shinryo = include __DIR__ . '/../data/shinryo.php';
   <div class="container">
     <h1>診療案内</h1>
     <p class="page-lead">
-      当院では、外来での一般内科診療・生活習慣病管理・内視鏡検査・各種健診に加え、
-      通院が難しい方への訪問診療まで、幅広く対応しています。
+      当院では、一般内科・消化器外来・内視鏡検査・糖尿病・生活習慣病の診療から、
+      各種健診・ワクチン、通院が難しい方への訪問診療まで、幅広く対応しています。
     </p>
   </div>
 </section>
@@ -31,6 +31,12 @@ $shinryo = include __DIR__ . '/../data/shinryo.php';
         </a>
       <?php endforeach; ?>
     </div>
+
+    <h2>担当医表</h2>
+    <p class="page-lead" style="max-width:none; text-align:center;">
+      外来診療の担当医と診療時間のご案内です。担当医は都合により変更になる場合がございます。
+    </p>
+    <img src="/assets/images/tantoi_hyou.png" alt="担当医表。外来診療・在宅診療（訪問診療）の曜日別の担当医と、各種検査（超音波検査・胃内視鏡検査）の実施日をご案内しています。詳しくは受付・お電話にてお問い合わせください。" class="tantoi-hyou-image">
 
     <div class="cta-box">
       <h2>受診について</h2>

@@ -1,17 +1,17 @@
 <?php
-$page_title = '訪問診療';
+$page_title = '訪問診療(往診)';
 $page_description = '通院が難しい方のご自宅へ伺う訪問診療を行っています。総合病院と連携し、在宅での療養を支えます。';
 $page_css = 'page.css';
 include __DIR__ . '/../partials/head.php';
 ?>
 
 <div class="breadcrumb container">
-  <a href="/">ホーム</a> &raquo; <a href="/shinryo/index.php">診療案内</a> &raquo; 訪問診療
+  <a href="/">ホーム</a> &raquo; <a href="/shinryo/index.php">診療案内</a> &raquo; 訪問診療(往診)
 </div>
 
 <section class="page-header">
   <div class="container">
-    <h1>訪問診療</h1>
+    <h1>訪問診療(往診)</h1>
     <p class="page-lead">
       通院が難しい方のご自宅へ医師が伺う訪問診療を行っています。
       総合病院と連携しながら、ご自宅での療養を支えます。

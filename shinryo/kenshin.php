@@ -1,19 +1,19 @@
 <?php
-$page_title = '特定健診・がん検診';
-$page_description = '特定健康診査や各種がん検診を実施し、病気の早期発見・予防に取り組んでいます。';
+$page_title = '各種健診・ワクチン';
+$page_description = '特定健康診査・各種がん検診・予防接種を実施し、病気の早期発見・予防に取り組んでいます。';
 $page_css = 'page.css';
 include __DIR__ . '/../partials/head.php';
 ?>
 
 <div class="breadcrumb container">
-  <a href="/">ホーム</a> &raquo; <a href="/shinryo/index.php">診療案内</a> &raquo; 特定健診・がん検診
+  <a href="/">ホーム</a> &raquo; <a href="/shinryo/index.php">診療案内</a> &raquo; 各種健診・ワクチン
 </div>
 
 <section class="page-header">
   <div class="container">
-    <h1>特定健診・がん検診</h1>
+    <h1>各種健診・ワクチン</h1>
     <p class="page-lead">
-      生活習慣病や病気の早期発見・予防のため、特定健康診査や各種がん検診を実施しています。
+      生活習慣病や病気の早期発見・予防のため、特定健康診査・各種がん検診・予防接種を実施しています。
     </p>
   </div>
 </section>
@@ -35,9 +35,15 @@ include __DIR__ . '/../partials/head.php';
       <li>体の変化を早めに確認しておきたい</li>
     </ul>
 
+    <h2>予防接種(ワクチン)について</h2>
+    <p>
+      当院では各種予防接種に対応しています。ワクチンの種類・料金・接種可能時期については、
+      在庫状況により異なりますので、お電話でご確認ください。
+    </p>
+
     <div class="notice-box">
       <p>
-        検診の種類・料金・持ち物は、お電話でご案内しています。お気軽にお問い合わせください。
+        検診・予防接種の種類・料金・持ち物は、お電話でご案内しています。お気軽にお問い合わせください。
       </p>
     </div>
 

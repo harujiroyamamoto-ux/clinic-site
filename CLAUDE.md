@@ -91,15 +91,17 @@
 ```
 トップページ (index.php)
 ├─ お知らせ (news.php)
-├─ 診療案内 (shinryo/index.php)
-│    ├─ 一般内科・生活習慣病 (shinryo/naika.php)
+├─ 診療案内 (shinryo/index.php、担当医表(担当医表.png)を掲載)
+│    ├─ 一般内科 (shinryo/naika.php)
+│    ├─ 消化器外来 (shinryo/shokaki.php、ピロリ菌検査・除菌を含む)
 │    ├─ 内視鏡検査(胃カメラ・大腸カメラ)ハブページ (shinryo/naishikyo.php)
-    │    ├─ 胃カメラ検査 (shinryo/ikamera.php)
-    │    └─ 大腸カメラ検査 (shinryo/daichokamera.php)
-│    ├─ 特定健診・がん検診 (shinryo/kenshin.php)
-│    ├─ ピロリ菌外来 (shinryo/pylori.php)
+│    │    ├─ 胃カメラ検査 (shinryo/ikamera.php)
+│    │    └─ 大腸カメラ検査 (shinryo/daichokamera.php)
+│    ├─ 糖尿病 (shinryo/tonyobyo.php)
+│    ├─ 生活習慣病 (shinryo/seikatsu.php)
 │    ├─ 骨粗しょう症診療 (shinryo/kosso.php)
-│    └─ 訪問診療 (shinryo/homon.php)
+│    ├─ 訪問診療(往診) (shinryo/homon.php)
+│    └─ 各種健診・ワクチン (shinryo/kenshin.php)
 ├─ 医師紹介 (doctor.php)
 ├─ 病名から探す (byomei.php)
 ├─ 症状から探す (shojo.php)
@@ -155,8 +157,30 @@
 - 理念テキスト:「予防から治療、看取りまで。生涯を支える医療を、この街で。」（平成3年開院・地域とともに35年、を踏まえてユーザーの意向をもとに作成）
 - スマホでは2枚の写真が縦積みになる
 
+## 診療案内の再構成(対応済み)
+- 担当医表: assets/images/tantoi_hyou.png(ユーザー提供の画像をそのまま埋め込み)をshinryo/index.phpに掲載。
+  曜日別の外来担当医、在宅診療(訪問診療)の曜日別担当医、各種検査(超音波・胃内視鏡)の実施日を含む
+- ピロリ菌外来(shinryo/pylori.php)は削除。内容はshinryo/shokaki.php(消化器外来)内の
+  「ピロリ菌検査・除菌治療」セクションに統合
+- 診療案内の項目を8つに再構成: 一般内科 / 消化器外来(新設) / 内視鏡検査(胃カメラ・大腸カメラ) / 糖尿病(新設) /
+  生活習慣病(新設) / 骨粗しょう症診療 / 訪問診療(往診) / 各種健診・ワクチン
+  - 元の「一般内科・生活習慣病」(shinryo/naika.php)は「一般内科」に絞り込み、生活習慣病・糖尿病の内容は
+    それぞれ新設のshinryo/seikatsu.php・shinryo/tonyobyo.phpに分離
+  - shinryo/kenshin.php(旧「特定健診・がん検診」)は「各種健診・ワクチン」に改称し、予防接種の案内を追加
+    (具体的なワクチンの種類・料金は未確認のため「お問い合わせください」と汎用的な案内にとどめている)
+  - data/shinryo.php(トップページ・診療案内トップの一覧データ)を8項目に更新
+- data/glossary.php(症状・病名68ページ)の関連リンク(related)を新しいページ構成にあわせて更新
+  - ピロリ菌関連の症状・病名 → shokaki(消化器外来)
+  - 糖尿病関連の症状・病名(のどが渇く、血糖値指摘 等) → tonyobyo(糖尿病)
+  - 高血圧・脂質異常・動脈硬化などの症状・病名 → seikatsu(生活習慣病)
+  - partials/glossary_render.phpの$related_pagesにshokaki/tonyobyo/seikatsu/kenshinを追加
+
 ## 未着手・今後の対応(次のステップ)
 - 受付・待合室（別カット）・診察室・院長/副院長の実写差し替え、WebP最適化
 - 医師の経歴詳細(出身大学・勤務歴)の追記(doctor.php内にコメントで場所を明記済み)
 - 構造化データの緯度・経度(geo)は、Googleビジネスプロフィール登録後に追記する
+- 予防接種(ワクチン)の具体的な種類・料金が決まれば、shinryo/kenshin.phpに追記する
+- 担当医表(担当医表.png)には院長・副院長以外にも複数の医師(仁多美先生、吉井先生、山本晴先生、鈴木先生、
+  二本松先生、野田先生、唐沢先生、仁多寅先生、橘田先生、池田先生)が記載されている。doctor.php(医師紹介)を
+  拡充するかどうかは今回未対応・要確認
 - 第5部・公開運用編:さくらのレンタルサーバー契約・SSH接続・独自ドメイン・SSL・公開作業

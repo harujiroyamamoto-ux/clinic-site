@@ -1,20 +1,20 @@
 <?php
-$page_title = '一般内科・生活習慣病';
-$page_description = 'かぜ・発熱などの急な体調不良から、高血圧・糖尿病・脂質異常症などの生活習慣病まで対応しています。';
+$page_title = '一般内科';
+$page_description = 'かぜ・発熱などの急な体調不良から、日常的な体調管理まで対応する一般内科のご案内です。';
 $page_css = 'page.css';
 include __DIR__ . '/../partials/head.php';
 ?>
 
 <div class="breadcrumb container">
-  <a href="/">ホーム</a> &raquo; <a href="/shinryo/index.php">診療案内</a> &raquo; 一般内科・生活習慣病
+  <a href="/">ホーム</a> &raquo; <a href="/shinryo/index.php">診療案内</a> &raquo; 一般内科
 </div>
 
 <section class="page-header">
   <div class="container">
-    <h1>一般内科・生活習慣病</h1>
+    <h1>一般内科</h1>
     <p class="page-lead">
-      かぜや発熱、腹痛などの急な体調不良から、高血圧・糖尿病・脂質異常症といった
-      生活習慣病の管理まで、幅広く診療しています。
+      かぜや発熱などの急な体調不良から、日々の体調管理まで、
+      地域のかかりつけ医として幅広く診療しています。
     </p>
   </div>
 </section>
@@ -24,17 +24,15 @@ include __DIR__ . '/../partials/head.php';
     <h2>こんな症状のときにご相談ください</h2>
     <ul>
       <li>発熱、せき、のどの痛みなどのかぜ症状</li>
-      <li>腹痛、下痢、便秘などの胃腸の不調</li>
       <li>頭痛、めまい、倦怠感</li>
-      <li>健診で血圧・血糖値・脂質の数値を指摘された</li>
       <li>むくみ、動悸など気になる症状がある</li>
+      <li>体調不良が続いている、原因がはっきりしない</li>
     </ul>
 
-    <h2>生活習慣病の管理</h2>
     <p>
-      高血圧・糖尿病・脂質異常症などの生活習慣病は、自覚症状が少ないまま進行することがあります。
-      当院では定期的な検査と診察を通じて、お一人おひとりの状態に合わせた治療・生活指導を行っています。
-      必要な場合は、連携する総合病院への紹介にも対応いたします。
+      消化器の症状は<a href="/shinryo/shokaki.php">消化器外来</a>、
+      糖尿病は<a href="/shinryo/tonyobyo.php">糖尿病</a>、
+      高血圧・脂質異常症などは<a href="/shinryo/seikatsu.php">生活習慣病</a>のページもあわせてご覧ください。
     </p>
 
     <div class="notice-box">
