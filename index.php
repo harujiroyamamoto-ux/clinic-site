@@ -106,7 +106,7 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
     <p class="shinryo-department-list">内科｜消化器内科｜内視鏡(胃カメラ・大腸カメラ)｜循環器内科｜糖尿病内科｜訪問診療</p>
     <div class="card-grid">
       <?php foreach ($shinryo as $item): ?>
-        <a class="card shinryo-card" href="<?= htmlspecialchars($item['url']) ?>">
+        <a class="card shinryo-card shinryo-card-compact <?= htmlspecialchars($item['color'] ?? '') ?>" href="<?= htmlspecialchars($item['url']) ?>">
           <?php if (!empty($item['logo'])): ?>
             <img src="<?= htmlspecialchars($item['logo']) ?>" alt="<?= htmlspecialchars($item['title']) ?>のロゴ" class="shinryo-card-logo">
           <?php else: ?>

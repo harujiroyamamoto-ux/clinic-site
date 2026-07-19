@@ -89,6 +89,30 @@ h1 { font-size: var(--font-size-h1); }
 h2 { font-size: var(--font-size-h2); }
 h3 { font-size: var(--font-size-h3); }
 
+/* 見出し(h2)のアクセントバー。--accent-color を設定した親要素の中では、
+   その色が使われる（診療科・症状カテゴリごとの色分けと連動） */
+h2::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 3px;
+  background: var(--accent-color, var(--color-primary));
+  margin: var(--space-sm) auto 0;
+  border-radius: 2px;
+}
+
+/* 診療科・カテゴリの色分けパレット。要素に付与すると --accent-color が
+   その配下のアクセントバー・ボーダー・文字色に反映される */
+.accent-blue { --accent-color: #3a7bd5; }
+.accent-rose { --accent-color: #d0656f; }
+.accent-teal { --accent-color: #4fa89e; }
+.accent-coral { --accent-color: #e0765f; }
+.accent-green { --accent-color: #5a9e6f; }
+.accent-amber { --accent-color: #d9a23d; }
+.accent-sky { --accent-color: #4fa8d9; }
+.accent-indigo { --accent-color: #6a75c9; }
+.accent-cyan { --accent-color: #3fa6b8; }
+
 section {
   padding: var(--space-lg) 0;
 }
@@ -166,14 +190,18 @@ section:nth-of-type(even) {
 
 /* 診療案内バナー（カテゴリ別の大きめボタン） */
 .shinryo-card {
-  display: flex;
-  align-items: center;
-  gap: var(--space-md);
   color: var(--color-text);
-  border-left: 6px solid var(--color-primary);
+  border-left: 6px solid var(--accent-color, var(--color-primary));
   padding: var(--space-md) var(--space-lg) var(--space-md) var(--space-md);
   position: relative;
   transition: box-shadow 0.2s, transform 0.2s;
+}
+
+/* ロゴ+タイトルのみを横並びで見せる版（トップページの診療案内カード） */
+.shinryo-card-compact {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
 }
 
 .shinryo-card-logo {
@@ -202,19 +230,19 @@ span.shinryo-card-logo.img-placeholder {
   top: 50%;
   transform: translateY(-50%);
   font-size: 1.6rem;
-  color: var(--color-primary);
+  color: var(--accent-color, var(--color-primary));
 }
 
 .shinryo-card:hover {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
   text-decoration: none;
-  border-left-color: var(--color-accent);
 }
 
 .shinryo-card h3 {
   margin: 0 0 var(--space-sm);
   font-size: 1.2rem;
+  color: var(--accent-color, var(--color-primary-dark));
 }
 
 .shinryo-card p {

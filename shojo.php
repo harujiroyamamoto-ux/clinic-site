@@ -15,6 +15,15 @@ $category_labels = [
   'houmon' => '訪問診療系',
 ];
 
+$category_colors = [
+  'kaze' => 'accent-blue',
+  'shokaki' => 'accent-rose',
+  'junkanki' => 'accent-coral',
+  'seikatsu' => 'accent-amber',
+  'kokyuki' => 'accent-sky',
+  'houmon' => 'accent-indigo',
+];
+
 $grouped = [];
 foreach ($glossary as $item) {
   if ($item['type'] !== 'symptom') continue;
@@ -39,7 +48,7 @@ foreach ($glossary as $item) {
 <section>
   <div class="container">
     <?php foreach ($category_labels as $cat_key => $cat_label): ?>
-      <div class="symptom-category">
+      <div class="symptom-category <?= htmlspecialchars($category_colors[$cat_key] ?? '') ?>">
         <h2><?= htmlspecialchars($cat_label) ?></h2>
         <div class="symptom-tags">
           <?php foreach ($grouped[$cat_key] ?? [] as $item): ?>

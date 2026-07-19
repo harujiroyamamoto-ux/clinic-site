@@ -317,6 +317,30 @@
   (.feature-item-header/.feature-item-badge/.feature-item-photo/.feature-item-caption)に全面書き換え。
   768px以下は1カラム
 
+## サイト全体:診療科・症状カテゴリの色分けとh2アクセントバーを追加
+- 「全体的に色は青が中心でよいが、視覚に訴えるよう適度に色分けしたい」との要望を受け、適用範囲を
+  AskUserQuestionで確認(複数選択): (1)診療案内カード(トップページ+診療案内ページ)、
+  (2)症状・病名ページのカテゴリタグ、(3)各ページ見出し(h2)へのアクセントカラー、の3つを実施
+- assets/css/common.css に9色のアクセントパレットを追加(.accent-blue/rose/teal/coral/green/amber/sky/indigo/cyan、
+  各クラスは --accent-color というCSS変数を設定するだけ)。この変数を子要素側(h2::after / .shinryo-card /
+  .symptom-tag 等)で `var(--accent-color, var(--color-primary))` のように参照させることで、
+  親にクラスを1つ付けるだけで配下の見出し下線・ボーダー・文字色がまとめて連動する設計にした
+- 診療科カラー割当て(data/shinryo.phpに'color'キーを追加、ロゴの配色ともなるべく揃えた):
+  一般内科=blue、消化器外来=rose、内視鏡検査=teal、循環器外来=coral、糖尿病=green、生活習慣病=amber、
+  訪問診療=indigo、各種健診・ワクチン=cyan。index.php・shinryo/index.phpの両方のカードに適用
+- 症状・病名カテゴリカラー割当て(shojo.php/byomei.phpに$category_colors配列を追加。
+  glossaryのcategoryキーと対応させ、診療科と共通する分野は同じ色に統一): kaze=blue、shokaki=rose、
+  junkanki=coral、seikatsu=amber、kokyuki=sky、houmon=indigo。.symptom-tagの枠線・文字色・
+  hover時の塗りつぶしに反映
+- h2見出しには `h2::after` で56px×3pxのアクセントバーを追加(--accent-colorがあればその色、
+  なければ既定の--color-primary)。既存の .cta-box h2::after(白い下線、より詳細度が高いセレクタ)は
+  そのまま優先されるため、暗い背景のCTAボックスでは従来通り白下線のまま維持されている
+- 【重要】この作業中に発見した表示崩れを修正: 診療案内カードにロゴを追加した際(前回セッション)、
+  .shinryo-card に display:flex を追加していたが、これは診療案内トップページ(shinryo/index.php、
+  ロゴなし・タイトル+説明文が縦積みのカード)にも影響し、タイトルと説明文が横並びに崩れていた。
+  flexレイアウトを .shinryo-card-compact という別クラスに切り出し、ロゴ付きカード(index.php)のみに
+  付与することで解消。トップページ制作時にこの回帰に気づかず放置していた点は今後の教訓とする
+
 ## 未着手・今後の対応(次のステップ)
 - 受付・待合室（別カット）・診察室・院長/副院長・その他医師の実写差し替え、WebP最適化
 - トップページ特色(Feature)セクションのFeature2〜4の写真(訪問診療・診察・内視鏡検査の様子)が未取得

@@ -25,7 +25,7 @@ $shinryo = include __DIR__ . '/../data/shinryo.php';
   <div class="container">
     <div class="card-grid card-grid-vertical">
       <?php foreach ($shinryo as $item): ?>
-        <a class="card shinryo-card" href="<?= htmlspecialchars($item['url']) ?>">
+        <a class="card shinryo-card <?= htmlspecialchars($item['color'] ?? '') ?>" href="<?= htmlspecialchars($item['url']) ?>">
           <h3><?= htmlspecialchars($item['title']) ?></h3>
           <p><?= htmlspecialchars($item['summary']) ?></p>
         </a>
