@@ -450,6 +450,16 @@
 - ロゴのみになったことで見出し相当の存在感を持たせるため、新しい .shinryo-card-logo-solo クラス
   (140px、中央寄せ)を追加。.shinryo-card-logo-labeled(サイズ・contain指定)と併用している
 
+## 内視鏡検査ページ:タイトル文字を復活、ロゴも文字なし版に差し替え
+- ユーザーが4つのロゴを文字なしのシンプルなアイコン版(他8診療科ロゴと同じ、丸背景+イラストのみ)に
+  作り直したため、assets/images/logo_ikamera.png・logo_daichokamera.png・logo_evening.png・
+  logo_dojitsu.png を差し替え
+- あわせて「言葉を戻してほしい」との要望どおり、.shinryo-card-header(ロゴ+h3見出し)構成を復活。
+  見出しはユーザー指定の短い表記「胃カメラ」「大腸カメラ」「イブニング胃カメラ」「胃・大腸同日検査」
+  (「〜検査」を付けない)に統一。ロゴは他の診療科ロゴと同じ通常の.shinryo-card-logo(84px、円形トリミング)を使用
+- 不要になった .shinryo-card-logo-labeled と .shinryo-card-logo-solo(文字入りロゴ専用に追加していたクラス)は
+  common.cssから削除
+
 ## 未着手・今後の対応(次のステップ)
 - 採用情報ページ(recruit.php)の内容確認・調整: 実際の募集職種、給与額、待遇、院内・スタッフ写真、
   スタッフの声(実在のコメント)への差し替え

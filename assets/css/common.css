@@ -216,23 +216,6 @@ section:nth-of-type(even) {
   margin: 0;
 }
 
-/* テキストが埋め込まれたロゴ用（丸くトリミングせず、正方形のまま表示） */
-.shinryo-card-logo-labeled {
-  width: 100px;
-  height: 100px;
-  min-width: 100px;
-  border-radius: var(--radius);
-  object-fit: contain;
-}
-
-/* タイトル文字を出さず、ロゴのみを見出し代わりに大きく見せる版 */
-.shinryo-card-logo-solo {
-  display: block;
-  width: 140px;
-  height: 140px;
-  margin: 0 auto var(--space-sm);
-}
-
 .shinryo-card-logo {
   width: 84px;
   height: 84px;
