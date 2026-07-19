@@ -28,7 +28,7 @@ $canonical_url = SITE_BASE_URL . $request_path;
 <link rel="canonical" href="<?= htmlspecialchars($canonical_url) ?>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/common.css">
 <?php if (!empty($page_css)): ?>
 <link rel="stylesheet" href="/assets/css/<?= htmlspecialchars($page_css) ?>">
