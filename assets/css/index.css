@@ -226,3 +226,51 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* 採用情報バナー（アクセスの下） */
+.recruit-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  background: var(--color-primary-light);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+}
+
+.recruit-banner-illustration {
+  width: 130px;
+  height: 130px;
+  flex-shrink: 0;
+}
+
+.recruit-banner-text {
+  flex: 1;
+}
+
+.recruit-banner-text h2 {
+  text-align: left;
+}
+
+.recruit-banner-text h2::after {
+  margin-left: 0;
+}
+
+.recruit-banner-text p {
+  margin: var(--space-sm) 0 var(--space-md);
+}
+
+@media (max-width: 768px) {
+  .recruit-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .recruit-banner-text h2 {
+    text-align: center;
+  }
+
+  .recruit-banner-text h2::after {
+    margin: var(--space-sm) auto 0;
+  }
+}

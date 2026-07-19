@@ -188,6 +188,30 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
   </div>
 </section>
 
+<section class="recruit-banner-section">
+  <div class="container">
+    <div class="recruit-banner">
+      <svg class="recruit-banner-illustration" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="スタッフ募集のイラスト">
+        <circle cx="60" cy="60" r="58" fill="#eef1f5"></circle>
+        <circle cx="47" cy="46" r="13" fill="#2c4a6e"></circle>
+        <path d="M22 90c0-16 11-27 25-27s25 11 25 27" fill="#2c4a6e"></path>
+        <circle cx="76" cy="42" r="11" fill="#4a7c59"></circle>
+        <path d="M55 90c0-14 10-24 21-24s21 10 21 24" fill="#4a7c59"></path>
+        <circle cx="94" cy="26" r="11" fill="#fff" stroke="#4a7c59" stroke-width="3"></circle>
+        <path d="M94 20v12M88 26h12" stroke="#4a7c59" stroke-width="3" stroke-linecap="round"></path>
+      </svg>
+      <div class="recruit-banner-text">
+        <h2>スタッフ募集中</h2>
+        <p>
+          山本内科クリニックでは、一緒に地域医療を支えてくださるスタッフを募集しています。
+          未経験の方やブランクのある方もお気軽にご相談ください。
+        </p>
+        <a href="/recruit.php" class="btn btn-primary">採用情報を見る</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <?php include __DIR__ . '/partials/footer.php'; ?>
 </body>
 </html>
