@@ -28,6 +28,43 @@
   text-decoration: none;
 }
 
+/* 解説ページの本文（症状・病名の個別ページ） */
+.glossary-points {
+  margin: var(--space-sm) 0 var(--space-lg);
+}
+
+/* 予約バナー（症状・病名の解説ページ下部） */
+.booking-banner {
+  background: var(--color-primary-dark);
+  color: #fff;
+  text-align: center;
+  padding: var(--space-xl) 0;
+  margin-top: var(--space-xl);
+}
+
+.booking-banner h2 {
+  color: #fff;
+}
+
+.booking-banner p {
+  opacity: 0.9;
+}
+
+.booking-banner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.btn-disabled {
+  background: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: not-allowed;
+}
+
 .page-header {
   background: var(--color-primary-light);
   padding: var(--space-lg) 0;
