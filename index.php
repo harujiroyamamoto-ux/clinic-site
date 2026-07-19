@@ -113,7 +113,7 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
       </tr>
       <tr>
         <th>休診日</th>
-        <td>水曜午後・土曜午後・日曜・祝日（水曜・土曜は午前のみ診療）</td>
+        <td>木曜・水曜午後・土曜午後・日曜・祝日（水曜・土曜は午前のみ診療）</td>
       </tr>
       <tr>
         <th>ご予約について</th>
@@ -137,7 +137,7 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
         <td>○</td>
         <td>○</td>
         <td>○</td>
-        <td>○</td>
+        <td class="closed">×</td>
         <td>○</td>
         <td>○</td>
         <td class="closed">×</td>
@@ -147,7 +147,7 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
         <td>○</td>
         <td>○</td>
         <td class="closed">×</td>
-        <td>○</td>
+        <td class="closed">×</td>
         <td>○</td>
         <td class="closed">×</td>
         <td class="closed">×</td>
