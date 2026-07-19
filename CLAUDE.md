@@ -348,6 +348,15 @@
 - Feature1は前回セッションで実写(clinic_exterior_day.jpg)を使っていたが、ユーザー指定によりイメージ写真に差し替え
 - Feature2〜4のimg-placeholder(準備中表示)は解消。これでトップページのFeatureセクションはすべて画像が入った状態
 
+## 胃カメラ・大腸カメラページ:解説漫画を追加
+- 「胃漫画.png」「大腸漫画.png」(いずれもクリニック名入りで完結した患者向け解説イラスト、
+  苦痛の少ない工夫・検査の流れ・早期発見の大切さなどを説明。内容は一般的な内視鏡検査の説明で
+  当院固有の誇大表現なし)を assets/images/comic_ikamera.png・comic_daichokamera.png としてコピー
+- shinryo/ikamera.php・shinryo/daichokamera.php の「鎮静剤や麻酔剤を使用した辛くない内視鏡検査」の
+  直後、「こんな症状はありませんか」の前に「漫画でわかる胃カメラ」「漫画でわかる大腸カメラ」の見出し+
+  画像を追加。新しいCSSクラス .comic-image を assets/css/page.css に追加(.symptom-imageとほぼ同じ、
+  枠線付き)
+
 ## 未着手・今後の対応(次のステップ)
 - 受付・待合室（別カット）・診察室・院長/副院長・その他医師の実写差し替え、WebP最適化
 - 院長・副院長の2ショット写真(トップページごあいさつセクション用)が未取得。取得できたら/assets/images/に配置しindex.phpのimg-placeholderと差し替える

@@ -158,6 +158,15 @@
   border-radius: var(--radius);
 }
 
+.comic-image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: var(--space-md) 0 var(--space-lg);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+}
+
 .related-photo {
   max-width: 320px;
   height: auto;
