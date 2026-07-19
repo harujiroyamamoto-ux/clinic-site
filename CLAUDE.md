@@ -35,6 +35,9 @@
 - スマホでは画面下部に電話・ご来院の方への固定ボタン(partials/floating_cta.php、768px以下でのみ表示)
 - サイト全体(見出し・本文・ナビ・フッターすべて)をGoogle Fonts「Noto Serif JP」で統一(本文400、見出し600、ヒーローh1のみ700)
   - おなかとおしりのすずきクリニック(onakatooshiri.com)が実際に使用しているフォントを調査し、同じNoto Serif JPを採用(partials/head.phpでGoogle Fontsを読み込み、common.cssのbody/h1,h2,h3に指定。OS内蔵の明朝体はフォールバックとして残す)
+- 見出し(h1,h2,h3)はすべて中央寄せ(common.css)。ヒーローのh1(.hero-photo-title)のみ写真オーバーレイのデザイン上、左寄せのまま
+- content-section内のh2は、左のアクセントバーではなく中央下の短い下線アクセント(::after)に変更。cta-box内のh2にも白系の下線アクセントを追加
+- 胃カメラ・大腸カメラページの「検査の流れ」は、番号付きサークル+タイトル+説明のタイムライン形式(.exam-flow、page.cssで定義)。やまたかクリニック(yamataka-cl.com)の構成を参考にしたが文章は独自作成
 
 ## ヘッダーナビゲーション
 - 構成: お知らせ / 診療案内 / 医師紹介 / 胃・大腸内視鏡(shinryo/naishikyo.phpへ直リンク) / 病名から探す / 症状から探す / アクセス

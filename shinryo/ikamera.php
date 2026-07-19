@@ -40,21 +40,49 @@ include __DIR__ . '/../partials/head.php';
       土曜日の検査にも対応していますので、平日のご来院が難しい方もご相談ください。
     </p>
 
-    <h2>検査の流れ（目安）</h2>
-    <ol>
-      <li>受付・問診（体調やお薬の確認）</li>
-      <li>検査前の説明（鎮静剤・麻酔剤使用の希望確認）</li>
-      <li>胃カメラ検査の実施</li>
-      <li>鎮静剤・麻酔剤を使用した場合は、目が覚めるまでベッドで休憩</li>
-      <li>検査結果の説明、必要に応じて今後の方針のご案内</li>
-    </ol>
-
-    <h2>検査当日にご注意いただくこと</h2>
-    <ul>
-      <li>検査前は一定時間の絶食が必要です。食事や水分をとってよい時間は、患者さんの状態によって異なりますので、ご予約の際に個別にご案内します</li>
-      <li>服用中のお薬がある方は、事前にお申し出ください</li>
-      <li>鎮静剤・麻酔剤を使用した場合、検査当日はお車・バイク・自転車の運転はお控えください</li>
-    </ul>
+    <h2>検査の流れ</h2>
+    <div class="exam-flow">
+      <div class="exam-flow-step">
+        <div class="exam-flow-number">1</div>
+        <div class="exam-flow-content">
+          <h3>検査前日</h3>
+          <p>
+            消化の良い食事を心がけてください。食事や水分をとってよい時間は、
+            患者さんの状態によって異なりますので、ご予約の際に個別にご案内します。
+          </p>
+        </div>
+      </div>
+      <div class="exam-flow-step">
+        <div class="exam-flow-number">2</div>
+        <div class="exam-flow-content">
+          <h3>検査当日</h3>
+          <p>
+            指示された時間から絶食のうえご来院ください。服用中のお薬がある方は、
+            休薬の指示がある場合は必ず従い、事前にお申し出ください。
+          </p>
+        </div>
+      </div>
+      <div class="exam-flow-step">
+        <div class="exam-flow-number">3</div>
+        <div class="exam-flow-content">
+          <h3>ご来院後</h3>
+          <p>
+            受付・問診の後、検査前の説明を行います。鎮静剤・麻酔剤をご希望の場合は
+            その準備をしたうえで、胃カメラ検査を実施します。
+          </p>
+        </div>
+      </div>
+      <div class="exam-flow-step">
+        <div class="exam-flow-number">4</div>
+        <div class="exam-flow-content">
+          <h3>検査後</h3>
+          <p>
+            鎮静剤・麻酔剤を使用した場合は、目が覚めるまでベッドで休憩いただいてから、
+            医師が検査結果をご説明します。当日はお車・バイク・自転車の運転はお控えください。
+          </p>
+        </div>
+      </div>
+    </div>
 
     <div class="notice-box">
       <p>

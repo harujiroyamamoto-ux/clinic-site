@@ -81,6 +81,7 @@ h1, h2, h3 {
   font-family: "Noto Serif JP", "Hiragino Mincho ProN", "YuMincho", "游明朝", "HGS明朝E", serif;
   font-weight: 600;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 h1 { font-size: var(--font-size-h1); }
