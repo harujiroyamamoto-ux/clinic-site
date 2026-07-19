@@ -95,8 +95,12 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
     <div class="card-grid">
       <?php foreach ($shinryo as $item): ?>
         <a class="card shinryo-card" href="<?= htmlspecialchars($item['url']) ?>">
+          <?php if (!empty($item['logo'])): ?>
+            <img src="<?= htmlspecialchars($item['logo']) ?>" alt="<?= htmlspecialchars($item['title']) ?>のロゴ" class="shinryo-card-logo">
+          <?php else: ?>
+            <span class="shinryo-card-logo img-placeholder">ロゴ<br>（準備中）</span>
+          <?php endif; ?>
           <h3><?= htmlspecialchars($item['title']) ?></h3>
-          <p><?= htmlspecialchars($item['summary']) ?></p>
         </a>
       <?php endforeach; ?>
     </div>

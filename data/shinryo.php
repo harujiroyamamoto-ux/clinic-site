@@ -5,40 +5,48 @@ return [
     'title' => '一般内科',
     'url' => '/shinryo/naika.php',
     'summary' => 'かぜ・発熱などの急な体調不良から、日常的な体調管理まで幅広く対応します。',
+    'logo' => '/assets/images/logo_naika.png',
   ],
   [
     'title' => '消化器外来',
     'url' => '/shinryo/shokaki.php',
     'summary' => '胃痛・腹痛・便通異常など、消化器の症状に対応します。ピロリ菌検査にも対応しています。',
+    'logo' => '/assets/images/logo_shokaki.png',
   ],
   [
     'title' => '内視鏡検査(胃カメラ・大腸カメラ)',
     'url' => '/shinryo/naishikyo.php',
     'summary' => '胃・大腸の内視鏡検査に対応しています。鎮静剤を使用した検査にも対応しています。',
+    'logo' => '/assets/images/logo_naishikyo.png',
   ],
   [
     'title' => '循環器外来',
     'url' => '/shinryo/junkanki.php',
     'summary' => '動悸・息切れ・むくみなど、心臓や血管の症状に対応します。高血圧などのリスク管理も行います。',
+    'logo' => null,
   ],
   [
     'title' => '糖尿病',
     'url' => '/shinryo/tonyobyo.php',
     'summary' => '血糖値の管理から合併症の予防まで、糖尿病の治療に取り組んでいます。',
+    'logo' => null,
   ],
   [
     'title' => '生活習慣病',
     'url' => '/shinryo/seikatsu.php',
     'summary' => '高血圧・脂質異常症・骨粗しょう症など、生活習慣病の検査・治療・生活指導を行っています。',
+    'logo' => null,
   ],
   [
     'title' => '訪問診療(往診)',
     'url' => '/shinryo/homon.php',
     'summary' => '通院が難しい方のご自宅へ伺う訪問診療を行っています。総合病院と連携し、在宅での療養を支えます。',
+    'logo' => null,
   ],
   [
     'title' => '各種健診・ワクチン',
     'url' => '/shinryo/kenshin.php',
     'summary' => '特定健康診査・各種がん検診・予防接種を実施し、病気の早期発見・予防に取り組んでいます。',
+    'logo' => null,
   ],
 ];

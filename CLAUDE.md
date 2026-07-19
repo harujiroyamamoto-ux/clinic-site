@@ -280,9 +280,22 @@
 - .feature-rowをrepeat(3,1fr)→repeat(4,1fr)に変更、gap/paddingをspace-lg→space-mdに縮小。
   レスポンシブは1024px以下で2カラム、768px以下で1カラム(新しいブレークポイントを追加)
 
+## トップページ:診療案内カードをロゴアイコン表示に変更(コメント文は撤去)
+- ユーザー提供の「内科ロゴ.png」「消化器ロゴ.png」「内視鏡ロゴ.png」(元は親フォルダ直下)を
+  assets/images/logo_naika.png・logo_shokaki.png・logo_naishikyo.pngとしてコピー
+- data/shinryo.php の各項目に 'logo' キーを追加(3件は画像パス、残り5件はnullでロゴ未取得を明示)
+- index.php の診療案内カードループのみ変更: <p>summary</p>を削除し、logoがあれば56px円形ロゴ画像、
+  なければ「ロゴ（準備中）」の円形img-placeholderを表示。shinryo/index.php(診療案内トップページ)は
+  別ループなので影響なく、従来どおりsummaryテキストを表示し続ける
+- assets/css/common.css の .shinryo-card を flex レイアウトに変更(ロゴ+タイトルを横並び)。
+  .shinryo-card-logo(円形56px)、img-placeholder版の小サイズ調整用セレクタを追加
+- 残り5項目(循環器外来・糖尿病・生活習慣病・訪問診療・各種健診)のロゴは未取得。取得次第
+  data/shinryo.php の該当 'logo' を null から画像パスに差し替える
+
 ## 未着手・今後の対応(次のステップ)
 - 受付・待合室（別カット）・診察室・院長/副院長・その他医師の実写差し替え、WebP最適化
 - 院長・副院長の2ショット写真(トップページごあいさつセクション用)が未取得。取得できたら/assets/images/に配置しindex.phpのimg-placeholderと差し替える
+- トップページ診療案内の残り5項目(循環器外来・糖尿病・生活習慣病・訪問診療・各種健診)のロゴ画像が未取得
 - 医師の経歴詳細(出身大学・勤務歴・資格)の追記(doctor.php内にコメントで場所を明記済み。「その他の医師」も資格等が分かれば追記)
 - 構造化データの緯度・経度(geo)は、Googleビジネスプロフィール登録後に追記する
 - 予防接種(ワクチン)の具体的な種類・料金が決まれば、shinryo/kenshin.phpに追記する
