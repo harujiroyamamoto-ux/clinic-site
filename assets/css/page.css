@@ -135,6 +135,20 @@
   margin-top: 0;
 }
 
+/* よくある質問（採用情報ページなど） */
+.faq-item {
+  margin-bottom: var(--space-lg);
+}
+
+.faq-item h3 {
+  text-align: left;
+  margin-bottom: var(--space-xs);
+}
+
+.faq-item p {
+  margin: 0;
+}
+
 .cta-box {
   background: var(--color-primary-dark);
   color: #fff;
