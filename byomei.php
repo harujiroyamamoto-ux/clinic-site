@@ -1,6 +1,6 @@
 <?php
 $page_title = '病名から探す';
-$page_description = 'かぜ症状・消化器・循環器・糖尿病や脂質異常・呼吸器・訪問診療など、カテゴリ別に病名から山本内科クリニックの診療案内ページを探せます。';
+$page_description = 'かぜ症状・食道や胃の病気・大腸の病気・循環器・糖尿病や脂質異常・呼吸器・訪問診療など、カテゴリ別に病名から山本内科クリニックの診療案内ページを探せます。';
 $page_css = 'page.css';
 include __DIR__ . '/partials/head.php';
 
@@ -8,7 +8,8 @@ $glossary = include __DIR__ . '/data/glossary.php';
 
 $category_labels = [
   'kaze' => 'かぜ症状',
-  'shokaki' => '消化器',
+  'ishokudo' => '食道・胃',
+  'daicho' => '大腸',
   'junkanki' => '循環器',
   'seikatsu' => '糖尿病・脂質異常',
   'kokyuki' => '呼吸器',
@@ -17,7 +18,8 @@ $category_labels = [
 
 $category_colors = [
   'kaze' => 'accent-blue',
-  'shokaki' => 'accent-rose',
+  'ishokudo' => 'accent-rose',
+  'daicho' => 'accent-teal',
   'junkanki' => 'accent-coral',
   'seikatsu' => 'accent-amber',
   'kokyuki' => 'accent-sky',

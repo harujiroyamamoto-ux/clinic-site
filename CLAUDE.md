@@ -460,6 +460,25 @@
 - 不要になった .shinryo-card-logo-labeled と .shinryo-card-logo-solo(文字入りロゴ専用に追加していたクラス)は
   common.cssから削除
 
+## 症状・病名:消化器カテゴリを「食道・胃」と「大腸」に分割、新規6件を追加
+- これまで単一の「消化器系(shokaki)」カテゴリだった症状・病名を、data/glossary.phpのcategoryキーレベルで
+  'ishokudo'(食道・胃)と'daicho'(大腸)の2つに分割。既存15件(症状8+病名7)を内容に応じて振り分け:
+  食道・胃側=腹痛・胃もたれ胸やけ・吐き気嘔吐・ピロリ菌感染が心配(症状)、胃炎・胃潰瘍十二指腸潰瘍・
+  逆流性食道炎・ピロリ菌感染症(病名)。大腸側=下痢・便秘・血便・便が細くなった(症状)、大腸ポリープ・
+  過敏性腸症候群・便秘症(病名)
+- 新規に6件を追加してバランスを取った(他カテゴリが9〜12件程度のため):
+  食道・胃=げっぷが多い(shojo/geppu-oi.php)・食欲不振(shojo/shokuyoku-fushin.php)・
+  機能性ディスペプシア(byomei/kinousei-dyspepsia.php)。
+  大腸=残便感(shojo/zanbenkan.php)・腹部膨満感(shojo/fukubu-bouman.php)・
+  大腸憩室症(byomei/daichou-keishitsu-sho.php)。追加後の内訳は食道・胃11件(症状6+病名5)、
+  大腸10件(症状6+病名4)
+- shojo.php/byomei.php/partials/glossary_render.phpの$category_labels・$category_colorsを更新
+  (shokaki 1エントリ→ishokudo/daichoの2エントリに)。色は食道・胃=accent-rose(既存のshokaki色を継承)、
+  大腸=accent-teal(未使用だった色を新規割当て、内視鏡ロゴの配色とも近く自然)
+  ※どちらのカテゴリも各症状・病名エントリ側の'related'(診療案内へのリンク先)は元の値を維持しているため、
+  「関連する診療案内」ボタンの遷移先(shinryo/shokaki.php・ikamera.php・daichokamera.phpなど)は変更なし
+- sitemap.xmlに新規6ページのURLを追加
+
 ## 未着手・今後の対応(次のステップ)
 - 採用情報ページ(recruit.php)の内容確認・調整: 実際の募集職種、給与額、待遇、院内・スタッフ写真、
   スタッフの声(実在のコメント)への差し替え

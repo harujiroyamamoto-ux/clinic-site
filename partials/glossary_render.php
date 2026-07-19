@@ -36,7 +36,8 @@ $advice_heading = $is_symptom ? '受診の目安' : '当院での対応';
 
 $category_colors = [
   'kaze' => 'accent-blue',
-  'shokaki' => 'accent-rose',
+  'ishokudo' => 'accent-rose',
+  'daicho' => 'accent-teal',
   'junkanki' => 'accent-coral',
   'seikatsu' => 'accent-amber',
   'kokyuki' => 'accent-sky',
