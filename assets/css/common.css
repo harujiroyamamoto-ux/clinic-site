@@ -47,7 +47,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "YuMincho", "游明朝", "HGS明朝E", serif;
+  font-family: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "游ゴシック", "Yu Gothic", Meiryo, sans-serif;
   font-size: var(--font-size-base);
   line-height: 1.8;
   color: var(--color-text);
@@ -78,7 +78,7 @@ img {
 h1, h2, h3 {
   line-height: 1.4;
   color: var(--color-primary-dark);
-  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "YuMincho", "游明朝", "HGS明朝E", serif;
+  font-family: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "游ゴシック", "Yu Gothic", Meiryo, sans-serif;
   font-weight: 600;
   letter-spacing: 0.03em;
   text-align: center;

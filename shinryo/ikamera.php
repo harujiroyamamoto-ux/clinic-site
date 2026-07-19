@@ -40,6 +40,25 @@ include __DIR__ . '/../partials/head.php';
       土曜日の検査にも対応していますので、平日のご来院が難しい方もご相談ください。
     </p>
 
+    <h2>経験豊富な消化器疾患の専門医が行います</h2>
+    <div class="feature-block">
+      <div class="img-placeholder feature-photo">医師の写真<br>（準備中）</div>
+      <p>
+        当院の内視鏡検査は、日本消化器内視鏡学会が認定する専門医の資格を持った医師が行います。
+        確かな内視鏡の操作技術と知識によって身体に負担の少ない検査でありながら、
+        見落としのない正確な検査を行うことができます。
+      </p>
+    </div>
+
+    <h2>新世代の高度な内視鏡システムを導入</h2>
+    <div class="feature-block feature-block-reverse">
+      <div class="img-placeholder feature-photo">内視鏡システムの写真<br>（準備中）</div>
+      <p>
+        当院で使用する内視鏡システムは、内視鏡技術の開発では世界的に定評のあるオリンパス社の
+        最新鋭最上位システム「EVIS X1」を導入しております。微細な病変もよりはっきりと捉えることができます。
+      </p>
+    </div>
+
     <h2>検査の流れ</h2>
     <div class="exam-flow">
       <div class="exam-flow-step">
