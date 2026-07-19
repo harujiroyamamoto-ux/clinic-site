@@ -32,7 +32,9 @@ $is_symptom = $item['type'] === 'symptom';
 $index_url = $is_symptom ? '/shojo.php' : '/byomei.php';
 $index_label = $is_symptom ? '症状から探す' : '病名から探す';
 $points_heading = $is_symptom ? '考えられる原因' : '主な原因・特徴';
-$advice_heading = $is_symptom ? '受診の目安' : '当院での対応';
+$advice_heading = $is_symptom ? '受診のタイミング' : '当院での対応';
+$exam_heading = $is_symptom ? '検査・診断方法' : '検査方法';
+$about_heading = $item['about_heading'] ?? ($item['label'] . 'とは');
 
 $category_colors = [
   'kaze' => 'accent-blue',
@@ -78,6 +80,11 @@ include __DIR__ . '/head.php';
 
 <section class="content-section <?= htmlspecialchars($accent_class) ?>">
   <div class="container">
+    <?php if (!empty($item['about'])): ?>
+      <h2><?= htmlspecialchars($about_heading) ?></h2>
+      <p><?= htmlspecialchars($item['about']) ?></p>
+    <?php endif; ?>
+
     <h2><?= htmlspecialchars($points_heading) ?></h2>
     <ul class="glossary-points">
       <?php foreach ($item['points'] as $point): ?>
@@ -85,12 +92,34 @@ include __DIR__ . '/head.php';
       <?php endforeach; ?>
     </ul>
 
-    <h2><?= htmlspecialchars($advice_heading) ?></h2>
-    <p><?= htmlspecialchars($item['advice']) ?></p>
+    <?php if (!empty($item['diseases'])): ?>
+      <h2>考えられる疾患</h2>
+      <ul class="glossary-points">
+        <?php foreach ($item['diseases'] as $d): ?>
+          <li>
+            <?php if (!empty($d['key'])): ?>
+              <a href="/byomei/<?= htmlspecialchars($d['key']) ?>.php"><?= htmlspecialchars($d['label']) ?></a>
+            <?php else: ?>
+              <?= htmlspecialchars($d['label']) ?>
+            <?php endif; ?>
+          </li>
+        <?php endforeach; ?>
+      </ul>
+    <?php endif; ?>
+
+    <?php if (!$is_symptom): ?>
+      <h2><?= htmlspecialchars($advice_heading) ?></h2>
+      <p><?= htmlspecialchars($item['advice']) ?></p>
+    <?php endif; ?>
 
     <?php if (!empty($item['exam'])): ?>
-      <h2>検査方法</h2>
+      <h2><?= htmlspecialchars($exam_heading) ?></h2>
       <p><?= htmlspecialchars($item['exam']) ?></p>
+    <?php endif; ?>
+
+    <?php if ($is_symptom): ?>
+      <h2><?= htmlspecialchars($advice_heading) ?></h2>
+      <p><?= htmlspecialchars($item['advice']) ?></p>
     <?php endif; ?>
 
     <?php if (!empty($item['treatment'])): ?>
