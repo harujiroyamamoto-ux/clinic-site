@@ -25,7 +25,7 @@ $jsonld = [
     ],
     [
       '@type' => 'OpeningHoursSpecification',
-      'dayOfWeek' => ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      'dayOfWeek' => ['Monday', 'Tuesday', 'Thursday', 'Friday'],
       'opens' => '15:00',
       'closes' => '18:00',
     ],

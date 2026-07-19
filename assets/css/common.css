@@ -28,6 +28,7 @@
   --font-size-h3: 1.4rem;
 
   /* 余白 */
+  --space-xs: 6px;
   --space-sm: 12px;
   --space-md: 24px;
   --space-lg: 48px;
@@ -220,6 +221,36 @@ table.info-table th {
 .closed {
   color: var(--color-alert);
   font-weight: bold;
+}
+
+/* 曜日ごとの診療有無が一目でわかる週間表 */
+table.week-schedule {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--space-md);
+}
+
+table.week-schedule th,
+table.week-schedule td {
+  border: 1px solid var(--color-border);
+  padding: var(--space-sm);
+  text-align: center;
+}
+
+table.week-schedule th {
+  background: var(--color-primary-light);
+}
+
+table.week-schedule td.closed {
+  background: #fdf2f1;
+}
+
+@media (max-width: 480px) {
+  table.week-schedule th,
+  table.week-schedule td {
+    padding: var(--space-xs) 4px;
+    font-size: 0.9rem;
+  }
 }
 
 /* 画像プレースホルダー（写真未取得の間の仮表示） */

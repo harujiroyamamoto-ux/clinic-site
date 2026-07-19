@@ -53,7 +53,7 @@ include __DIR__ . '/partials/head.php';
     <table class="info-table">
       <tr>
         <th>平日</th>
-        <td>9:00〜12:00　／　15:00〜18:00</td>
+        <td>9:00〜12:00　／　15:00〜18:00（水曜は午前のみ）</td>
       </tr>
       <tr>
         <th>土曜</th>
@@ -61,7 +61,7 @@ include __DIR__ . '/partials/head.php';
       </tr>
       <tr>
         <th>休診日</th>
-        <td class="closed">土曜午後・日曜・祝日</td>
+        <td class="closed">水曜午後・土曜午後・日曜・祝日</td>
       </tr>
     </table>
 

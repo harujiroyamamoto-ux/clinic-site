@@ -113,11 +113,44 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
       </tr>
       <tr>
         <th>休診日</th>
-        <td>土曜午後・日曜・祝日（土曜は午前のみ診療）</td>
+        <td>水曜午後・土曜午後・日曜・祝日（水曜・土曜は午前のみ診療）</td>
       </tr>
       <tr>
         <th>ご予約について</th>
         <td>受付にて承っております。午前20名・午後20名までとなります。</td>
+      </tr>
+    </table>
+
+    <table class="week-schedule">
+      <tr>
+        <th></th>
+        <th>月</th>
+        <th>火</th>
+        <th>水</th>
+        <th>木</th>
+        <th>金</th>
+        <th>土</th>
+        <th>日・祝</th>
+      </tr>
+      <tr>
+        <th>午前</th>
+        <td>○</td>
+        <td>○</td>
+        <td>○</td>
+        <td>○</td>
+        <td>○</td>
+        <td>○</td>
+        <td class="closed">×</td>
+      </tr>
+      <tr>
+        <th>午後</th>
+        <td>○</td>
+        <td>○</td>
+        <td class="closed">×</td>
+        <td>○</td>
+        <td>○</td>
+        <td class="closed">×</td>
+        <td class="closed">×</td>
       </tr>
     </table>
   </div>
