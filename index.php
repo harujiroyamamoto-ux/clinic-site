@@ -29,31 +29,43 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
   <div class="container">
     <h2>山本内科クリニックの特色</h2>
     <div class="feature-row">
-      <div class="feature-item">
-        <span class="feature-item-number">Feature1</span>
-        <h3>地域に密着して35年</h3>
-        <p>
+      <div class="feature-item feature-color-blue">
+        <div class="feature-item-header">
+          <span class="feature-item-badge"><span class="feature-item-badge-label">Feature</span><span class="feature-item-badge-num">1</span></span>
+          <h3>地域に密着して35年</h3>
+        </div>
+        <img src="/assets/images/clinic_exterior_day.jpg" alt="山本内科クリニック外観" class="feature-item-photo">
+        <p class="feature-item-caption">
           平成3年の開院以来、35年にわたり本牧の地で診療を続けてきました。
         </p>
       </div>
-      <div class="feature-item">
-        <span class="feature-item-number">Feature2</span>
-        <h3>生涯を支える医療</h3>
-        <p>
+      <div class="feature-item feature-color-green">
+        <div class="feature-item-header">
+          <span class="feature-item-badge"><span class="feature-item-badge-label">Feature</span><span class="feature-item-badge-num">2</span></span>
+          <h3>生涯を支える医療</h3>
+        </div>
+        <div class="feature-item-photo img-placeholder">訪問診療の様子<br>（準備中）</div>
+        <p class="feature-item-caption">
           外来での予防・検査・治療から、通院が困難になった際には在宅医療を行います。
         </p>
       </div>
-      <div class="feature-item">
-        <span class="feature-item-number">Feature3</span>
-        <h3>複数の専門科が在籍</h3>
-        <p>
-          一般内科に加え、消化器と内視鏡・循環器・糖尿病など、複数の専門医師が在籍しています。
+      <div class="feature-item feature-color-orange">
+        <div class="feature-item-header">
+          <span class="feature-item-badge"><span class="feature-item-badge-label">Feature</span><span class="feature-item-badge-num">3</span></span>
+          <h3>幅広い内科診療と専門医療</h3>
+        </div>
+        <div class="feature-item-photo img-placeholder">診察の様子<br>（準備中）</div>
+        <p class="feature-item-caption">
+          診断後、必要な際には専門診察を受けることが可能です。
         </p>
       </div>
-      <div class="feature-item">
-        <span class="feature-item-number">Feature4</span>
-        <h3>鎮静剤を使用した内視鏡に対応</h3>
-        <p>
+      <div class="feature-item feature-color-purple">
+        <div class="feature-item-header">
+          <span class="feature-item-badge"><span class="feature-item-badge-label">Feature</span><span class="feature-item-badge-num">4</span></span>
+          <h3>鎮静剤を使用した内視鏡に対応</h3>
+        </div>
+        <div class="feature-item-photo img-placeholder">内視鏡検査の様子<br>（準備中）</div>
+        <p class="feature-item-caption">
           消化器内視鏡を専門とする医師による、苦痛を最小限にした胃カメラと大腸カメラが可能です。
         </p>
       </div>
