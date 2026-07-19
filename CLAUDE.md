@@ -33,7 +33,8 @@
 - トップページのヒーローは、外観+待合室の写真を大きく並べ理念テキストを重ねる構成(3-2参照)
 - 診療案内など主要ページへの導線は、左に太いアクセントバー＋矢印付きの「バナー式」カード(.shinryo-card、common.cssで共通定義)
 - スマホでは画面下部に電話・ご来院の方への固定ボタン(partials/floating_cta.php、768px以下でのみ表示)
-- 見出し(h1・h2・h3)は明朝体(Hiragino Mincho ProN / 游明朝)で、高級感・信頼感のある印象に統一(common.css)
+- 見出し(h1・h2・h3)はGoogle Fonts「Noto Serif JP」(太さ600、ヒーローh1のみ700)で、高級感・信頼感のある印象に統一
+  - おなかとおしりのすずきクリニック(onakatooshiri.com)が実際に使用しているフォントを調査し、同じNoto Serif JPを採用(partials/head.phpでGoogle Fontsを読み込み、common.cssのh1,h2,h3に指定。OS内蔵の明朝体はフォールバックとして残す)
 
 ## ヘッダーナビゲーション
 - 構成: お知らせ / 診療案内 / 医師紹介 / 胃・大腸内視鏡(shinryo/naishikyo.phpへ直リンク) / 病名から探す / 症状から探す / アクセス

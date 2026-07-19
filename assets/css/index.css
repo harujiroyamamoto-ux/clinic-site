@@ -37,6 +37,7 @@
 .hero-photo-title {
   color: #fff;
   font-size: 2.1rem;
+  font-weight: 700;
   line-height: 1.6;
   margin: 0 0 var(--space-md);
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);

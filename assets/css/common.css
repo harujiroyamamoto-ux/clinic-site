@@ -78,7 +78,8 @@ img {
 h1, h2, h3 {
   line-height: 1.4;
   color: var(--color-primary-dark);
-  font-family: "Hiragino Mincho ProN", "YuMincho", "游明朝", "HGS明朝E", serif;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "YuMincho", "游明朝", "HGS明朝E", serif;
+  font-weight: 600;
   letter-spacing: 0.03em;
 }
 
