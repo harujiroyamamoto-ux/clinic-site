@@ -479,6 +479,22 @@
   「関連する診療案内」ボタンの遷移先(shinryo/shokaki.php・ikamera.php・daichokamera.phpなど)は変更なし
 - sitemap.xmlに新規6ページのURLを追加
 
+## 病名:食道・胃/大腸のラインナップを拡充、胃炎→萎縮性胃炎に変更
+- 食道・胃カテゴリに4件追加: 食道癌(byomei/shokudo-gan.php)、胃粘膜下腫瘍(byomei/i-nenmakuka-shuyou.php、
+  まれに悪性=GISTの可能性があることも記載)、バレット食道(byomei/barrett-shokudou.php)、
+  胃ポリープ(byomei/i-polyp.php)
+- 大腸カテゴリに3件追加: 潰瘍性大腸炎(byomei/kaiyousei-daichoen.php)、クローン病(byomei/crohn-byo.php)
+  ※どちらも国指定難病である旨を明記し、専門的な治療が必要な場合は連携医療機関を紹介する前提で記載、
+  痔核(byomei/jikaku.php)
+- 既存の「胃炎」(key: ien)を「萎縮性胃炎」に変更。単なるラベル変更ではなく、内容もピロリ菌長期感染による
+  慢性萎縮・胃がんリスクという萎縮性胃炎特有の観点に書き直した。キーも'ien'→'ishukusei-ien'に変更し、
+  URLをbyomei/ien.php→byomei/ishukusei-ien.phpに変更(git mvでリネーム)。サイトはまだ本番公開前で
+  外部からのリンクが存在しないため、この時点でのURL変更は安全と判断
+- 追加した病気のうち、食道癌・胃粘膜下腫瘍(の悪性例)・潰瘍性大腸炎・クローン病は、専門的な治療が必要な場合に
+  「連携する医療機関をご紹介する」という既存の言い回しを踏襲し、当院で完結するかのような誇大な表現は避けた
+- これで食道・胃15件(症状6+病名9)、大腸13件(症状6+病名7)に拡充。sitemap.xmlも合わせて更新
+  (byomei/ien.php削除→byomei/ishukusei-ien.php、新規7件を追加)
+
 ## 未着手・今後の対応(次のステップ)
 - 採用情報ページ(recruit.php)の内容確認・調整: 実際の募集職種、給与額、待遇、院内・スタッフ写真、
   スタッフの声(実在のコメント)への差し替え
