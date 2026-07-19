@@ -30,6 +30,14 @@ include __DIR__ . '/../partials/head.php';
         <h3>大腸カメラ検査</h3>
         <p>血便・便通異常など、下腹部の症状が気になる方はこちら。</p>
       </a>
+      <a class="card shinryo-card" href="/shinryo/ikamera-evening.php">
+        <h3>イブニング胃カメラ</h3>
+        <p>平日夕方の時間帯で胃カメラ検査を受けたい方はこちら。</p>
+      </a>
+      <a class="card shinryo-card" href="/shinryo/naishikyo-dojitsu.php">
+        <h3>胃・大腸同日検査</h3>
+        <p>胃カメラと大腸カメラを同じ日にまとめて受けたい方はこちら。</p>
+      </a>
     </div>
 
     <div class="cta-box">

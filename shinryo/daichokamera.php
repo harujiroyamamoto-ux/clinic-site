@@ -30,9 +30,6 @@ include __DIR__ . '/../partials/head.php';
       なお、鎮静剤を使った場合、当日は自動車・バイク・自転車などの運転はお控えください。
     </p>
 
-    <h2>漫画でわかる大腸カメラ</h2>
-    <img src="/assets/images/comic_daichokamera.png" alt="漫画でわかる大腸カメラ検査。苦痛の少ない工夫、検査前の準備、検査当日の流れ、といった内容をイラストで解説しています。" class="comic-image">
-
     <h2>こんな症状はありませんか</h2>
     <img src="/assets/images/symptom_daichokamera.png" alt="下痢を繰り返す、便秘が長引く、血便が出た、残便感がある、排便回数が多い、腹部膨満感がある、便が細くなった、体重が急激に減った、便潜血検査陽性だった、親族で大腸がん罹患者がいる、などの症状チェックリスト" class="symptom-image">
 
@@ -131,6 +128,9 @@ include __DIR__ . '/../partials/head.php';
         </div>
       </div>
     </div>
+
+    <h2>漫画でわかる大腸カメラ</h2>
+    <img src="/assets/images/comic_daichokamera.png" alt="漫画でわかる大腸カメラ検査。苦痛の少ない工夫、検査前の準備、検査当日の流れ、といった内容をイラストで解説しています。" class="comic-image">
 
     <div class="notice-box">
       <p>
