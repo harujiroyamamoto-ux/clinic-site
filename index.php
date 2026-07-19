@@ -8,22 +8,19 @@ $news = include __DIR__ . '/data/news.php';
 $shinryo = include __DIR__ . '/data/shinryo.php';
 ?>
 
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-text">
-      <p class="hero-eyebrow">平成3年開院　横浜市中区本牧町</p>
-      <h1>地域のホームドクターとして<br>35年以上、皆さまの健康を支えています</h1>
-      <p class="hero-lead">
-        外来では予防・治療・検査を行い、総合病院と連携しながら、
-        訪問診療でご自宅での療養を支えています。
-      </p>
+<section class="hero-photo">
+  <div class="hero-photo-grid">
+    <img src="/assets/images/clinic_exterior_day.jpg" alt="山本内科クリニック外観" class="hero-photo-img">
+    <img src="/assets/images/waiting_room.jpg" alt="山本内科クリニック待合室" class="hero-photo-img">
+  </div>
+  <div class="hero-photo-overlay">
+    <div class="container">
+      <p class="hero-photo-eyebrow">平成3年開院　地域とともに35年</p>
+      <h1 class="hero-photo-title">予防から治療、看取りまで。<br>生涯を支える医療を、この街で。</h1>
       <div class="hero-actions">
         <a href="tel:0456223331" class="btn btn-accent">📞 045-622-3331</a>
         <a href="/access.php" class="btn btn-primary">アクセスを見る</a>
       </div>
-    </div>
-    <div class="hero-image">
-      <img src="/assets/images/clinic_exterior_day.jpg" alt="山本内科クリニック外観">
     </div>
   </div>
 </section>
@@ -89,7 +86,7 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
       </p>
       <a href="/access.php" class="btn btn-primary">地図・詳しいアクセス方法</a>
     </div>
-    <div class="img-placeholder">クリニック外観の写真（準備中）</div>
+    <img src="/assets/images/clinic_exterior_night.jpg" alt="山本内科クリニック外観（夜間）" class="clinic-photo">
   </div>
 </section>
 

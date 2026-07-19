@@ -91,15 +91,21 @@
 - ロゴ本体: assets/images/logo.jpg（ユーザー提供、190x40、ヘッダーで使用）
 - OGP画像: assets/images/ogp.jpg（1200x630。ネイビー背景にロゴを配置し、PHP(GD)で自動生成したもの）
 - favicon: assets/images/favicon.png・apple-touch-icon.png（旧サイトのロゴマーク単体画像 pic_clinic_224.jpg を正方形に切り出して生成）
-- 外観写真(昼): assets/images/clinic_exterior_day.jpg → トップページのヒーロー画像で使用（旧サイト pic_banner2.jpg より取得）
+- 外観写真(昼): assets/images/clinic_exterior_day.jpg → トップページのヒーロー画像（左側）、アクセスセクションで使用（旧サイト pic_banner2.jpg より取得）
 - 外観写真(夜): assets/images/clinic_exterior_night.jpg → クリニック紹介ページの院内案内カードで使用（旧サイト pic_banner3.jpg より取得）
+- 待合室写真: assets/images/waiting_room.jpg → トップページのヒーロー画像（右側）で使用（ユーザー提供 pic_waiting1.jpg）
 - たんぽぽ/えがお 入口写真: assets/images/tanpopo_224.jpg → tanpopo.phpで使用（旧サイト pic_tanpopo_224.jpg より取得）
 - えがおマスコット: assets/images/egao_224.jpg → egao.phpで使用（旧サイト pic_egao_224.jpg より取得）
-- 上記はすべて旧サイト(www.yamamoto-naika.com、同じ運営者の既存サイト)から本人の許可を得て転用したもの
-- 未使用のまま残っている画像プレースホルダー: 受付・待合室、診察室（clinic.php）、院長・副院長の写真（doctor.php）
+- 上記はすべて旧サイト(www.yamamoto-naika.com、同じ運営者の既存サイト)またはユーザー本人から提供された画像
+- 未使用のまま残っている画像プレースホルダー: 受付・待合室（clinic.php、別カット）、診察室（clinic.php）、院長・副院長の写真（doctor.php）
+
+## トップページのヒーロー(対応済み)
+- 外観+待合室の2枚の写真を大きく並べ、下部に暗いグラデーションを重ねて理念テキストを白抜きで表示（おなかとおしりのすずきクリニック onakatooshiri.com を参考に、印象のみ独自実装）
+- 理念テキスト:「予防から治療、看取りまで。生涯を支える医療を、この街で。」（平成3年開院・地域とともに35年、を踏まえてユーザーの意向をもとに作成）
+- スマホでは2枚の写真が縦積みになる
 
 ## 未着手・今後の対応(次のステップ)
-- 受付・待合室・診察室・院長/副院長の実写差し替え、WebP最適化
+- 受付・待合室（別カット）・診察室・院長/副院長の実写差し替え、WebP最適化
 - 医師の経歴詳細(出身大学・勤務歴)の追記(doctor.php内にコメントで場所を明記済み)
 - 構造化データの緯度・経度(geo)は、Googleビジネスプロフィール登録後に追記する
 - 第5部・公開運用編:さくらのレンタルサーバー契約・SSH接続・独自ドメイン・SSL・公開作業
