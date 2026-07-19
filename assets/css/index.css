@@ -68,6 +68,63 @@
   }
 }
 
+/* 特色（Feature1〜3）横並びセクション */
+.feature-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.feature-item {
+  text-align: center;
+  padding: var(--space-lg);
+  background: var(--color-primary-light);
+  border-radius: var(--radius);
+}
+
+.feature-item-number {
+  display: inline-block;
+  color: var(--color-primary);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-xs);
+}
+
+.feature-item h3 {
+  margin: 0 0 var(--space-sm);
+  font-size: 1.15rem;
+}
+
+.feature-item p {
+  margin: 0;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .feature-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ごあいさつ（院長・副院長の写真+テキスト） */
+.greeting-section .container {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.greeting-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+
+@media (max-width: 768px) {
+  .greeting-section .container {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* お知らせ一覧（トップページの3件表示） */
 .news-list {
   list-style: none;

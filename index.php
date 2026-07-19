@@ -25,6 +25,54 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
   </div>
 </section>
 
+<section class="feature-section">
+  <div class="container">
+    <h2>山本内科クリニックの特色</h2>
+    <div class="feature-row">
+      <div class="feature-item">
+        <span class="feature-item-number">Feature1</span>
+        <h3>地域に密着して35年</h3>
+        <p>
+          平成3年の開院以来、35年にわたり本牧の地で診療を続けてきました。
+          お子様の頃から通ってくださった患者様が、ご結婚されご家族を連れて
+          来院されることも少なくありません。世代を超えて頼っていただける
+          かかりつけ医を目指しています。
+        </p>
+      </div>
+      <div class="feature-item">
+        <span class="feature-item-number">Feature2</span>
+        <h3>往診を含めた生涯を支える医療</h3>
+        <p>
+          通院が難しくなった患者様には、訪問診療(往診)でご自宅まで伺います。
+          外来での予防・治療・検査から、通院が困難になった際の在宅医療、
+          そして看取りまで、生涯にわたって寄り添う医療を心がけています。
+        </p>
+      </div>
+      <div class="feature-item">
+        <span class="feature-item-number">Feature3</span>
+        <h3>複数の専門科が在籍</h3>
+        <p>
+          一般内科に加え、消化器内科・循環器内科・呼吸器内科・糖尿病内科など、
+          複数の専門分野を持つ医師が在籍しています。専門的な内視鏡検査にも
+          対応し、幅広い症状にワンストップで対応できる体制を整えています。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="greeting-section">
+  <div class="container">
+    <div class="img-placeholder greeting-photo">院長・副院長の写真<br>（準備中）</div>
+    <div>
+      <h2>ごあいさつ</h2>
+      <p>
+        閑静な住宅街にたたずむ開業30年以上のクリニック。風邪、生活習慣病、専門的な内視鏡検査や各種専門外来、訪問診療と幅広い診察を行っています。予防から看取りまで行えるホームドクターに最適なクリニックです。地域の長寿化と発展のため、信頼され頼りにされるクリニックをめざしています。
+      </p>
+    </div>
+  </div>
+</section>
+
 <section class="news-section">
   <div class="container">
     <h2>お知らせ</h2>
