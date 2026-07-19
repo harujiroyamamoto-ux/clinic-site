@@ -12,12 +12,12 @@ $shojo = [
   ],
   [
     'title' => '腹痛・胸やけ・胃の不快感',
-    'url' => '/shinryo/naishikyo.php',
+    'url' => '/shinryo/ikamera.php',
     'summary' => '胃カメラによる検査で原因を確認できます。',
   ],
   [
     'title' => '血便・便通の変化(下痢・便秘)',
-    'url' => '/shinryo/naishikyo.php',
+    'url' => '/shinryo/daichokamera.php',
     'summary' => '大腸カメラによる検査に対応しています。',
   ],
   [

@@ -17,12 +17,12 @@ $byomei = [
   ],
   [
     'title' => '胃炎・胃潰瘍・十二指腸潰瘍',
-    'url' => '/shinryo/naishikyo.php',
+    'url' => '/shinryo/ikamera.php',
     'summary' => '胃カメラによる検査に対応しています。',
   ],
   [
     'title' => '大腸ポリープ',
-    'url' => '/shinryo/naishikyo.php',
+    'url' => '/shinryo/daichokamera.php',
     'summary' => '大腸カメラによる検査に対応しています。',
   ],
   [
