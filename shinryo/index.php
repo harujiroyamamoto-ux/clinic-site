@@ -1,6 +1,6 @@
 <?php
 $page_title = '診療案内';
-$page_description = '山本内科クリニックの診療案内。一般内科、消化器外来、内視鏡検査、糖尿病、生活習慣病、骨粗しょう症診療、訪問診療、各種健診・ワクチンに対応しています。';
+$page_description = '山本内科クリニックの診療案内。一般内科、消化器外来、内視鏡検査、糖尿病、生活習慣病、訪問診療、各種健診・ワクチンに対応しています。';
 $page_css = 'page.css';
 include __DIR__ . '/../partials/head.php';
 
@@ -23,7 +23,7 @@ $shinryo = include __DIR__ . '/../data/shinryo.php';
 
 <section>
   <div class="container">
-    <div class="card-grid">
+    <div class="card-grid card-grid-vertical">
       <?php foreach ($shinryo as $item): ?>
         <a class="card shinryo-card" href="<?= htmlspecialchars($item['url']) ?>">
           <h3><?= htmlspecialchars($item['title']) ?></h3>

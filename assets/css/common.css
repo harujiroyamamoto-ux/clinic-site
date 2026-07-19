@@ -157,6 +157,12 @@ section:nth-of-type(even) {
   gap: var(--space-md);
 }
 
+.card-grid-vertical {
+  grid-template-columns: 1fr;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
 /* 診療案内バナー（カテゴリ別の大きめボタン） */
 .shinryo-card {
   color: var(--color-text);

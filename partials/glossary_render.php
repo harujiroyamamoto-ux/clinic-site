@@ -22,7 +22,6 @@ $related_pages = [
   'daichokamera' => ['url' => '/shinryo/daichokamera.php', 'label' => '大腸カメラ検査'],
   'tonyobyo' => ['url' => '/shinryo/tonyobyo.php', 'label' => '糖尿病'],
   'seikatsu' => ['url' => '/shinryo/seikatsu.php', 'label' => '生活習慣病'],
-  'kosso' => ['url' => '/shinryo/kosso.php', 'label' => '骨粗しょう症診療'],
   'homon' => ['url' => '/shinryo/homon.php', 'label' => '訪問診療(往診)'],
   'kenshin' => ['url' => '/shinryo/kenshin.php', 'label' => '各種健診・ワクチン'],
 ];

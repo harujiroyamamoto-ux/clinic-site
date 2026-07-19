@@ -2,7 +2,7 @@
 // 症状・病名の解説ページ用データ。1件が1ページに対応する。
 // type: 'symptom'(症状から探す配下) | 'disease'(病名から探すの配下)
 // category: kaze / shokaki / junkanki / seikatsu / kokyuki / houmon
-// related: naika / shokaki / ikamera / daichokamera / tonyobyo / seikatsu / kosso / homon / kenshin （リンク先の診療案内ページ）
+// related: naika / shokaki / ikamera / daichokamera / tonyobyo / seikatsu / homon / kenshin （リンク先の診療案内ページ。骨粗しょう症はseikatsuへ統合）
 
 return [
 
@@ -261,7 +261,7 @@ return [
     'lead' => '内臓脂肪の蓄積に、高血圧・高血糖・脂質異常が重なった状態です。',
     'points' => ['生活習慣の乱れが主な原因', '動脈硬化性疾患のリスクが高まる', '早期の生活改善が重要です'],
     'advice' => '健診で指摘された場合は、早めにご相談ください。'],
-  ['key' => 'kosso', 'type' => 'disease', 'category' => 'seikatsu', 'label' => '骨粗しょう症', 'related' => 'kosso',
+  ['key' => 'kosso', 'type' => 'disease', 'category' => 'seikatsu', 'label' => '骨粗しょう症', 'related' => 'seikatsu',
     'lead' => '骨の量が減り、骨がもろくなって骨折しやすくなる病気です。',
     'points' => ['加齢や閉経に伴うホルモンの変化', 'カルシウム・運動不足', '自覚症状が少なく、検査での発見が重要です'],
     'advice' => '骨密度検査で早期に状態を確認できます。'],

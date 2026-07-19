@@ -1,6 +1,6 @@
 <?php
 $page_title = '医師紹介';
-$page_description = '山本内科クリニックの院長・副院長をご紹介します。';
+$page_description = '山本内科クリニックの院長・副院長および各分野の医師をご紹介します。';
 $page_css = 'page.css';
 include __DIR__ . '/partials/head.php';
 ?>
@@ -13,7 +13,8 @@ include __DIR__ . '/partials/head.php';
   <div class="container">
     <h1>医師紹介</h1>
     <p class="page-lead">
-      地域のみなさまが安心して受診いただけるよう、院長・副院長が診療にあたっています。
+      地域のみなさまが安心して受診いただけるよう、院長・副院長をはじめ、
+      各分野の医師が診療にあたっています。
     </p>
   </div>
 </section>
@@ -32,7 +33,7 @@ include __DIR__ . '/partials/head.php';
         </ul>
         <!-- 出身大学・勤務歴など、公開可能な経歴が決まりましたらここに追記します -->
         <p>
-          内科全般の診療に加え、消化器の専門知識を活かし、内視鏡検査やピロリ菌外来など
+          内科全般の診療に加え、消化器の専門知識を活かし、内視鏡検査やピロリ菌検査など
           消化器疾患の診療にも力を入れています。
           患者さんお一人おひとりの話に丁寧に耳を傾け、納得いただける診療を心がけています。
         </p>
@@ -52,6 +53,50 @@ include __DIR__ . '/partials/head.php';
           内科・消化器内科を専門とし、一般内科診療から生活習慣病の管理まで幅広く対応しています。
           訪問診療にも携わり、通院が難しい患者さんのご自宅でも安心して療養いただけるよう努めています。
         </p>
+      </div>
+    </div>
+
+    <h2>その他の医師</h2>
+    <p style="text-align:center;">
+      院長・副院長のほか、各分野を担当する医師が診療にあたっています。
+      曜日ごとの担当医は<a href="/shinryo/index.php">診療案内の担当医表</a>をご確認ください。
+    </p>
+    <div class="card-grid">
+      <div class="card">
+        <p class="doctor-role">総合内科</p>
+        <h3>仁多美 先生</h3>
+      </div>
+      <div class="card">
+        <p class="doctor-role">循環器</p>
+        <h3>吉井 先生</h3>
+      </div>
+      <div class="card">
+        <p class="doctor-role">消化器</p>
+        <h3>二本松 先生</h3>
+      </div>
+      <div class="card">
+        <p class="doctor-role">消化器</p>
+        <h3>鈴木 先生</h3>
+      </div>
+      <div class="card">
+        <p class="doctor-role">糖尿病</p>
+        <h3>野田 先生</h3>
+      </div>
+      <div class="card">
+        <p class="doctor-role">糖尿病</p>
+        <h3>唐沢 先生</h3>
+      </div>
+      <div class="card">
+        <p class="doctor-role">呼吸器</p>
+        <h3>仁多寅 先生</h3>
+      </div>
+      <div class="card">
+        <p class="doctor-role">脳神経・救急</p>
+        <h3>橘田 先生</h3>
+      </div>
+      <div class="card">
+        <p class="doctor-role">訪問診療</p>
+        <h3>池田 先生</h3>
       </div>
     </div>
 
