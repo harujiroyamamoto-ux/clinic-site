@@ -23,31 +23,19 @@ include __DIR__ . '/../partials/head.php';
   <div class="container">
     <div class="card-grid">
       <a class="card shinryo-card" href="/shinryo/ikamera.php">
-        <div class="shinryo-card-header">
-          <img src="/assets/images/logo_ikamera.png" alt="胃カメラのロゴ" class="shinryo-card-logo shinryo-card-logo-labeled">
-          <h3>胃カメラ検査</h3>
-        </div>
+        <img src="/assets/images/logo_ikamera.png" alt="胃カメラ検査" class="shinryo-card-logo shinryo-card-logo-labeled shinryo-card-logo-solo">
         <p>胃の痛み・胸やけ・吐き気など、上腹部の症状が気になる方はこちら。</p>
       </a>
       <a class="card shinryo-card" href="/shinryo/daichokamera.php">
-        <div class="shinryo-card-header">
-          <img src="/assets/images/logo_daichokamera.png" alt="大腸カメラのロゴ" class="shinryo-card-logo shinryo-card-logo-labeled">
-          <h3>大腸カメラ検査</h3>
-        </div>
+        <img src="/assets/images/logo_daichokamera.png" alt="大腸カメラ検査" class="shinryo-card-logo shinryo-card-logo-labeled shinryo-card-logo-solo">
         <p>血便・便通異常など、下腹部の症状が気になる方はこちら。</p>
       </a>
       <a class="card shinryo-card" href="/shinryo/ikamera-evening.php">
-        <div class="shinryo-card-header">
-          <img src="/assets/images/logo_evening.png" alt="イブニング胃カメラのロゴ" class="shinryo-card-logo shinryo-card-logo-labeled">
-          <h3>イブニング胃カメラ</h3>
-        </div>
+        <img src="/assets/images/logo_evening.png" alt="イブニング胃カメラ" class="shinryo-card-logo shinryo-card-logo-labeled shinryo-card-logo-solo">
         <p>平日夕方の時間帯で胃カメラ検査を受けたい方はこちら。</p>
       </a>
       <a class="card shinryo-card" href="/shinryo/naishikyo-dojitsu.php">
-        <div class="shinryo-card-header">
-          <img src="/assets/images/logo_dojitsu.png" alt="胃・大腸同日検査のロゴ" class="shinryo-card-logo shinryo-card-logo-labeled">
-          <h3>胃・大腸同日検査</h3>
-        </div>
+        <img src="/assets/images/logo_dojitsu.png" alt="胃・大腸同日検査" class="shinryo-card-logo shinryo-card-logo-labeled shinryo-card-logo-solo">
         <p>胃カメラと大腸カメラを同じ日にまとめて受けたい方はこちら。</p>
       </a>
     </div>
