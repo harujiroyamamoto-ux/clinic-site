@@ -15,12 +15,14 @@
   <nav class="global-nav">
     <div class="container">
       <ul>
-        <li><a href="/news.php">お知らせ</a></li>
+        <li><a href="/">ホーム</a></li>
         <li><a href="/shinryo/index.php">診療案内</a></li>
+        <li><a href="/shinryo/naishikyo.php">胃・大腸カメラ</a></li>
+        <li><a href="/shojo.php">症状</a></li>
+        <li><a href="/byomei.php">病名</a></li>
+        <li><a href="/shinryo/homon.php">訪問診療</a></li>
         <li><a href="/doctor.php">医師紹介</a></li>
-        <li><a href="/shinryo/naishikyo.php">胃・大腸内視鏡</a></li>
-        <li><a href="/byomei.php">病名から探す</a></li>
-        <li><a href="/shojo.php">症状から探す</a></li>
+        <li><a href="/visit.php">初めての方へ</a></li>
         <li><a href="/access.php">アクセス</a></li>
       </ul>
     </div>
