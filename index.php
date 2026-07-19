@@ -9,8 +9,9 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
 ?>
 
 <section class="hero-photo">
-  <div class="hero-photo-grid hero-photo-grid-single">
-    <img src="/assets/images/waiting_room.jpg" alt="山本内科クリニック待合室" class="hero-photo-img">
+  <div class="hero-photo-slideshow">
+    <img src="/assets/images/waiting_room.jpg" alt="山本内科クリニック待合室" class="hero-photo-img is-active">
+    <img src="/assets/images/clinic_exterior_day.jpg" alt="山本内科クリニック外観" class="hero-photo-img">
   </div>
   <div class="hero-photo-overlay">
     <div class="container">

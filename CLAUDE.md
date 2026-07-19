@@ -223,11 +223,20 @@
 
 ## トップページ:ヒーロー写真を待合室1枚に変更、診療案内に診療科目一覧を追加
 - ヒーロー写真を「外観+待合室」の2枚グリッドから、待合室写真1枚(.hero-photo-grid-single修飾クラス、
-  grid-template-columns:1fr)に変更
+  grid-template-columns:1fr)に変更 ※直後にスライドショー化(下記)により.hero-photo-grid系クラスは廃止
 - ヒーロー見出しを「予防から治療、看取りまで。生涯を支える医療を、この街で。」から
   「予防から看取りまで。35年の信頼を礎に、生涯を支える医療を。」に変更
 - 診療案内セクション(h2直下)に診療科目一覧テキスト(.shinryo-department-list)を追加:
   「内科｜消化器内科｜内視鏡(胃カメラ・大腸カメラ)｜循環器内科｜糖尿病内科｜訪問診療」
+
+## トップページ:ヒーローを待合室/外観の3秒クロスフェード・スライドショーに変更、高さも縮小
+- 「写真が大きすぎてFeatureセクションが埋もれる」というフィードバックを受け、hero-photoの高さを
+  大幅縮小(デスクトップ620px→380px、タブレット→360px、モバイル→400px。以前は460〜620pxだった)
+- 待合室・外観2枚を絶対配置で重ね、assets/js/main.js内のsetIntervalで3秒ごとにopacityをクロスフェード
+  (.hero-photo-slideshow / .hero-photo-img.is-active、transition: opacity 1.2s ease)。
+  旧来の左右2分割グリッド(.hero-photo-grid/.hero-photo-grid-single)は廃止
+- オーバーレイのpaddingもspace-xl→space-lgに縮小し、縮小した高さでもテキスト・ボタンが
+  overflow:hiddenで欠けないよう調整(特にモバイルは見出し2行+ボタン2段で高さがシビア)
 
 ## 未着手・今後の対応(次のステップ)
 - 受付・待合室（別カット）・診察室・院長/副院長・その他医師の実写差し替え、WebP最適化

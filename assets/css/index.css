@@ -1,23 +1,40 @@
-/* ヒーロー：外観+待合室の写真を大きく見せ、理念テキストを重ねる */
+/* ヒーロー：待合室+外観の写真を3秒ごとに切り替えて見せ、理念テキストを重ねる */
 .hero-photo {
   position: relative;
+  height: 380px;
+  overflow: hidden;
 }
 
-.hero-photo-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 620px;
-}
-
-.hero-photo-grid-single {
-  grid-template-columns: 1fr;
+.hero-photo-slideshow {
+  position: absolute;
+  inset: 0;
 }
 
 .hero-photo-img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+.hero-photo-img.is-active {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .hero-photo {
+    height: 360px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-photo {
+    height: 400px;
+  }
 }
 
 .hero-photo-overlay {
@@ -25,7 +42,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: var(--space-xl) 0 var(--space-lg);
+  padding: var(--space-lg) 0 var(--space-md);
   background: linear-gradient(to top, rgba(17, 28, 43, 0.92) 10%, rgba(17, 28, 43, 0.55) 55%, rgba(17, 28, 43, 0) 100%);
   color: #fff;
 }
@@ -56,19 +73,8 @@
 }
 
 @media (max-width: 768px) {
-  .hero-photo-grid {
-    height: 420px;
-  }
-
   .hero-photo-title {
     font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-photo-grid {
-    grid-template-columns: 1fr;
-    height: 460px;
   }
 }
 
