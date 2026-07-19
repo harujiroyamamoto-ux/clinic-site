@@ -341,9 +341,15 @@
   flexレイアウトを .shinryo-card-compact という別クラスに切り出し、ロゴ付きカード(index.php)のみに
   付与することで解消。トップページ制作時にこの回帰に気づかず放置していた点は今後の教訓とする
 
+## トップページ:特色(Feature)セクションの写真を全て差し替え
+- ユーザーが用意した4枚の写真(地域密着写真.png/生涯を支える医療写真.png/内科診療写真.png/内視鏡写真.png、
+  いずれも一般的なイメージ写真でこのクリニック固有の実写ではない)を assets/images/feature_chiiki.png・
+  feature_shogai.png・feature_naika.png・feature_naishikyo.png としてコピーし、Feature1〜4に配置
+- Feature1は前回セッションで実写(clinic_exterior_day.jpg)を使っていたが、ユーザー指定によりイメージ写真に差し替え
+- Feature2〜4のimg-placeholder(準備中表示)は解消。これでトップページのFeatureセクションはすべて画像が入った状態
+
 ## 未着手・今後の対応(次のステップ)
 - 受付・待合室（別カット）・診察室・院長/副院長・その他医師の実写差し替え、WebP最適化
-- トップページ特色(Feature)セクションのFeature2〜4の写真(訪問診療・診察・内視鏡検査の様子)が未取得
 - 院長・副院長の2ショット写真(トップページごあいさつセクション用)が未取得。取得できたら/assets/images/に配置しindex.phpのimg-placeholderと差し替える
 - 医師の経歴詳細(出身大学・勤務歴・資格)の追記(doctor.php内にコメントで場所を明記済み。「その他の医師」も資格等が分かれば追記)
 - 構造化データの緯度・経度(geo)は、Googleビジネスプロフィール登録後に追記する
