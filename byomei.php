@@ -1,39 +1,68 @@
 <?php
 $page_title = '病名から探す';
-$page_description = '高血圧・糖尿病・胃炎・ピロリ菌感染症・骨粗しょう症など、病名から山本内科クリニックの診療案内ページを探せます。';
+$page_description = 'かぜ症状・消化器・循環器・糖尿病や脂質異常・呼吸器・訪問診療など、カテゴリ別に病名から山本内科クリニックの診療案内ページを探せます。';
 $page_css = 'page.css';
 include __DIR__ . '/partials/head.php';
 
-$byomei = [
+$categories = [
   [
-    'title' => '高血圧・糖尿病・脂質異常症',
-    'url' => '/shinryo/naika.php',
-    'summary' => '生活習慣病として、定期的な検査と治療・生活指導を行います。',
+    'title' => 'かぜ症状',
+    'items' => [
+      ['label' => 'かぜ症候群(急性上気道炎)', 'url' => '/shinryo/naika.php'],
+      ['label' => 'インフルエンザ', 'url' => '/shinryo/naika.php'],
+      ['label' => '扁桃炎', 'url' => '/shinryo/naika.php'],
+      ['label' => '副鼻腔炎', 'url' => '/shinryo/naika.php'],
+      ['label' => '咽頭炎・喉頭炎', 'url' => '/shinryo/naika.php'],
+    ],
   ],
   [
-    'title' => 'かぜ症候群',
-    'url' => '/shinryo/naika.php',
-    'summary' => '発熱・せき・のどの痛みなど、急な体調不良に対応します。',
+    'title' => '消化器',
+    'items' => [
+      ['label' => '胃炎', 'url' => '/shinryo/ikamera.php'],
+      ['label' => '胃潰瘍・十二指腸潰瘍', 'url' => '/shinryo/ikamera.php'],
+      ['label' => '逆流性食道炎', 'url' => '/shinryo/ikamera.php'],
+      ['label' => '大腸ポリープ', 'url' => '/shinryo/daichokamera.php'],
+      ['label' => '過敏性腸症候群', 'url' => '/shinryo/naika.php'],
+      ['label' => 'ピロリ菌感染症', 'url' => '/shinryo/pylori.php'],
+      ['label' => '便秘症', 'url' => '/shinryo/naika.php'],
+    ],
   ],
   [
-    'title' => '胃炎・胃潰瘍・十二指腸潰瘍',
-    'url' => '/shinryo/ikamera.php',
-    'summary' => '胃カメラによる検査に対応しています。',
+    'title' => '循環器',
+    'items' => [
+      ['label' => '高血圧症', 'url' => '/shinryo/naika.php'],
+      ['label' => '不整脈', 'url' => '/shinryo/naika.php'],
+      ['label' => '動脈硬化', 'url' => '/shinryo/naika.php'],
+      ['label' => 'むくみ(浮腫)', 'url' => '/shinryo/naika.php'],
+    ],
   ],
   [
-    'title' => '大腸ポリープ',
-    'url' => '/shinryo/daichokamera.php',
-    'summary' => '大腸カメラによる検査に対応しています。',
+    'title' => '糖尿病・脂質異常',
+    'items' => [
+      ['label' => '糖尿病(2型糖尿病)', 'url' => '/shinryo/naika.php'],
+      ['label' => '脂質異常症(高コレステロール血症)', 'url' => '/shinryo/naika.php'],
+      ['label' => '高尿酸血症・痛風', 'url' => '/shinryo/naika.php'],
+      ['label' => 'メタボリックシンドローム', 'url' => '/shinryo/naika.php'],
+      ['label' => '骨粗しょう症', 'url' => '/shinryo/kosso.php'],
+    ],
   ],
   [
-    'title' => 'ピロリ菌感染症',
-    'url' => '/shinryo/pylori.php',
-    'summary' => '検査・除菌治療に対応しています。',
+    'title' => '呼吸器',
+    'items' => [
+      ['label' => '気管支炎', 'url' => '/shinryo/naika.php'],
+      ['label' => '気管支喘息', 'url' => '/shinryo/naika.php'],
+      ['label' => 'COPD(慢性閉塞性肺疾患)', 'url' => '/shinryo/naika.php'],
+      ['label' => '咳喘息', 'url' => '/shinryo/naika.php'],
+    ],
   ],
   [
-    'title' => '骨粗しょう症',
-    'url' => '/shinryo/kosso.php',
-    'summary' => '骨密度検査をもとに、予防・治療に取り組んでいます。',
+    'title' => '訪問診療',
+    'items' => [
+      ['label' => '慢性疾患の在宅療養', 'url' => '/shinryo/homon.php'],
+      ['label' => '認知症', 'url' => '/shinryo/homon.php'],
+      ['label' => '寝たきり状態', 'url' => '/shinryo/homon.php'],
+      ['label' => 'がん末期(緩和ケア・看取り)', 'url' => '/shinryo/homon.php'],
+    ],
   ],
 ];
 ?>
@@ -46,7 +75,7 @@ $byomei = [
   <div class="container">
     <h1>病名から探す</h1>
     <p class="page-lead">
-      気になる病名から、関連する診療案内ページをご覧いただけます。
+      気になる病名のカテゴリから、関連する診療案内ページをご覧いただけます。
       正確な診断には受診が必要です。気になる症状がある場合はご相談ください。
     </p>
   </div>
@@ -54,14 +83,16 @@ $byomei = [
 
 <section>
   <div class="container">
-    <div class="card-grid">
-      <?php foreach ($byomei as $item): ?>
-        <a class="card shinryo-card" href="<?= htmlspecialchars($item['url']) ?>">
-          <h3><?= htmlspecialchars($item['title']) ?></h3>
-          <p><?= htmlspecialchars($item['summary']) ?></p>
-        </a>
-      <?php endforeach; ?>
-    </div>
+    <?php foreach ($categories as $category): ?>
+      <div class="symptom-category">
+        <h2><?= htmlspecialchars($category['title']) ?></h2>
+        <div class="symptom-tags">
+          <?php foreach ($category['items'] as $item): ?>
+            <a class="symptom-tag" href="<?= htmlspecialchars($item['url']) ?>"><?= htmlspecialchars($item['label']) ?></a>
+          <?php endforeach; ?>
+        </div>
+      </div>
+    <?php endforeach; ?>
 
     <div class="cta-box">
       <h2>ご予約・お問い合わせ</h2>
