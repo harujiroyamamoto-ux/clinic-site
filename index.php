@@ -50,6 +50,13 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
           一般内科に加え、消化器と内視鏡・循環器・糖尿病など、複数の専門医師が在籍しています。
         </p>
       </div>
+      <div class="feature-item">
+        <span class="feature-item-number">Feature4</span>
+        <h3>鎮静剤を使用した内視鏡に対応</h3>
+        <p>
+          消化器内視鏡を専門とする医師による、苦痛を最小限にした胃カメラと大腸カメラが可能です。
+        </p>
+      </div>
     </div>
   </div>
 </section>

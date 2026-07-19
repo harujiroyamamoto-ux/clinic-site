@@ -78,16 +78,16 @@
   }
 }
 
-/* 特色（Feature1〜3）横並びセクション */
+/* 特色（Feature1〜4）横並びセクション */
 .feature-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-lg);
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
 }
 
 .feature-item {
   text-align: center;
-  padding: var(--space-lg);
+  padding: var(--space-md);
   background: var(--color-primary-light);
   border-radius: var(--radius);
 }
@@ -108,6 +108,12 @@
 .feature-item p {
   margin: 0;
   text-align: left;
+}
+
+@media (max-width: 1024px) {
+  .feature-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
