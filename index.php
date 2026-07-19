@@ -9,14 +9,13 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
 ?>
 
 <section class="hero-photo">
-  <div class="hero-photo-grid">
-    <img src="/assets/images/clinic_exterior_day.jpg" alt="山本内科クリニック外観" class="hero-photo-img">
+  <div class="hero-photo-grid hero-photo-grid-single">
     <img src="/assets/images/waiting_room.jpg" alt="山本内科クリニック待合室" class="hero-photo-img">
   </div>
   <div class="hero-photo-overlay">
     <div class="container">
       <p class="hero-photo-eyebrow">平成3年開院　地域とともに35年</p>
-      <h1 class="hero-photo-title">予防から治療、看取りまで。<br>生涯を支える医療を、この街で。</h1>
+      <h1 class="hero-photo-title">予防から看取りまで。<br>35年の信頼を礎に、生涯を支える医療を。</h1>
       <div class="hero-actions">
         <a href="tel:0456223331" class="btn btn-accent">📞 045-622-3331</a>
         <a href="/access.php" class="btn btn-primary">アクセスを見る</a>
@@ -91,6 +90,7 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
 <section class="shinryo-section">
   <div class="container">
     <h2>診療案内</h2>
+    <p class="shinryo-department-list">内科｜消化器内科｜内視鏡(胃カメラ・大腸カメラ)｜循環器内科｜糖尿病内科｜訪問診療</p>
     <div class="card-grid">
       <?php foreach ($shinryo as $item): ?>
         <a class="card shinryo-card" href="<?= htmlspecialchars($item['url']) ?>">

@@ -9,6 +9,10 @@
   height: 620px;
 }
 
+.hero-photo-grid-single {
+  grid-template-columns: 1fr;
+}
+
 .hero-photo-img {
   width: 100%;
   height: 100%;
@@ -123,6 +127,14 @@
   .greeting-section .container {
     grid-template-columns: 1fr;
   }
+}
+
+/* 診療案内セクション：診療科目の一覧テキスト */
+.shinryo-department-list {
+  text-align: center;
+  color: var(--color-text-light);
+  font-weight: bold;
+  margin: 0 0 var(--space-md);
 }
 
 /* お知らせ一覧（トップページの3件表示） */
