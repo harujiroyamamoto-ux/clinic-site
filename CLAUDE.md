@@ -431,6 +431,18 @@
   ページ冒頭付近(鎮静剤の説明のすぐ後)から、「検査の流れ」の後・notice-boxの前(ページ下部)に移動
 - sitemap.xmlに新規2ページのURLを追加
 
+## 内視鏡検査ページ:4枚のカードにロゴを追加
+- 「胃カメラロゴ.png」「大腸カメラロゴ.png」「イブニングロゴ.png」「同日検査ロゴ.png」を
+  assets/images/logo_ikamera.png・logo_daichokamera.png・logo_evening.png・logo_dojitsu.png としてコピーし、
+  shinryo/naishikyo.php の4枚のカードに配置
+- これらのロゴは既存の8診療科ロゴ(丸くトリミングして表示)と異なり、イラスト+テキストが1枚の正方形画像として
+  完結しているため、丸トリミング(object-fit:cover+border-radius:50%)すると文字が切れてしまう。そのため
+  新しい修飾クラス .shinryo-card-logo-labeled (object-fit:contain、角丸のみ、トリミングなし)を追加し、
+  画像全体が見えるようにした
+- カードのレイアウトも変更: ロゴ+タイトルを .shinryo-card-header で横並びにし、その下に説明文を続ける
+  新しい構造(既存の shinryo-card-compact はロゴ+タイトルのみで説明文がない版だったため、
+  説明文ありの版として区別して追加)
+
 ## 未着手・今後の対応(次のステップ)
 - 採用情報ページ(recruit.php)の内容確認・調整: 実際の募集職種、給与額、待遇、院内・スタッフ写真、
   スタッフの声(実在のコメント)への差し替え

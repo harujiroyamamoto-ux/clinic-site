@@ -204,6 +204,27 @@ section:nth-of-type(even) {
   gap: var(--space-md);
 }
 
+/* ロゴ+タイトルを見出しとして上部に置き、下に説明文が続く版（内視鏡検査ページなど） */
+.shinryo-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+.shinryo-card-header h3 {
+  margin: 0;
+}
+
+/* テキストが埋め込まれたロゴ用（丸くトリミングせず、正方形のまま表示） */
+.shinryo-card-logo-labeled {
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  border-radius: var(--radius);
+  object-fit: contain;
+}
+
 .shinryo-card-logo {
   width: 84px;
   height: 84px;
