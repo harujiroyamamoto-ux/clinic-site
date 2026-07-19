@@ -27,6 +27,9 @@
       <div>
         <h3>サイト情報</h3>
         <p>
+          <a href="/">ホーム</a><br>
+          <a href="/clinic.php">クリニック紹介</a><br>
+          <a href="/visit.php">ご来院の方へ</a><br>
           <a href="/recruit.php">採用情報</a><br>
           <a href="/privacy.php">プライバシーポリシー</a>
         </p>
