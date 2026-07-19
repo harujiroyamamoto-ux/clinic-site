@@ -75,6 +75,14 @@
   border-radius: var(--radius);
 }
 
+.symptom-image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: var(--space-md) 0 var(--space-lg);
+  border-radius: var(--radius);
+}
+
 .related-photo {
   max-width: 320px;
   height: auto;
