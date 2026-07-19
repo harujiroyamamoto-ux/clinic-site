@@ -34,6 +34,30 @@ $index_label = $is_symptom ? '症状から探す' : '病名から探す';
 $points_heading = $is_symptom ? '考えられる原因' : '主な原因・特徴';
 $advice_heading = $is_symptom ? '受診の目安' : '当院での対応';
 
+$category_colors = [
+  'kaze' => 'accent-blue',
+  'shokaki' => 'accent-rose',
+  'junkanki' => 'accent-coral',
+  'seikatsu' => 'accent-amber',
+  'kokyuki' => 'accent-sky',
+  'houmon' => 'accent-indigo',
+];
+$accent_class = $category_colors[$item['category']] ?? '';
+
+// 関連する症状・病名（同カテゴリ内で、症状⇄病名を優先して最大6件）
+$related_entries = [];
+foreach ($glossary as $g) {
+  if ($g['key'] === $item['key']) continue;
+  if ($g['category'] !== $item['category']) continue;
+  $related_entries[] = $g;
+}
+usort($related_entries, function ($a, $b) use ($item) {
+  $a_priority = $a['type'] !== $item['type'] ? 0 : 1;
+  $b_priority = $b['type'] !== $item['type'] ? 0 : 1;
+  return $a_priority <=> $b_priority;
+});
+$related_entries = array_slice($related_entries, 0, 6);
+
 $page_title = $item['label'];
 $page_description = $item['lead'];
 $page_css = 'page.css';
@@ -51,7 +75,7 @@ include __DIR__ . '/head.php';
   </div>
 </section>
 
-<section class="content-section">
+<section class="content-section <?= htmlspecialchars($accent_class) ?>">
   <div class="container">
     <h2><?= htmlspecialchars($points_heading) ?></h2>
     <ul class="glossary-points">
@@ -63,11 +87,44 @@ include __DIR__ . '/head.php';
     <h2><?= htmlspecialchars($advice_heading) ?></h2>
     <p><?= htmlspecialchars($item['advice']) ?></p>
 
+    <?php if (!empty($item['exam'])): ?>
+      <h2>検査方法</h2>
+      <p><?= htmlspecialchars($item['exam']) ?></p>
+    <?php endif; ?>
+
+    <?php if (!empty($item['treatment'])): ?>
+      <h2>治療の流れ</h2>
+      <p><?= htmlspecialchars($item['treatment']) ?></p>
+    <?php endif; ?>
+
+    <?php if (!empty($item['selfcare'])): ?>
+      <h2>セルフケア・予防</h2>
+      <p><?= htmlspecialchars($item['selfcare']) ?></p>
+    <?php endif; ?>
+
+    <?php if (!empty($item['checklist'])): ?>
+      <h2>こんな方はご相談を</h2>
+      <ul class="consult-checklist">
+        <?php foreach ($item['checklist'] as $c): ?>
+          <li><?= htmlspecialchars($c) ?></li>
+        <?php endforeach; ?>
+      </ul>
+    <?php endif; ?>
+
     <div class="notice-box">
       <p>
         この内容は一般的な情報であり、診断を行うものではありません。正確な診断には受診が必要です。
       </p>
     </div>
+
+    <?php if (!empty($related_entries)): ?>
+      <h2>関連する症状・病名</h2>
+      <div class="symptom-tags">
+        <?php foreach ($related_entries as $rel): ?>
+          <a class="symptom-tag" href="/<?= $rel['type'] === 'symptom' ? 'shojo' : 'byomei' ?>/<?= htmlspecialchars($rel['key']) ?>.php"><?= htmlspecialchars($rel['label']) ?></a>
+        <?php endforeach; ?>
+      </div>
+    <?php endif; ?>
 
     <div class="cta-box">
       <h2>関連する診療案内</h2>

@@ -34,6 +34,26 @@
   margin: var(--space-sm) 0 var(--space-lg);
 }
 
+/* こんな方はご相談を（主要な病名ページのチェックリスト） */
+.consult-checklist {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-sm) 0 var(--space-lg);
+}
+
+.consult-checklist li {
+  position: relative;
+  padding: var(--space-xs) 0 var(--space-xs) 1.8em;
+}
+
+.consult-checklist li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color, var(--color-accent));
+  font-weight: bold;
+}
+
 /* 予約バナー（症状・病名の解説ページ下部） */
 .booking-banner {
   background: var(--color-primary-dark);
