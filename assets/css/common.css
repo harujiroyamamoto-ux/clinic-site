@@ -359,7 +359,7 @@ table.week-schedule td.closed {
 }
 
 .site-logo img {
-  height: 48px;
+  height: 68px;
   width: auto;
 }
 
@@ -432,6 +432,10 @@ table.week-schedule td.closed {
   .tel-link {
     font-size: 1rem;
     white-space: nowrap;
+  }
+
+  .site-logo img {
+    height: 52px;
   }
 }
 
