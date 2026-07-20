@@ -33,7 +33,7 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
             <h3>地域に密着して35年</h3>
           </div>
           <p class="feature-item-caption">
-            平成3年の開院以来、35年にわたり本牧の地で診療を続けてきました。
+            平成3年の開院以来、本牧の地で診療を続けてきました。
           </p>
         </div>
       </div>
@@ -57,7 +57,7 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
             <h3>幅広い内科診療</h3>
           </div>
           <p class="feature-item-caption">
-            必要時に循環器や糖尿病といった専門外来受診のご案内を行います。
+            必要時に消化器や循環器、糖尿病の専門外来受診が可能です。
           </p>
         </div>
       </div>

@@ -78,7 +78,7 @@
 
 .feature-block-card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
   gap: var(--space-lg);
   align-items: center;
   border: 1px solid var(--color-border);
@@ -86,6 +86,7 @@
   padding: var(--space-lg);
 }
 
+/* イラストが縦に大きくなりすぎないよう、写真列を狭めにして高さを抑える */
 .feature-block-photo {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -141,14 +142,18 @@
 @media (max-width: 768px) {
   .feature-block-card {
     grid-template-columns: 1fr;
+    padding: var(--space-md);
   }
 
   .feature-block-reverse .feature-block-photo {
     order: 0;
   }
 
-  .feature-block-card {
-    padding: var(--space-md);
+  /* 1カラムになるスマホでは、写真の縦幅が伸びすぎないよう横長気味にする */
+  .feature-block-photo {
+    max-width: 220px;
+    margin: 0 auto;
+    aspect-ratio: 4 / 3;
   }
 }
 
