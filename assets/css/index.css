@@ -29,12 +29,6 @@
   .hero-photo {
     height: 90vh;
   }
-
-  /* 写真に焼き込まれた文字が左寄りのため、スマホの縦長トリミングで
-     文字が切れないよう表示位置を左に寄せる */
-  .hero-photo-img {
-    object-position: left center;
-  }
 }
 
 /* 写真下部に元々焼き込まれている文字と重ならないよう、不透明な白い帯の上に
@@ -99,7 +93,7 @@
 .feature-color-green,
 .feature-color-orange,
 .feature-color-purple {
-  --feature-color: #4fa8d9;
+  --feature-color: #8bc34a;
 }
 
 /* 写真はカード全体を覆う薄い背景として敷き、上に白いベールを重ねて文字を読みやすくする */
