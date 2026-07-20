@@ -26,44 +26,44 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
     <h2>山本内科クリニックの特色</h2>
     <div class="feature-row">
       <div class="feature-item feature-color-blue">
-        <div class="feature-item-header">
+        <?php site_image('/assets/images/feature_chiiki.png', '地域に密着した診療のイメージ', 'feature-item-bg'); ?>
+        <div class="feature-item-content">
           <span class="feature-item-badge"><span class="feature-item-badge-num">1</span></span>
           <h3>地域に密着して35年</h3>
+          <p class="feature-item-caption">
+            平成3年の開院以来、35年にわたり本牧の地で診療を続けてきました。
+          </p>
         </div>
-        <?php site_image('/assets/images/feature_chiiki.png', '地域に密着した診療のイメージ', 'feature-item-photo'); ?>
-        <p class="feature-item-caption">
-          平成3年の開院以来、35年にわたり本牧の地で診療を続けてきました。
-        </p>
       </div>
       <div class="feature-item feature-color-green">
-        <div class="feature-item-header">
+        <?php site_image('/assets/images/feature_shogai.png', '生涯を支える医療のイメージ', 'feature-item-bg'); ?>
+        <div class="feature-item-content">
           <span class="feature-item-badge"><span class="feature-item-badge-num">2</span></span>
           <h3>生涯を支える医療</h3>
+          <p class="feature-item-caption">
+            外来での予防・検査・治療から、通院が困難になった際には在宅医療を行います。
+          </p>
         </div>
-        <?php site_image('/assets/images/feature_shogai.png', '生涯を支える医療のイメージ', 'feature-item-photo'); ?>
-        <p class="feature-item-caption">
-          外来での予防・検査・治療から、通院が困難になった際には在宅医療を行います。
-        </p>
       </div>
       <div class="feature-item feature-color-orange">
-        <div class="feature-item-header">
+        <?php site_image('/assets/images/feature_naika.png', '内科診療のイメージ', 'feature-item-bg'); ?>
+        <div class="feature-item-content">
           <span class="feature-item-badge"><span class="feature-item-badge-num">3</span></span>
           <h3>幅広い内科診療</h3>
+          <p class="feature-item-caption">
+            必要時に循環器や糖尿病といった専門外来受診のご案内を行います。
+          </p>
         </div>
-        <?php site_image('/assets/images/feature_naika.png', '内科診療のイメージ', 'feature-item-photo'); ?>
-        <p class="feature-item-caption">
-          必要時に循環器や糖尿病といった専門外来受診のご案内を行います。
-        </p>
       </div>
       <div class="feature-item feature-color-purple">
-        <div class="feature-item-header">
+        <?php site_image('/assets/images/feature_naishikyo.png', '内視鏡検査のイメージ', 'feature-item-bg'); ?>
+        <div class="feature-item-content">
           <span class="feature-item-badge"><span class="feature-item-badge-num">4</span></span>
           <h3>鎮静剤を使用した内視鏡に対応</h3>
+          <p class="feature-item-caption">
+            消化器内視鏡を専門とする医師による、苦痛を最小限にした胃カメラと大腸カメラが可能です。
+          </p>
         </div>
-        <?php site_image('/assets/images/feature_naishikyo.png', '内視鏡検査のイメージ', 'feature-item-photo'); ?>
-        <p class="feature-item-caption">
-          消化器内視鏡を専門とする医師による、苦痛を最小限にした胃カメラと大腸カメラが可能です。
-        </p>
       </div>
     </div>
   </div>
