@@ -1,0 +1,19 @@
+# URLの正規化(重複URLをGoogleに認識させないための301リダイレクト)。
+# partials/head.php の canonical タグ(見た目上のヒント)を、実際のリダイレクトでも裏付ける。
+# さくらのレンタルサーバーなどApache環境で有効。PHP組み込みサーバー(php -S)では
+# .htaccessは読み込まれないため、ローカル環境では動作確認できない点に注意。
+
+RewriteEngine On
+
+# (1) http:// でのアクセスを https:// へ301リダイレクト
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# (2) wwwなしのドメインを、wwwありに統一(partials/head.phpのSITE_BASE_URLと合わせる)
+RewriteCond %{HTTP_HOST} ^yamamoto-naika\.com$ [NC]
+RewriteRule ^(.*)$ https://www.yamamoto-naika.com/$1 [L,R=301]
+
+# (3) 「/index.php」「/shinryo/index.php」のように index.php を直接指定したアクセスを、
+#     末尾スラッシュのURL(例: /、/shinryo/)へ301リダイレクト。canonicalタグの正規URLと一致させる
+RewriteCond %{THE_REQUEST} \s/+(.*)index\.php[\s?] [NC]
+RewriteRule ^ /%1 [L,R=301]
