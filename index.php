@@ -27,7 +27,7 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
     <h2>山本内科クリニックの特色</h2>
     <div class="feature-row">
       <div class="feature-item feature-color-blue">
-        <?php site_image('/assets/images/feature_chiiki.png', '地域に密着した診療のイメージ', 'feature-item-bg'); ?>
+        <?php site_image('/assets/images/feature_chiiki.png', '地域に密着したクリニック外観のイメージ', 'feature-item-bg'); ?>
         <div class="feature-item-content">
           <span class="feature-item-badge"><span class="feature-item-badge-num">1</span></span>
           <h3>地域に密着して35年</h3>
@@ -47,7 +47,7 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
         </div>
       </div>
       <div class="feature-item feature-color-orange">
-        <?php site_image('/assets/images/feature_naika.png', '内科診療のイメージ', 'feature-item-bg'); ?>
+        <?php site_image('/assets/images/feature_naika.png', 'クリニック待合室のイメージ', 'feature-item-bg'); ?>
         <div class="feature-item-content">
           <span class="feature-item-badge"><span class="feature-item-badge-num">3</span></span>
           <h3>幅広い内科診療</h3>
