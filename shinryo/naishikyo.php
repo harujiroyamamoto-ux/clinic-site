@@ -24,28 +24,28 @@ include __DIR__ . '/../partials/head.php';
     <div class="card-grid">
       <a class="card shinryo-card" href="/shinryo/ikamera.php">
         <div class="shinryo-card-header">
-          <img src="/assets/images/logo_ikamera.png" alt="胃カメラのロゴ" class="shinryo-card-logo">
+          <?php site_image('/assets/images/logo_ikamera.png', '胃カメラのロゴ', 'shinryo-card-logo'); ?>
           <h3>胃カメラ</h3>
         </div>
         <p>胃の痛み・胸やけ・吐き気など、上腹部の症状が気になる方はこちら。</p>
       </a>
       <a class="card shinryo-card" href="/shinryo/daichokamera.php">
         <div class="shinryo-card-header">
-          <img src="/assets/images/logo_daichokamera.png" alt="大腸カメラのロゴ" class="shinryo-card-logo">
+          <?php site_image('/assets/images/logo_daichokamera.png', '大腸カメラのロゴ', 'shinryo-card-logo'); ?>
           <h3>大腸カメラ</h3>
         </div>
         <p>血便・便通異常など、下腹部の症状が気になる方はこちら。</p>
       </a>
       <a class="card shinryo-card" href="/shinryo/ikamera-evening.php">
         <div class="shinryo-card-header">
-          <img src="/assets/images/logo_evening.png" alt="イブニング胃カメラのロゴ" class="shinryo-card-logo">
+          <?php site_image('/assets/images/logo_evening.png', 'イブニング胃カメラのロゴ', 'shinryo-card-logo'); ?>
           <h3>イブニング胃カメラ</h3>
         </div>
         <p>平日夕方の時間帯で胃カメラ検査を受けたい方はこちら。</p>
       </a>
       <a class="card shinryo-card" href="/shinryo/naishikyo-dojitsu.php">
         <div class="shinryo-card-header">
-          <img src="/assets/images/logo_dojitsu.png" alt="胃・大腸同日検査のロゴ" class="shinryo-card-logo">
+          <?php site_image('/assets/images/logo_dojitsu.png', '胃・大腸同日検査のロゴ', 'shinryo-card-logo'); ?>
           <h3>胃・大腸同日検査</h3>
         </div>
         <p>胃カメラと大腸カメラを同じ日にまとめて受けたい方はこちら。</p>

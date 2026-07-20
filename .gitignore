@@ -1,1 +1,5 @@
 .DS_Store
+
+# site_image()が元画像(jpg/png)から自動生成するWebPファイル。
+# 元画像から再生成できる派生ファイルなので、Gitでは管理しない。
+assets/images/*.webp

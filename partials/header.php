@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="container">
     <a href="/" class="site-logo">
-      <img src="/assets/images/logo.jpg" alt="医療法人社団 山本内科クリニック">
+      <?php site_image('/assets/images/logo.jpg', '医療法人社団 山本内科クリニック', '', ['loading' => 'eager']); ?>
     </a>
     <div class="header-contact">
       <a href="tel:0456223331" class="tel-link">

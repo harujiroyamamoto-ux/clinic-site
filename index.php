@@ -10,8 +10,8 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
 
 <section class="hero-photo">
   <div class="hero-photo-slideshow">
-    <img src="/assets/images/waiting_room.jpg" alt="山本内科クリニック待合室" class="hero-photo-img is-active">
-    <img src="/assets/images/clinic_exterior_day.jpg" alt="山本内科クリニック外観" class="hero-photo-img">
+    <?php site_image('/assets/images/waiting_room.jpg', '山本内科クリニック待合室', 'hero-photo-img is-active', ['loading' => 'eager', 'fetchpriority' => 'high']); ?>
+    <?php site_image('/assets/images/clinic_exterior_day.jpg', '山本内科クリニック外観', 'hero-photo-img', ['loading' => 'eager']); ?>
   </div>
   <div class="hero-photo-overlay">
     <div class="container">
@@ -34,7 +34,7 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
           <span class="feature-item-badge"><span class="feature-item-badge-num">1</span></span>
           <h3>地域に密着して35年</h3>
         </div>
-        <img src="/assets/images/feature_chiiki.png" alt="地域に密着した診療のイメージ" class="feature-item-photo">
+        <?php site_image('/assets/images/feature_chiiki.png', '地域に密着した診療のイメージ', 'feature-item-photo'); ?>
         <p class="feature-item-caption">
           平成3年の開院以来、35年にわたり本牧の地で診療を続けてきました。
         </p>
@@ -44,7 +44,7 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
           <span class="feature-item-badge"><span class="feature-item-badge-num">2</span></span>
           <h3>生涯を支える医療</h3>
         </div>
-        <img src="/assets/images/feature_shogai.png" alt="生涯を支える医療のイメージ" class="feature-item-photo">
+        <?php site_image('/assets/images/feature_shogai.png', '生涯を支える医療のイメージ', 'feature-item-photo'); ?>
         <p class="feature-item-caption">
           外来での予防・検査・治療から、通院が困難になった際には在宅医療を行います。
         </p>
@@ -54,7 +54,7 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
           <span class="feature-item-badge"><span class="feature-item-badge-num">3</span></span>
           <h3>幅広い内科診療</h3>
         </div>
-        <img src="/assets/images/feature_naika.png" alt="内科診療のイメージ" class="feature-item-photo">
+        <?php site_image('/assets/images/feature_naika.png', '内科診療のイメージ', 'feature-item-photo'); ?>
         <p class="feature-item-caption">
           必要時に循環器や糖尿病といった専門外来受診のご案内を行います。
         </p>
@@ -64,7 +64,7 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
           <span class="feature-item-badge"><span class="feature-item-badge-num">4</span></span>
           <h3>鎮静剤を使用した内視鏡に対応</h3>
         </div>
-        <img src="/assets/images/feature_naishikyo.png" alt="内視鏡検査のイメージ" class="feature-item-photo">
+        <?php site_image('/assets/images/feature_naishikyo.png', '内視鏡検査のイメージ', 'feature-item-photo'); ?>
         <p class="feature-item-caption">
           消化器内視鏡を専門とする医師による、苦痛を最小限にした胃カメラと大腸カメラが可能です。
         </p>
@@ -108,7 +108,7 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
       <?php foreach ($shinryo as $item): ?>
         <a class="card shinryo-card shinryo-card-compact <?= htmlspecialchars($item['color'] ?? '') ?>" href="<?= htmlspecialchars($item['url']) ?>">
           <?php if (!empty($item['logo'])): ?>
-            <img src="<?= htmlspecialchars($item['logo']) ?>" alt="<?= htmlspecialchars($item['title']) ?>のロゴ" class="shinryo-card-logo">
+            <?php site_image($item['logo'], $item['title'] . 'のロゴ', 'shinryo-card-logo'); ?>
           <?php else: ?>
             <span class="shinryo-card-logo img-placeholder">ロゴ<br>（準備中）</span>
           <?php endif; ?>
@@ -184,14 +184,14 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
       </p>
       <a href="/access.php" class="btn btn-primary">地図・詳しいアクセス方法</a>
     </div>
-    <img src="/assets/images/clinic_exterior_night.jpg" alt="山本内科クリニック外観（夜間）" class="clinic-photo">
+    <?php site_image('/assets/images/clinic_exterior_night.jpg', '山本内科クリニック外観（夜間）', 'clinic-photo'); ?>
   </div>
 </section>
 
 <section class="recruit-banner-section">
   <div class="container">
     <a href="/recruit.php" class="recruit-banner-link">
-      <img src="/assets/images/recruit_banner.png" alt="私たちと一緒に働く仲間を募集しています！求人情報はこちら" class="recruit-banner-image">
+      <?php site_image('/assets/images/recruit_banner.png', '私たちと一緒に働く仲間を募集しています！求人情報はこちら', 'recruit-banner-image'); ?>
     </a>
   </div>
 </section>

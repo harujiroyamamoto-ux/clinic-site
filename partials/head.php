@@ -5,6 +5,9 @@
 // サイトの本番ドメイン。公開先が変わったらここだけ直せば全ページに反映される。
 define('SITE_BASE_URL', 'https://www.yamamoto-naika.com');
 
+// 画像をWebP対応・サイズ自動付与で表示するヘルパー(site_image関数)。全ページで使えるようにする。
+require_once __DIR__ . '/image_helper.php';
+
 $title_tag = !empty($page_title)
   ? $page_title . '｜山本内科クリニック（横浜市中区本牧町）'
   : '山本内科クリニック｜横浜市中区本牧町の内科・消化器内科・訪問診療';

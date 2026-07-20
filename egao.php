@@ -20,7 +20,7 @@ include __DIR__ . '/partials/head.php';
 
 <section class="content-section">
   <div class="container">
-    <img src="/assets/images/egao_224.jpg" alt="ヘルパーチームえがお マスコット" class="related-mascot">
+    <?php site_image('/assets/images/egao_224.jpg', 'ヘルパーチームえがお マスコット', 'related-mascot'); ?>
 
     <h2>サービス内容</h2>
     <p>

@@ -31,7 +31,7 @@ include __DIR__ . '/../partials/head.php';
     </p>
 
     <h2>こんな症状はありませんか</h2>
-    <img src="/assets/images/symptom_daichokamera.png" alt="下痢を繰り返す、便秘が長引く、血便が出た、残便感がある、排便回数が多い、腹部膨満感がある、便が細くなった、体重が急激に減った、便潜血検査陽性だった、親族で大腸がん罹患者がいる、などの症状チェックリスト" class="symptom-image">
+    <?php site_image('/assets/images/symptom_daichokamera.png', '下痢を繰り返す、便秘が長引く、血便が出た、残便感がある、排便回数が多い、腹部膨満感がある、便が細くなった、体重が急激に減った、便潜血検査陽性だった、親族で大腸がん罹患者がいる、などの症状チェックリスト', 'symptom-image'); ?>
 
     <h2>当院の大腸カメラ検査について</h2>
     <p>
@@ -130,7 +130,7 @@ include __DIR__ . '/../partials/head.php';
     </div>
 
     <h2>漫画でわかる大腸カメラ</h2>
-    <img src="/assets/images/comic_daichokamera.png" alt="漫画でわかる大腸カメラ検査。苦痛の少ない工夫、検査前の準備、検査当日の流れ、といった内容をイラストで解説しています。" class="comic-image">
+    <?php site_image('/assets/images/comic_daichokamera.png', '漫画でわかる大腸カメラ検査。苦痛の少ない工夫、検査前の準備、検査当日の流れ、といった内容をイラストで解説しています。', 'comic-image'); ?>
 
     <div class="notice-box">
       <p>

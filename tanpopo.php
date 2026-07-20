@@ -20,7 +20,7 @@ include __DIR__ . '/partials/head.php';
 
 <section class="content-section">
   <div class="container">
-    <img src="/assets/images/tanpopo_224.jpg" alt="たんぽぽ訪問看護ステーション・ヘルパーチームえがお 入口" class="clinic-photo related-photo">
+    <?php site_image('/assets/images/tanpopo_224.jpg', 'たんぽぽ訪問看護ステーション・ヘルパーチームえがお 入口', 'clinic-photo related-photo'); ?>
 
     <h2>サービス内容</h2>
     <p>

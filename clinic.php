@@ -24,7 +24,7 @@ include __DIR__ . '/partials/head.php';
     <div class="card-grid">
       <div class="img-placeholder">受付・待合室の写真<br>（準備中）</div>
       <div class="img-placeholder">診察室の写真<br>（準備中）</div>
-      <img src="/assets/images/clinic_exterior_night.jpg" alt="山本内科クリニック外観（夜間）" class="clinic-photo">
+      <?php site_image('/assets/images/clinic_exterior_night.jpg', '山本内科クリニック外観（夜間）', 'clinic-photo'); ?>
     </div>
     <p>
       院内には空気清浄装置を導入し、清潔な環境づくりに努めています。

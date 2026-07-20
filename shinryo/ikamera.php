@@ -31,7 +31,7 @@ include __DIR__ . '/../partials/head.php';
     </p>
 
     <h2>こんな症状はありませんか</h2>
-    <img src="/assets/images/symptom_ikamera.png" alt="胃が痛い、みぞおちが痛い、胃もたれがする、胸焼けがする、喉がつかえる、げっぷが多い、吐き気・嘔吐がある、ピロリ菌感染陽性だった、胃潰瘍・十二指腸潰瘍になったことがある、体重が減っている、黒い便が出る、などの症状チェックリスト" class="symptom-image">
+    <?php site_image('/assets/images/symptom_ikamera.png', '胃が痛い、みぞおちが痛い、胃もたれがする、胸焼けがする、喉がつかえる、げっぷが多い、吐き気・嘔吐がある、ピロリ菌感染陽性だった、胃潰瘍・十二指腸潰瘍になったことがある、体重が減っている、黒い便が出る、などの症状チェックリスト', 'symptom-image'); ?>
 
     <h2>当院の胃カメラ検査について</h2>
     <p>
@@ -103,7 +103,7 @@ include __DIR__ . '/../partials/head.php';
     </div>
 
     <h2>漫画でわかる胃カメラ</h2>
-    <img src="/assets/images/comic_ikamera.png" alt="漫画でわかる胃カメラ検査。苦痛の少ない工夫、検査の流れ、こんな症状がある方はご相談ください、といった内容をイラストで解説しています。" class="comic-image">
+    <?php site_image('/assets/images/comic_ikamera.png', '漫画でわかる胃カメラ検査。苦痛の少ない工夫、検査の流れ、こんな症状がある方はご相談ください、といった内容をイラストで解説しています。', 'comic-image'); ?>
 
     <div class="notice-box">
       <p>
