@@ -76,6 +76,19 @@ img {
   padding: 0 var(--space-md);
 }
 
+/* 視覚的には非表示にしつつ、スクリーンリーダーや検索エンジンには読める状態を保つ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 h1, h2, h3 {
   line-height: 1.4;
   color: var(--color-primary-dark);

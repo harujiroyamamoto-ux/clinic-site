@@ -1,7 +1,7 @@
-/* ヒーロー：待合室+外観の写真を3秒ごとに切り替えて見せ、理念テキストを重ねる */
+/* ヒーロー：受付・診察室等の写真を4秒ごとに切り替えて見せる。文言は写真に焼き込み済み */
 .hero-photo {
   position: relative;
-  height: 520px;
+  height: 75vh;
   overflow: hidden;
 }
 
@@ -27,47 +27,13 @@
 
 @media (max-width: 768px) {
   .hero-photo {
-    height: 420px;
+    height: 90vh;
   }
-}
 
-@media (max-width: 480px) {
-  .hero-photo {
-    height: 380px;
-  }
-}
-
-.hero-photo-overlay {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: var(--space-lg) 0 var(--space-md);
-  background: linear-gradient(to top, rgba(17, 28, 43, 0.92) 10%, rgba(17, 28, 43, 0.55) 55%, rgba(17, 28, 43, 0) 100%);
-  color: #fff;
-}
-
-.hero-photo-eyebrow {
-  color: #fff;
-  opacity: 0.85;
-  font-weight: bold;
-  letter-spacing: 0.05em;
-  margin: 0 0 var(--space-sm);
-}
-
-.hero-photo-title {
-  color: #fff;
-  font-size: 2.1rem;
-  font-weight: 700;
-  line-height: 1.6;
-  margin: 0 0 var(--space-md);
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
-  text-align: left;
-}
-
-@media (max-width: 768px) {
-  .hero-photo-title {
-    font-size: 1.5rem;
+  /* 写真に焼き込まれた文字が左寄りのため、スマホの縦長トリミングで
+     文字が切れないよう表示位置を左に寄せる */
+  .hero-photo-img {
+    object-position: left center;
   }
 }
 

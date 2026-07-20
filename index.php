@@ -10,15 +10,11 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
 
 <section class="hero-photo">
   <div class="hero-photo-slideshow">
-    <?php site_image('/assets/images/waiting_room.jpg', '山本内科クリニック待合室', 'hero-photo-img is-active', ['loading' => 'eager', 'fetchpriority' => 'high']); ?>
-    <?php site_image('/assets/images/clinic_exterior_day.jpg', '山本内科クリニック外観', 'hero-photo-img', ['loading' => 'eager']); ?>
+    <?php site_image('/assets/images/hero_view1.png', '山本内科クリニック受付', 'hero-photo-img is-active', ['loading' => 'eager', 'fetchpriority' => 'high']); ?>
+    <?php site_image('/assets/images/hero_view2.png', '山本内科クリニック診察室', 'hero-photo-img', ['loading' => 'eager']); ?>
+    <?php site_image('/assets/images/hero_view3.png', '山本内科クリニックのイメージ', 'hero-photo-img', ['loading' => 'eager']); ?>
   </div>
-  <div class="hero-photo-overlay">
-    <div class="container">
-      <p class="hero-photo-eyebrow">平成3年開院　地域とともに35年</p>
-      <h1 class="hero-photo-title">予防から看取りまで。<br>35年の信頼を礎に、生涯を支える医療を。</h1>
-    </div>
-  </div>
+  <h1 class="sr-only">予防から看取りまで。35年の信頼を礎に、生涯を支える医療を。平成3年開院　地域とともに35年</h1>
 </section>
 
 <section class="feature-section">
