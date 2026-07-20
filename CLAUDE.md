@@ -158,7 +158,7 @@
 
 ## ロゴ・写真・OGP画像(対応済み)
 - ロゴ本体: assets/images/logo.jpg（ユーザー提供、190x40、ヘッダーで使用）
-- OGP画像: assets/images/ogp.jpg（1200x630。ネイビー背景にロゴを配置し、PHP(GD)で自動生成したもの）
+- OGP画像: assets/images/ogp.jpg（1200x630。新ロゴ(clinic logo)を使って刷新。詳細は下記「OGP設定の刷新」を参照）
 - favicon: ユーザー提供のロゴマーク画像をもとに刷新済み。詳細は下記「favicon一式の刷新」を参照
 - 外観写真(昼): assets/images/clinic_exterior_day.jpg → トップページのヒーロー画像（左側）、アクセスセクションで使用（旧サイト pic_banner2.jpg より取得）
 - 外観写真(夜): assets/images/clinic_exterior_night.jpg → クリニック紹介ページの院内案内カードで使用（旧サイト pic_banner3.jpg より取得）
@@ -656,6 +656,29 @@
   `<meta name="theme-color">`をまとめて記述。既存の(旧ロゴマークから作った)
   assets/images/favicon.pngは新しいセットに置き換わったため削除した
 - 全ページ共通のpartials/head.php経由で読み込まれるため、コード変更なしで全ページに反映される
+
+## OGP設定の刷新(新ロゴのアイキャッチ画像・X/Twitter対応)
+- 「SNSでシェアされたときに医院名・説明・アイキャッチ画像がきれいなカードで表示されるようにしたい。
+  アイキャッチ画像にはclinic logoを使ってほしい」との要望を受け、partials/head_ogp.php を整備した
+- アイキャッチ画像(assets/images/ogp.jpg、1200x630)を刷新。ユーザーが用意した新ロゴマーク画像
+  (親フォルダの「clinic logo.png」、チューリップ+「医療法人社団 山本内科クリニック」の横長ロゴ、
+  2070x578)をもとに、scratchpadに作成したワンショットのPHP生成スクリプトで、
+  ネイビー背景(--color-primaryの#2c4a6e)+中央の白いカードにロゴを配置+カード下に
+  「横浜市中区本牧町　平成3年開院」のキャプション(macOSのヒラギノ角ゴシックW6フォントで描画)
+  という構成のJPEG画像を生成した。旧ロゴ(小さい丸アイコン+テキスト)から新ロゴ(横長の
+  ワードマーク)に変わったため、カードのサイズ・比率も新ロゴの縦横比(3.58:1)に合わせて再設計
+  (ロゴ自体は不透明な白背景のPNGだったため、そのままネイビーに重ねると白い矩形が目立ってしまう
+  ことを踏まえ、あえて白いカードの中に収める構成にして違和感なく仕上げた)
+- partials/head_ogp.php に、Facebook/LINE等が読むOGPタグ(og:type/site_name/locale/url/title/
+  description/image/image:width/image:height/image:alt)に加えて、X(旧Twitter)向けの
+  twitter:card(summary_large_image)/twitter:title/twitter:description/twitter:image を追加。
+  og:title・og:descriptionは既存の仕組み(head.phpが$page_title・$page_descriptionから作る
+  $title_tag・$description_tag)をそのまま再利用しているため、症状・病名ページを含む全87+ページで
+  ページごとに異なる正しいタイトル・説明文がOGPにも自動反映される
+- partials/head.php から全ページ共通で読み込まれるため、コード変更は head_ogp.php の1ファイルのみ。
+  index.php・shojo/hakike-outo.php(動的ページの例)の両方でog:・twitter:タグが正しく出力されることを
+  curlで確認済み。本番公開後は、FacebookシェアデバッガーやX(Twitter)のカード検証ツールで
+  実際の見え方を確認することをおすすめします
 
 ## 未着手・今後の対応(次のステップ)
 - 採用情報ページ(recruit.php)の内容確認・調整: 実際の募集職種、給与額、待遇、院内・スタッフ写真、
