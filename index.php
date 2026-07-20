@@ -16,7 +16,6 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
   </div>
   <div class="hero-photo-overlay">
     <div class="container">
-      <p class="hero-photo-eyebrow">平成3年開院　地域とともに35年</p>
       <h1 class="hero-photo-title">予防から看取りまで。<br>35年の信頼を礎に、生涯を支える医療を。</h1>
     </div>
   </div>
@@ -29,8 +28,10 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
       <div class="feature-block-card feature-color-blue">
         <?php site_image('/assets/images/feature_chiiki.png', '地域に密着したクリニック外観のイメージ', 'feature-block-photo'); ?>
         <div class="feature-block-text">
-          <span class="feature-item-badge"><span class="feature-item-badge-num">1</span></span>
-          <h3>地域に密着して35年</h3>
+          <div class="feature-block-heading-row">
+            <span class="feature-item-badge"><span class="feature-item-badge-num">1</span></span>
+            <h3>地域に密着して35年</h3>
+          </div>
           <p class="feature-item-caption">
             平成3年の開院以来、35年にわたり本牧の地で診療を続けてきました。
           </p>
@@ -39,8 +40,10 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
       <div class="feature-block-card feature-block-reverse feature-color-green">
         <?php site_image('/assets/images/feature_shogai.png', '生涯を支える医療のイメージ', 'feature-block-photo'); ?>
         <div class="feature-block-text">
-          <span class="feature-item-badge"><span class="feature-item-badge-num">2</span></span>
-          <h3>生涯を支える医療</h3>
+          <div class="feature-block-heading-row">
+            <span class="feature-item-badge"><span class="feature-item-badge-num">2</span></span>
+            <h3>生涯を支える医療</h3>
+          </div>
           <p class="feature-item-caption">
             外来での予防・検査・治療から、通院が困難になった際には在宅医療を行います。
           </p>
@@ -49,8 +52,10 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
       <div class="feature-block-card feature-color-orange">
         <?php site_image('/assets/images/feature_naika.png', 'クリニック待合室のイメージ', 'feature-block-photo'); ?>
         <div class="feature-block-text">
-          <span class="feature-item-badge"><span class="feature-item-badge-num">3</span></span>
-          <h3>幅広い内科診療</h3>
+          <div class="feature-block-heading-row">
+            <span class="feature-item-badge"><span class="feature-item-badge-num">3</span></span>
+            <h3>幅広い内科診療</h3>
+          </div>
           <p class="feature-item-caption">
             必要時に循環器や糖尿病といった専門外来受診のご案内を行います。
           </p>
@@ -59,8 +64,10 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
       <div class="feature-block-card feature-block-reverse feature-color-purple">
         <?php site_image('/assets/images/feature_naishikyo.png', '内視鏡検査のイメージ', 'feature-block-photo'); ?>
         <div class="feature-block-text">
-          <span class="feature-item-badge"><span class="feature-item-badge-num">4</span></span>
-          <h3>鎮静剤を使用した内視鏡に対応</h3>
+          <div class="feature-block-heading-row">
+            <span class="feature-item-badge"><span class="feature-item-badge-num">4</span></span>
+            <h3>鎮静剤を使用した内視鏡に対応</h3>
+          </div>
           <p class="feature-item-caption">
             消化器内視鏡を専門とする医師による、苦痛を最小限にした胃カメラと大腸カメラが可能です。
           </p>

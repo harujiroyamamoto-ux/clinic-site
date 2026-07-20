@@ -44,14 +44,6 @@
   box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.1);
 }
 
-.hero-photo-eyebrow {
-  font-family: "Zen Old Mincho", serif;
-  color: var(--color-text);
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  margin: 0 0 var(--space-sm);
-}
-
 .hero-photo-title {
   font-family: "Zen Old Mincho", serif;
   color: var(--color-text);
@@ -109,13 +101,21 @@
   text-align: left;
 }
 
+/* 番号バッジと見出しを横並びにして、カードの縦幅を抑える */
+.feature-block-heading-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin: 0 0 var(--space-sm);
+}
+
 .feature-item-badge {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
-  margin: 0 0 var(--space-sm);
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: var(--feature-color);
   color: #fff;
@@ -123,12 +123,12 @@
 }
 
 .feature-item-badge-num {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 
 .feature-block-text h3 {
-  margin: 0 0 var(--space-sm);
+  margin: 0;
   font-size: 1.3rem;
   color: var(--feature-color);
   text-align: left;
