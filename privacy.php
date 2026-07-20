@@ -1,6 +1,6 @@
 <?php
 $page_title = 'プライバシーポリシー';
-$page_description = '山本内科クリニックの個人情報保護方針です。';
+$page_description = '安心して受診いただくために、当院にお預けいただく氏名やご住所、診療情報などの個人情報を、どのような目的でどのように取り扱い、管理・保護しているかをご案内するプライバシーポリシーです。';
 $page_css = 'page.css';
 include __DIR__ . '/partials/head.php';
 ?>
