@@ -92,24 +92,49 @@ include __DIR__ . '/head.php';
       <?php endforeach; ?>
     </ul>
 
-    <?php if (!empty($item['diseases'])): ?>
+    <?php if (!empty($item['diseases'])):
+      $diseases_is_grouped = array_keys($item['diseases']) !== range(0, count($item['diseases']) - 1);
+    ?>
       <h2>考えられる疾患</h2>
-      <ul class="glossary-points">
-        <?php foreach ($item['diseases'] as $d): ?>
-          <li>
-            <?php if (!empty($d['key'])): ?>
-              <a href="/byomei/<?= htmlspecialchars($d['key']) ?>.php"><?= htmlspecialchars($d['label']) ?></a>
-            <?php else: ?>
-              <?= htmlspecialchars($d['label']) ?>
-            <?php endif; ?>
-          </li>
+      <?php if ($diseases_is_grouped): ?>
+        <?php foreach ($item['diseases'] as $group_name => $group_diseases): ?>
+          <h3 class="diseases-group-heading"><?= htmlspecialchars($group_name) ?></h3>
+          <ul class="glossary-points">
+            <?php foreach ($group_diseases as $d): ?>
+              <li>
+                <?php if (!empty($d['key'])): ?>
+                  <a href="/byomei/<?= htmlspecialchars($d['key']) ?>.php"><?= htmlspecialchars($d['label']) ?></a>
+                <?php else: ?>
+                  <?= htmlspecialchars($d['label']) ?>
+                <?php endif; ?>
+              </li>
+            <?php endforeach; ?>
+          </ul>
         <?php endforeach; ?>
-      </ul>
+      <?php else: ?>
+        <ul class="glossary-points">
+          <?php foreach ($item['diseases'] as $d): ?>
+            <li>
+              <?php if (!empty($d['key'])): ?>
+                <a href="/byomei/<?= htmlspecialchars($d['key']) ?>.php"><?= htmlspecialchars($d['label']) ?></a>
+              <?php else: ?>
+                <?= htmlspecialchars($d['label']) ?>
+              <?php endif; ?>
+            </li>
+          <?php endforeach; ?>
+        </ul>
+      <?php endif; ?>
     <?php endif; ?>
 
     <?php if (!$is_symptom): ?>
       <h2><?= htmlspecialchars($advice_heading) ?></h2>
-      <p><?= htmlspecialchars($item['advice']) ?></p>
+      <?php if (is_array($item['advice'])): ?>
+        <ul class="glossary-points">
+          <?php foreach ($item['advice'] as $a): ?><li><?= htmlspecialchars($a) ?></li><?php endforeach; ?>
+        </ul>
+      <?php else: ?>
+        <p><?= htmlspecialchars($item['advice']) ?></p>
+      <?php endif; ?>
     <?php endif; ?>
 
     <?php if (!empty($item['exam'])): ?>
@@ -119,7 +144,13 @@ include __DIR__ . '/head.php';
 
     <?php if ($is_symptom): ?>
       <h2><?= htmlspecialchars($advice_heading) ?></h2>
-      <p><?= htmlspecialchars($item['advice']) ?></p>
+      <?php if (is_array($item['advice'])): ?>
+        <ul class="glossary-points">
+          <?php foreach ($item['advice'] as $a): ?><li><?= htmlspecialchars($a) ?></li><?php endforeach; ?>
+        </ul>
+      <?php else: ?>
+        <p><?= htmlspecialchars($item['advice']) ?></p>
+      <?php endif; ?>
     <?php endif; ?>
 
     <?php if (!empty($item['treatment'])): ?>
