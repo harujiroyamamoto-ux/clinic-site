@@ -14,7 +14,12 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
     <?php site_image('/assets/images/hero_view2.png', '山本内科クリニック診察室', 'hero-photo-img', ['loading' => 'eager']); ?>
     <?php site_image('/assets/images/hero_view3.png', '山本内科クリニックのイメージ', 'hero-photo-img', ['loading' => 'eager']); ?>
   </div>
-  <h1 class="sr-only">予防から看取りまで。35年の信頼を礎に、生涯を支える医療を。平成3年開院　地域とともに35年</h1>
+  <div class="hero-photo-overlay">
+    <div class="container">
+      <p class="hero-photo-eyebrow">平成3年開院　地域とともに35年</p>
+      <h1 class="hero-photo-title">予防から看取りまで。<br>35年の信頼を礎に、生涯を支える医療を。</h1>
+    </div>
+  </div>
 </section>
 
 <section class="feature-section">

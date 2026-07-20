@@ -36,7 +36,13 @@ $shinryo = include __DIR__ . '/../data/shinryo.php';
     <p class="page-lead" style="max-width:none; text-align:center;">
       外来診療の担当医と診療時間のご案内です。担当医は都合により変更になる場合がございます。
     </p>
-    <?php site_image('/assets/images/tantoi_hyou.png', '担当医表。外来診療・在宅診療（訪問診療）の曜日別の担当医と、各種検査（超音波検査・胃内視鏡検査）の実施日をご案内しています。詳しくは受付・お電話にてお問い合わせください。', 'tantoi-hyou-image'); ?>
+    <?php site_image('/assets/images/tantoi_hyou.png', '担当医表。曜日・週ごとの外来診療の担当医と診療時間のご案内です。詳しくは受付・お電話にてお問い合わせください。', 'tantoi-hyou-image'); ?>
+
+    <h2>在宅診療・検査担当のご案内</h2>
+    <p class="page-lead" style="max-width:none; text-align:center;">
+      在宅診療（訪問診療）の実施日と担当医、各種検査の実施日をご案内します。検査はすべて予約制です。
+    </p>
+    <?php site_image('/assets/images/kensa_tanto.png', '在宅診療（訪問診療）の曜日別の担当医と、各種検査（腹部エコー・胃カメラ・大腸カメラ）の実施曜日のご案内です。詳しくは受付・お電話にてお問い合わせください。', 'tantoi-hyou-image'); ?>
 
     <div class="cta-box">
       <h2>受診について</h2>
