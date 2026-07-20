@@ -159,7 +159,7 @@
 ## ロゴ・写真・OGP画像(対応済み)
 - ロゴ本体: assets/images/logo.jpg（ユーザー提供、190x40、ヘッダーで使用）
 - OGP画像: assets/images/ogp.jpg（1200x630。ネイビー背景にロゴを配置し、PHP(GD)で自動生成したもの）
-- favicon: assets/images/favicon.png・apple-touch-icon.png（旧サイトのロゴマーク単体画像 pic_clinic_224.jpg を正方形に切り出して生成）
+- favicon: ユーザー提供のロゴマーク画像をもとに刷新済み。詳細は下記「favicon一式の刷新」を参照
 - 外観写真(昼): assets/images/clinic_exterior_day.jpg → トップページのヒーロー画像（左側）、アクセスセクションで使用（旧サイト pic_banner2.jpg より取得）
 - 外観写真(夜): assets/images/clinic_exterior_night.jpg → クリニック紹介ページの院内案内カードで使用（旧サイト pic_banner3.jpg より取得）
 - 待合室写真: assets/images/waiting_room.jpg → トップページのヒーロー画像（右側）で使用（ユーザー提供 pic_waiting1.jpg）
@@ -638,6 +638,24 @@
     仕様があり、それ以降のコード全体(関数定義含む)が実行されずそのままページに出力される事故が
     発生した。コメント内では実際のPHPタグを書かず、関数呼び出しの例だけをプレーンテキストで
     示すよう修正して解消した
+
+## favicon一式の刷新
+- ユーザーが用意した新しいロゴマーク画像(チューリップのイラスト+「YAMAMOTO NAIKA CLINIC」の
+  円形ロゴ、464x460、プロジェクトの親フォルダに favicon.png として設置)をもとに、必要なサイズの
+  favicon一式を自動生成し、partials/head_favicon.phpにまとめて全ページに適用した
+- 生成したファイル(scratchpadに作成したワンショットのPHP生成スクリプトで、元画像を中央クロップ→
+  各サイズにリサイズして作成。GDのimagecopyresampledを使用):
+  - assets/images/favicon-16x16.png・favicon-32x32.png(タブに表示される小さいアイコン)
+  - assets/images/apple-touch-icon.png(180x180、iPhoneのホーム画面に追加した際のアイコン)
+  - assets/images/android-chrome-192x192.png・android-chrome-512x512.png(Androidのホーム画面用)
+  - favicon.ico(サイトルート直下。16x16+32x32をPNG形式のまま格納した現代的なICO形式。
+    ブラウザが`<link>`タグを見る前に暗黙で`/favicon.ico`にアクセスしてくることがあるため、
+    フォールバック用に用意)
+  - site.webmanifest(サイトルート直下。Android/PWA向けのアイコン・テーマカラー(#2c4a6e)を定義)
+- partials/head_favicon.phpに、上記すべてへの`<link>`タグ(`sizes`属性でサイズを明示)と
+  `<meta name="theme-color">`をまとめて記述。既存の(旧ロゴマークから作った)
+  assets/images/favicon.pngは新しいセットに置き換わったため削除した
+- 全ページ共通のpartials/head.php経由で読み込まれるため、コード変更なしで全ページに反映される
 
 ## 未着手・今後の対応(次のステップ)
 - 採用情報ページ(recruit.php)の内容確認・調整: 実際の募集職種、給与額、待遇、院内・スタッフ写真、

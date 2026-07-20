@@ -1,0 +1,19 @@
+{
+    "name": "山本内科クリニック",
+    "short_name": "山本内科クリニック",
+    "icons": [
+        {
+            "src": "/assets/images/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#2c4a6e",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
