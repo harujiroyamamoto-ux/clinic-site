@@ -70,25 +70,6 @@
 }
 
 /* 特色（Feature1〜4）フォトカードセクション */
-.feature-row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-lg);
-}
-
-.feature-item {
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  padding: var(--space-lg) var(--space-md);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  min-height: 240px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .feature-color-blue,
 .feature-color-green,
 .feature-color-orange,
@@ -96,27 +77,36 @@
   --feature-color: #8bc34a;
 }
 
-/* 写真はカード全体を覆う薄い背景として敷き、上に白いベールを重ねて文字を読みやすくする */
-.feature-item-bg {
-  position: absolute;
-  inset: 0;
+/* 特色カード：写真とテキストを別ブロックとして左右に並べ、交互に反転させる */
+.feature-block-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.feature-block-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+}
+
+.feature-block-photo {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
-  z-index: 0;
+  border-radius: var(--radius);
 }
 
-.feature-item::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.85);
-  z-index: 1;
+.feature-block-reverse .feature-block-photo {
+  order: 2;
 }
 
-.feature-item-content {
-  position: relative;
-  z-index: 2;
+.feature-block-text {
+  text-align: left;
 }
 
 .feature-item-badge {
@@ -125,7 +115,7 @@
   justify-content: center;
   width: 48px;
   height: 48px;
-  margin: 0 auto var(--space-sm);
+  margin: 0 0 var(--space-sm);
   border-radius: 50%;
   background: var(--feature-color);
   color: #fff;
@@ -137,24 +127,27 @@
   font-weight: bold;
 }
 
-.feature-item h3 {
+.feature-block-text h3 {
   margin: 0 0 var(--space-sm);
   font-size: 1.3rem;
   color: var(--feature-color);
+  text-align: left;
 }
 
 .feature-item-caption {
   margin: 0;
-  text-align: center;
 }
 
 @media (max-width: 768px) {
-  .feature-row {
+  .feature-block-card {
     grid-template-columns: 1fr;
   }
 
-  .feature-item {
-    min-height: 180px;
+  .feature-block-reverse .feature-block-photo {
+    order: 0;
+  }
+
+  .feature-block-card {
     padding: var(--space-md);
   }
 }
