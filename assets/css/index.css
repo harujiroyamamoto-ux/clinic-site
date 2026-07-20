@@ -120,11 +120,6 @@
   line-height: 1.1;
 }
 
-.feature-item-badge-label {
-  font-size: 0.6rem;
-  letter-spacing: 0.03em;
-}
-
 .feature-item-badge-num {
   font-size: 1.3rem;
   font-weight: bold;

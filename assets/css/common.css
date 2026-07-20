@@ -428,6 +428,11 @@ table.week-schedule td.closed {
   .header-contact .tel-link span.tel-caption {
     display: none;
   }
+
+  .tel-link {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
 }
 
 /* ============================================

@@ -31,7 +31,7 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
     <div class="feature-row">
       <div class="feature-item feature-color-blue">
         <div class="feature-item-header">
-          <span class="feature-item-badge"><span class="feature-item-badge-label">Feature</span><span class="feature-item-badge-num">1</span></span>
+          <span class="feature-item-badge"><span class="feature-item-badge-num">1</span></span>
           <h3>地域に密着して35年</h3>
         </div>
         <img src="/assets/images/feature_chiiki.png" alt="地域に密着した診療のイメージ" class="feature-item-photo">
@@ -41,7 +41,7 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
       </div>
       <div class="feature-item feature-color-green">
         <div class="feature-item-header">
-          <span class="feature-item-badge"><span class="feature-item-badge-label">Feature</span><span class="feature-item-badge-num">2</span></span>
+          <span class="feature-item-badge"><span class="feature-item-badge-num">2</span></span>
           <h3>生涯を支える医療</h3>
         </div>
         <img src="/assets/images/feature_shogai.png" alt="生涯を支える医療のイメージ" class="feature-item-photo">
@@ -51,17 +51,17 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
       </div>
       <div class="feature-item feature-color-orange">
         <div class="feature-item-header">
-          <span class="feature-item-badge"><span class="feature-item-badge-label">Feature</span><span class="feature-item-badge-num">3</span></span>
-          <h3>幅広い内科診療と専門医療</h3>
+          <span class="feature-item-badge"><span class="feature-item-badge-num">3</span></span>
+          <h3>幅広い内科診療</h3>
         </div>
         <img src="/assets/images/feature_naika.png" alt="内科診療のイメージ" class="feature-item-photo">
         <p class="feature-item-caption">
-          診断後、必要な際には専門診察を受けることが可能です。
+          必要時に循環器や糖尿病といった専門外来受診のご案内を行います。
         </p>
       </div>
       <div class="feature-item feature-color-purple">
         <div class="feature-item-header">
-          <span class="feature-item-badge"><span class="feature-item-badge-label">Feature</span><span class="feature-item-badge-num">4</span></span>
+          <span class="feature-item-badge"><span class="feature-item-badge-num">4</span></span>
           <h3>鎮静剤を使用した内視鏡に対応</h3>
         </div>
         <img src="/assets/images/feature_naishikyo.png" alt="内視鏡検査のイメージ" class="feature-item-photo">
