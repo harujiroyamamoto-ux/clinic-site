@@ -1,5 +1,5 @@
 <?php
-$page_title = 'イブニング胃カメラ';
+$page_title = 'イブニング胃カメラ｜本牧の平日夕方の内視鏡検査';
 $page_description = '仕事や家事で、日中はなかなか時間が取れない方へ。平日夕方15時〜18時の時間帯でも受けられるイブニング胃カメラなら、お仕事帰りにも無理なく胃の検査を受けていただけます。';
 $page_css = 'page.css';
 include __DIR__ . '/../partials/head.php';

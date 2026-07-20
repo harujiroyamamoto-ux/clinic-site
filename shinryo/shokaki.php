@@ -1,5 +1,5 @@
 <?php
-$page_title = '消化器外来';
+$page_title = '消化器内科｜本牧の胃・大腸の症状診療';
 $page_description = '胃の痛みや胃もたれ、便通の乱れ、そのままにしていませんか。消化器外来では、胃・大腸カメラの検査からピロリ菌検査・除菌治療まで、食道から大腸まで幅広い消化器の症状にきめ細かく対応しています。';
 $page_css = 'page.css';
 include __DIR__ . '/../partials/head.php';

@@ -1,5 +1,5 @@
 <?php
-$page_title = 'お知らせ';
+$page_title = 'お知らせ｜本牧の内科・消化器内科';
 $page_description = '臨時休診のお知らせや診療体制の変更、院内からのご案内など、山本内科クリニックからの最新情報を随時こちらに掲載しています。受診の前に、ぜひ一度あわせてご確認いただくと安心です。';
 $page_css = 'page.css';
 include __DIR__ . '/partials/head.php';

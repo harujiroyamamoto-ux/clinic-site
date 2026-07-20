@@ -1,5 +1,5 @@
 <?php
-$page_title = '循環器外来';
+$page_title = '循環器内科｜本牧の動悸・息切れ・高血圧診療';
 $page_description = '動悸や息切れ、胸の違和感、健診での心電図異常が気になりませんか。狭心症・心筋梗塞・不整脈・動脈硬化など、心臓や血管の病気を診る循環器外来で、早めの検査と適切な治療をおすすめします。';
 $page_css = 'page.css';
 include __DIR__ . '/../partials/head.php';

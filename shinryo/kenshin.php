@@ -1,5 +1,5 @@
 <?php
-$page_title = '各種健診・ワクチン';
+$page_title = '健診・予防接種｜本牧の特定健診・がん検診';
 $page_description = '病気は早期発見が何より大切です。特定健康診査や胃・大腸がん検診などの各種がん検診、季節ごとの予防接種を通じて、日頃からの健康管理と病気の予防をしっかりサポートしています。';
 $page_css = 'page.css';
 include __DIR__ . '/../partials/head.php';

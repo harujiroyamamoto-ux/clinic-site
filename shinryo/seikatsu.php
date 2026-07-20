@@ -1,5 +1,5 @@
 <?php
-$page_title = '生活習慣病';
+$page_title = '生活習慣病｜本牧の高血圧・脂質異常症診療';
 $page_description = '高血圧やコレステロール値、尿酸値、骨密度が気になる方へ。生活習慣病診療では、検査から治療、食事や運動など日常生活での具体的なアドバイスまで、一人ひとりに合わせてご提案します。';
 $page_css = 'page.css';
 include __DIR__ . '/../partials/head.php';

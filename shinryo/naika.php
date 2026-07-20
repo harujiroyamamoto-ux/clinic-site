@@ -1,5 +1,5 @@
 <?php
-$page_title = '一般内科';
+$page_title = '内科｜本牧のかぜ・生活習慣病診療';
 $page_description = 'かぜや発熱、体のちょっとした不調も、まずはお気軽にご相談ください。急な体調不良への対応から、生活習慣病の管理や健康診断後のフォローなど、日常的な健康維持まで幅広く対応する一般内科のご案内です。';
 $page_css = 'page.css';
 include __DIR__ . '/../partials/head.php';

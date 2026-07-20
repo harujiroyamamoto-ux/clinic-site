@@ -1,5 +1,5 @@
 <?php
-$page_title = 'アクセス';
+$page_title = 'アクセス｜本牧の内科・消化器内科';
 $page_description = '当院までの道のり、迷わずたどり着けますか。神奈川県横浜市中区本牧町、バス停「小港前」から徒歩圏内で、お車での来院に便利な駐車場も完備しています。地図と写真付きで、初めての方にもわかりやすくご案内します。';
 $page_css = 'page.css';
 include __DIR__ . '/partials/head.php';

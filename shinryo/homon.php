@@ -1,5 +1,5 @@
 <?php
-$page_title = '訪問診療(往診)';
+$page_title = '訪問診療・往診｜本牧の在宅医療';
 $page_description = '通院が難しくなってきた、住み慣れた自宅での療養を考えている、そんなときは訪問診療をご検討ください。総合病院とも連携しながら、日々の健康管理から看取りまで在宅での生活を支えます。';
 $page_css = 'page.css';
 include __DIR__ . '/../partials/head.php';

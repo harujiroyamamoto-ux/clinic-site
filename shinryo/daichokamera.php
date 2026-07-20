@@ -1,5 +1,5 @@
 <?php
-$page_title = '大腸カメラ検査';
+$page_title = '大腸カメラ｜本牧のポリープ日帰り切除';
 $page_description = '血便や便通の異常が気になる方、大腸がん検診の便潜血検査で陽性だった方へ。鎮静剤を使用した苦痛の少ない大腸カメラで、検査中に発見したポリープの日帰り切除にも対応しております。';
 $page_css = 'page.css';
 include __DIR__ . '/../partials/head.php';

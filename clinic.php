@@ -1,5 +1,5 @@
 <?php
-$page_title = 'クリニック紹介';
+$page_title = 'クリニック紹介｜本牧の内科・消化器内科';
 $page_description = '初めての通院は、どんな場所か分からず少し緊張しますよね。受付や待合室、診察室の雰囲気から、訪問看護・介護と連携した関連施設のご案内まで、写真を交えてクリニックの様子を詳しくご紹介しています。';
 $page_css = 'page.css';
 include __DIR__ . '/partials/head.php';

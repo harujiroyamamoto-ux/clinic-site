@@ -1,5 +1,5 @@
 <?php
-$page_title = '胃カメラ検査';
+$page_title = '胃カメラ（上部内視鏡検査）｜本牧の鎮静剤対応';
 $page_description = '胃の不調が続く、健診でピロリ菌や胃炎を指摘された、そんなときは胃カメラで胃の中をしっかり確認しませんか。鎮静剤・麻酔剤を使用した、苦痛の少ない検査で早期発見・早期治療につなげます。';
 $page_css = 'page.css';
 include __DIR__ . '/../partials/head.php';

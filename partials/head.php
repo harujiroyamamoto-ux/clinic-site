@@ -8,9 +8,11 @@ define('SITE_BASE_URL', 'https://www.yamamoto-naika.com');
 // 画像をWebP対応・サイズ自動付与で表示するヘルパー(site_image関数)。全ページで使えるようにする。
 require_once __DIR__ . '/image_helper.php';
 
+// $page_title には「本牧の胃カメラ｜鎮静剤対応」のような、そのページ内容に合った
+// 検索キーワードを含む文言を各ページ側で設定する(医院名は付けない。ここで自動的に付く)。
 $title_tag = !empty($page_title)
-  ? $page_title . '｜山本内科クリニック（横浜市中区本牧町）'
-  : '山本内科クリニック｜横浜市中区本牧町の内科・消化器内科・訪問診療';
+  ? $page_title . '｜山本内科クリニック'
+  : '山本内科クリニック｜本牧の内科・消化器内科・訪問診療';
 $description_tag = $page_description ?? '横浜市中区本牧町の山本内科クリニック。一般内科・生活習慣病・内視鏡検査・訪問診療に対応しています。';
 
 // canonical（正規URL）。クエリ文字列を除いた現在のパスから自動生成する。

@@ -61,7 +61,17 @@ usort($related_entries, function ($a, $b) use ($item) {
 });
 $related_entries = array_slice($related_entries, 0, 6);
 
-$page_title = $item['label'];
+// 検索で見つけてもらいやすいよう、ページ内容に合わせたタイトルを組み立てる。
+// 括弧書き（例: 「バセドウ病(甲状腺機能亢進症)」の括弧部分）はタイトルでは使わずすっきりさせる。
+// クセのある言い回しのラベル（例: 「高血圧を指摘された」）は、data/glossary.phpの'title'で個別に上書きする。
+$title_base = preg_replace('/[(（].*/u', '', $item['label']);
+if (!empty($item['title'])) {
+  $page_title = $item['title'];
+} elseif ($is_symptom) {
+  $page_title = $title_base . 'の原因・受診の目安';
+} else {
+  $page_title = $title_base . 'の症状・原因・治療';
+}
 $page_description = $item['lead'];
 $page_css = 'page.css';
 include __DIR__ . '/head.php';

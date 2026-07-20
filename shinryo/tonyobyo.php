@@ -1,5 +1,5 @@
 <?php
-$page_title = '糖尿病';
+$page_title = '糖尿病内科｜本牧の血糖値・HbA1c管理';
 $page_description = '健診で血糖値やHbA1cを指摘された方、放置していませんか。糖尿病診療では、食事・運動療法から薬物治療、血管・神経・腎臓の合併症の予防まで、生活習慣に合わせて丁寧にサポートしています。';
 $page_css = 'page.css';
 include __DIR__ . '/../partials/head.php';

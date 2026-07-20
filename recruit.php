@@ -1,5 +1,5 @@
 <?php
-$page_title = '採用情報';
+$page_title = '採用情報｜本牧の内科クリニック';
 $page_description = '地域医療の現場で、私たちと一緒に働いてみませんか。看護師・医療事務など、山本内科クリニックの募集職種や仕事内容、職場の雰囲気、よくある質問から応募方法まで、わかりやすくご紹介しています。';
 $page_css = 'page.css';
 include __DIR__ . '/partials/head.php';
