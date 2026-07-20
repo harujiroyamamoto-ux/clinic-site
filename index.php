@@ -99,7 +99,7 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
 <section class="shinryo-section">
   <div class="container">
     <h2>診療案内</h2>
-    <p class="shinryo-department-list">内科｜消化器内科｜内視鏡(胃カメラ・大腸カメラ)｜循環器内科｜糖尿病内科｜訪問診療</p>
+    <p class="shinryo-department-list">内科｜消化器内科｜内視鏡(胃カメラ・大腸カメラ)｜循環器内科｜糖尿病外来｜訪問診療</p>
     <div class="card-grid">
       <?php foreach ($shinryo as $item): ?>
         <a class="card shinryo-card shinryo-card-compact <?= htmlspecialchars($item['color'] ?? '') ?>" href="<?= htmlspecialchars($item['url']) ?>">

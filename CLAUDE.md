@@ -18,7 +18,7 @@
 - 診療時間: 平日 9:00〜12:00・15:00〜18:00(木曜は終日休診、水曜午後も休診)、土曜は午前のみ、日曜・祝日休診
 - 予約: 受付のみ(電話・Web予約不可)、午前20名・午後20名まで
 - 特色: 外来での予防・治療・検査に加え、総合病院と連携し訪問診療で看取りまで対応
-- 診療内容: 一般内科・生活習慣病、内視鏡検査(胃カメラ・大腸カメラ)、特定健診・がん検診、ピロリ菌外来、骨粗しょう症診療、訪問診療
+- 診療内容: 一般内科(生活習慣病・骨粗しょう症を含む)、消化器外来、内視鏡検査(胃カメラ・大腸カメラ)、循環器外来、糖尿病外来、特定健診・がん検診、ピロリ菌外来、訪問診療
 - 院長: 山本光一郎(内科認定医・消化器病専門医)
 - 副院長: 山本晴二郎(内科専門医:内科・消化器内科)
 - 関連施設: たんぽぽ訪問看護ステーション、ヘルパーチームえがお(同一サイト内で紹介)
@@ -112,10 +112,11 @@
 │    ├─ 消化器外来 (shinryo/shokaki.php、ピロリ菌検査・除菌を含む)
 │    ├─ 内視鏡検査(胃カメラ・大腸カメラ)ハブページ (shinryo/naishikyo.php)
 │    │    ├─ 胃カメラ検査 (shinryo/ikamera.php)
-│    │    └─ 大腸カメラ検査 (shinryo/daichokamera.php)
-│    ├─ 糖尿病 (shinryo/tonyobyo.php)
-│    ├─ 生活習慣病 (shinryo/seikatsu.php)
-│    ├─ 骨粗しょう症診療 (shinryo/kosso.php)
+│    │    ├─ 大腸カメラ検査 (shinryo/daichokamera.php)
+│    │    ├─ イブニング胃カメラ (shinryo/ikamera-evening.php)
+│    │    └─ 胃・大腸同日検査 (shinryo/naishikyo-dojitsu.php)
+│    ├─ 循環器外来 (shinryo/junkanki.php)
+│    ├─ 糖尿病外来 (shinryo/tonyobyo.php)
 │    ├─ 訪問診療(往診) (shinryo/homon.php)
 │    └─ 各種健診・ワクチン (shinryo/kenshin.php)
 ├─ 医師紹介 (doctor.php)
@@ -797,6 +798,37 @@
 - カードの高さも大幅に圧縮(写真を専用の16:10ブロックとして表示する必要がなくなったため)。
   デスクトップはmin-height 240px、モバイルは180pxに設定し、「スマホで場所を取りすぎる」
   という指摘に対応した
+
+## 特色カードの文字色を単色(水色)に統一、糖尿病を糖尿病外来に改称、生活習慣病を一般内科に統合
+- 「特色1〜4の文字色はやはり単色にする、水色で」との要望を受け、assets/css/index.cssの
+  `.feature-color-blue/green/orange/purple`(4色バラバラだった`--feature-color`)を、
+  すべて同じ水色(#4fa8d9、既存のaccent-skyと同じ色でサイト全体の配色と統一)に変更した。
+  クラス名(feature-color-blue等)自体はHTML側の変更を避けるためそのまま残している
+- 「糖尿病を糖尿病外来に変更してほしい」との要望を受け、data/shinryo.php・
+  shinryo/tonyobyo.php(h1・パンくず・page_title)・partials/glossary_render.phpの
+  $related_pagesラベルを「糖尿病」→「糖尿病外来」に統一。トップページの診療科目一覧
+  (index.phpの.shinryo-department-list)も合わせて更新
+- 「生活習慣病は削除で」との要望に対し、7件の症状・病名ページ(高血圧を指摘された・
+  健診でコレステロール値を指摘された・高血圧症・脂質異常症・高尿酸血症/痛風・
+  メタボリックシンドローム・骨粗しょう症)が生活習慣病ページにリンクしていることを説明し、
+  AskUserQuestionで対応方針を確認したところ「内容ごと一般内科に統合」を選択いただいた:
+  - shinryo/naika.php(一般内科)に、旧shinryo/seikatsu.phpの内容(主な対応疾患、
+    当院の生活習慣病診療について、骨粗しょう症について)をそのまま統合し、
+    症状リストにも「健診で血圧・コレステロール値・尿酸値を指摘された」等を追加
+  - data/shinryo.phpから「生活習慣病」の項目を削除(診療案内は7項目に)
+  - data/glossary.phpの該当7件の`'related' => 'seikatsu'`を`'related' => 'naika'`に一括置換
+    (症状・病名の分類用の`'category' => 'seikatsu'`フィールドは変更していない。
+    shojo.php/byomei.phpの「糖尿病・脂質異常系」カテゴリ分類は従来通り機能する)
+  - partials/glossary_render.phpの$related_pagesから'seikatsu'エントリを削除
+  - shinryo/seikatsu.phpを削除(git rm)、sitemap.xmlから該当URLを削除
+  - shinryo/naika.php・shinryo/index.php内の文中言及(「生活習慣病のページもあわせて」等)を、
+    実際のページ構成と矛盾しないよう修正
+  - この作業で、サイトマップの記載(CLAUDE.md「## サイトマップ」)が実際には既に削除済みだった
+    骨粗しょう症診療(shinryo/kosso.php、以前のセッションで生活習慣病に統合済み)を含むなど
+    古くなっていたことに気づき、循環器外来・イブニング胃カメラ・胃大腸同日検査を含めて
+    現状に合わせて更新した
+  - 全ページをcurlで確認し、PHPの警告・エラーが無いこと、および高血圧症・骨粗しょう症などの
+    ページの「関連する診療案内」ボタンが正しく一般内科にリンクしていることを確認済み
 
 ## 未着手・今後の対応(次のステップ)
 - 採用情報ページ(recruit.php)の内容確認・調整: 実際の募集職種、給与額、待遇、院内・スタッフ写真、

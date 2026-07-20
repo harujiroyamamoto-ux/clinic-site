@@ -1,17 +1,17 @@
 <?php
-$page_title = '糖尿病内科｜本牧の血糖値・HbA1c管理';
+$page_title = '糖尿病外来｜本牧の血糖値・HbA1c管理';
 $page_description = '健診で血糖値やHbA1cを指摘された方、放置していませんか。糖尿病診療では、食事・運動療法から薬物治療、血管・神経・腎臓の合併症の予防まで、生活習慣に合わせて丁寧にサポートしています。';
 $page_css = 'page.css';
 include __DIR__ . '/../partials/head.php';
 ?>
 
 <div class="breadcrumb container">
-  <a href="/">ホーム</a> &raquo; <a href="/shinryo/index.php">診療案内</a> &raquo; 糖尿病
+  <a href="/">ホーム</a> &raquo; <a href="/shinryo/index.php">診療案内</a> &raquo; 糖尿病外来
 </div>
 
 <section class="page-header">
   <div class="container">
-    <h1>糖尿病</h1>
+    <h1>糖尿病外来</h1>
     <p class="page-lead">
       血糖値が高い状態が続く糖尿病は、自覚症状が少ないまま進行し、
       血管や神経に合併症を起こすことがあります。早めの発見と継続的な管理が大切です。

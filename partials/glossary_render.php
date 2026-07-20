@@ -21,8 +21,7 @@ $related_pages = [
   'ikamera' => ['url' => '/shinryo/ikamera.php', 'label' => '胃カメラ検査'],
   'daichokamera' => ['url' => '/shinryo/daichokamera.php', 'label' => '大腸カメラ検査'],
   'junkanki' => ['url' => '/shinryo/junkanki.php', 'label' => '循環器外来'],
-  'tonyobyo' => ['url' => '/shinryo/tonyobyo.php', 'label' => '糖尿病'],
-  'seikatsu' => ['url' => '/shinryo/seikatsu.php', 'label' => '生活習慣病'],
+  'tonyobyo' => ['url' => '/shinryo/tonyobyo.php', 'label' => '糖尿病外来'],
   'homon' => ['url' => '/shinryo/homon.php', 'label' => '訪問診療(往診)'],
   'kenshin' => ['url' => '/shinryo/kenshin.php', 'label' => '各種健診・ワクチン'],
 ];

@@ -91,10 +91,12 @@
   justify-content: center;
 }
 
-.feature-color-blue { --feature-color: #3a7bd5; }
-.feature-color-green { --feature-color: #4f9d6e; }
-.feature-color-orange { --feature-color: #d98a3d; }
-.feature-color-purple { --feature-color: #8874c4; }
+.feature-color-blue,
+.feature-color-green,
+.feature-color-orange,
+.feature-color-purple {
+  --feature-color: #4fa8d9;
+}
 
 /* 写真はカード全体を覆う薄い背景として敷き、上に白いベールを重ねて文字を読みやすくする */
 .feature-item-bg {

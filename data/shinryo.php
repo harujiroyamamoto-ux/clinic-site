@@ -30,18 +30,11 @@ return [
     'color' => 'accent-coral',
   ],
   [
-    'title' => '糖尿病',
+    'title' => '糖尿病外来',
     'url' => '/shinryo/tonyobyo.php',
     'summary' => '血糖値の管理から合併症の予防まで、糖尿病の治療に取り組んでいます。',
     'logo' => '/assets/images/logo_tonyobyo.png',
     'color' => 'accent-green',
-  ],
-  [
-    'title' => '生活習慣病',
-    'url' => '/shinryo/seikatsu.php',
-    'summary' => '高血圧・脂質異常症・骨粗しょう症など、生活習慣病の検査・治療・生活指導を行っています。',
-    'logo' => '/assets/images/logo_seikatsu.png',
-    'color' => 'accent-amber',
   ],
   [
     'title' => '訪問診療(往診)',
