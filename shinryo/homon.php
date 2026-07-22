@@ -78,40 +78,37 @@ include __DIR__ . '/../partials/head.php';
       <div class="exam-flow-step">
         <div class="exam-flow-number">1</div>
         <div class="exam-flow-content">
-          <h3>お電話でのご相談</h3>
+          <h3>ご相談</h3>
+          <div class="img-placeholder exam-flow-photo">ご相談の様子<br>（準備中）</div>
           <p>
-            まずは受付までお電話ください。現在の状況やお困りごとを伺い、
-            訪問診療がご利用いただけるかご案内いたします。
+            まずはお電話でご相談ください。ご本人・ご家族はもちろん、担当のケアマネジャーや
+            看護師の方からのご相談も承っています。現在の症状やお困りごと、通院が
+            難しくなった経緯などを伺い、訪問診療がご利用いただけるかご案内いたします。
           </p>
         </div>
       </div>
       <div class="exam-flow-step">
         <div class="exam-flow-number">2</div>
         <div class="exam-flow-content">
-          <h3>ご自宅への訪問・診察</h3>
+          <h3>初回訪問のご案内</h3>
+          <div class="img-placeholder exam-flow-photo">初回訪問のご案内の様子<br>（準備中）</div>
           <p>
-            医師がご自宅へ伺い、診察のうえ今後の方針についてご本人・ご家族と
-            ご相談します。
+            訪問診療をご利用いただける場合は、初回の訪問日時を調整いたします。
+            健康保険証やお薬手帳など、診察当日にご用意いただくものについても
+            あわせてご説明します。
           </p>
         </div>
       </div>
       <div class="exam-flow-step">
         <div class="exam-flow-number">3</div>
         <div class="exam-flow-content">
-          <h3>定期的な訪問診療の開始</h3>
+          <h3>診療開始・定期的な訪問</h3>
+          <div class="img-placeholder exam-flow-photo">訪問診療の様子<br>（準備中）</div>
           <p>
-            決められた曜日・頻度で、計画的に訪問診療を行います。
-            体調の変化があれば随時ご相談ください。
-          </p>
-        </div>
-      </div>
-      <div class="exam-flow-step">
-        <div class="exam-flow-number">4</div>
-        <div class="exam-flow-content">
-          <h3>必要に応じた連携</h3>
-          <p>
-            たんぽぽ訪問看護ステーションによる看護面でのサポートや、
-            入院が必要な場合の総合病院への紹介など、状況に応じて連携します。
+            決めた日時に医師がご自宅へ伺い、初回の診察を行います。以後は曜日を決めて
+            計画的に訪問診療を行い、体調の変化があれば随時ご相談いただけます。
+            必要に応じて、たんぽぽ訪問看護ステーションや連携する総合病院ともご相談しながら
+            対応します。
           </p>
         </div>
       </div>

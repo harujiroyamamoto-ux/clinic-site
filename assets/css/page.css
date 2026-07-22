@@ -300,6 +300,12 @@
   text-align: left;
 }
 
+/* 各ステップに写真を添える場合の枠（訪問診療ページなど、写真が準備でき次第差し替える） */
+.exam-flow-photo {
+  min-height: 140px;
+  margin: 0 0 var(--space-sm);
+}
+
 .exam-flow-content p {
   margin: 0;
   color: var(--color-text-light);
