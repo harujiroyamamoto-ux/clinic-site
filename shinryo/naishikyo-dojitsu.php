@@ -44,7 +44,7 @@ include __DIR__ . '/../partials/head.php';
     <h2>検査の流れ</h2>
     <div class="exam-flow">
       <div class="exam-flow-step">
-        <div class="exam-flow-number">1</div>
+        <div class="exam-flow-number is-c1">1</div>
         <div class="exam-flow-content">
           <h3>ご予約・事前の診察</h3>
           <p>
@@ -54,32 +54,36 @@ include __DIR__ . '/../partials/head.php';
         </div>
       </div>
       <div class="exam-flow-step">
-        <div class="exam-flow-number">2</div>
+        <div class="exam-flow-number is-c2">2</div>
         <div class="exam-flow-content">
           <h3>検査前日〜当日</h3>
           <p>
-            ご案内した方法で下剤を服用し、腸内をきれいにしてからご来院ください。
+            前日は推奨の検査食を摂取いただき、ご案内した方法で下剤を服用し、
+            腸内をきれいにしてからご来院ください。
             服用中のお薬がある方は、事前の指示に従ってください。
           </p>
         </div>
       </div>
       <div class="exam-flow-step">
-        <div class="exam-flow-number">3</div>
+        <div class="exam-flow-number is-c3">3</div>
         <div class="exam-flow-content">
           <h3>ご来院後</h3>
           <p>
             受付・問診の後、検査前の説明を行います。鎮静剤・麻酔剤をご希望の場合はその準備をしたうえで、
-            胃カメラ検査を行い、続けて大腸カメラ検査を実施します。
+            胃カメラ検査を行い、続けて大腸カメラ検査を実施します。ポリープが見つかった場合は、
+            その場での日帰り切除に対応します。
           </p>
         </div>
       </div>
       <div class="exam-flow-step">
-        <div class="exam-flow-number">4</div>
+        <div class="exam-flow-number is-c4">4</div>
         <div class="exam-flow-content">
           <h3>検査後</h3>
           <p>
             鎮静剤・麻酔剤を使用した場合は、目が覚めるまでベッドで休憩いただいてから、
-            医師が検査結果をご説明します。当日はお車・バイク・自転車の運転はお控えください。
+            医師が検査結果をご説明します。ポリープを取った場合は病理検査に提出し、
+            良性腫瘍か悪性腫瘍か診断するので後日外来受診が必要です。
+            当日はお車・バイク・自転車の運転はお控えください。
           </p>
         </div>
       </div>
