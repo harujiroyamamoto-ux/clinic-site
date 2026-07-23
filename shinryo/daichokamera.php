@@ -120,7 +120,7 @@ include __DIR__ . '/../partials/head.php';
         </div>
       </div>
       <div class="exam-flow-step">
-        <div class="exam-flow-number">4</div>
+        <div class="exam-flow-number is-c4">4</div>
         <div class="exam-flow-content">
           <h3>検査後</h3>
           <p>

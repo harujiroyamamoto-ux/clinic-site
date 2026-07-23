@@ -61,7 +61,7 @@ include __DIR__ . '/../partials/head.php';
     <h2>検査の流れ</h2>
     <div class="exam-flow">
       <div class="exam-flow-step">
-        <div class="exam-flow-number">1</div>
+        <div class="exam-flow-number is-c1">1</div>
         <div class="exam-flow-content">
           <h3>検査前日</h3>
           <p>
@@ -71,7 +71,7 @@ include __DIR__ . '/../partials/head.php';
         </div>
       </div>
       <div class="exam-flow-step">
-        <div class="exam-flow-number">2</div>
+        <div class="exam-flow-number is-c2">2</div>
         <div class="exam-flow-content">
           <h3>検査当日</h3>
           <p>
@@ -81,7 +81,7 @@ include __DIR__ . '/../partials/head.php';
         </div>
       </div>
       <div class="exam-flow-step">
-        <div class="exam-flow-number">3</div>
+        <div class="exam-flow-number is-c3">3</div>
         <div class="exam-flow-content">
           <h3>ご来院後</h3>
           <p>
@@ -91,7 +91,7 @@ include __DIR__ . '/../partials/head.php';
         </div>
       </div>
       <div class="exam-flow-step">
-        <div class="exam-flow-number">4</div>
+        <div class="exam-flow-number is-c4">4</div>
         <div class="exam-flow-content">
           <h3>検査後</h3>
           <p>
