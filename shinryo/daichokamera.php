@@ -87,27 +87,29 @@ include __DIR__ . '/../partials/head.php';
     <h2>検査の流れ</h2>
     <div class="exam-flow">
       <div class="exam-flow-step">
-        <div class="exam-flow-number">1</div>
+        <div class="exam-flow-number is-c1">1</div>
         <div class="exam-flow-content">
-          <h3>ご予約・事前の診察</h3>
+          <h3>事前の診察</h3>
           <p>
-            まずはご予約のうえ、事前の診察を受けていただきます。下剤の服用方法や
-            検査前の食事の注意点は、このときに個別にご案内します。
+            まずは外来で事前の診察を受けていただきます。下剤の服用方法や
+            検査前の食事の注意点は、このときに個別にご案内します。検査前の状態を把握するため、
+            血液検査と腹部レントゲン検査の施行を行うことがあります。
           </p>
         </div>
       </div>
       <div class="exam-flow-step">
-        <div class="exam-flow-number">2</div>
+        <div class="exam-flow-number is-c2">2</div>
         <div class="exam-flow-content">
           <h3>検査前日〜当日</h3>
           <p>
-            ご案内した方法で下剤を服用し、腸内をきれいにしてからご来院ください。
+            前日は推奨の検査食を摂取いただき、ご案内した方法で下剤を服用します。
+            当日は腸内をきれいにしてからご来院ください。
             抗血小板薬・抗凝固薬など服用中のお薬がある方は、事前の指示に従ってください。
           </p>
         </div>
       </div>
       <div class="exam-flow-step">
-        <div class="exam-flow-number">3</div>
+        <div class="exam-flow-number is-c3">3</div>
         <div class="exam-flow-content">
           <h3>ご来院後</h3>
           <p>
@@ -122,8 +124,10 @@ include __DIR__ . '/../partials/head.php';
         <div class="exam-flow-content">
           <h3>検査後</h3>
           <p>
-            鎮静剤・麻酔剤を使用した場合は、目が覚めるまでベッドで休憩いただいてから、
-            医師が検査結果をご説明します。当日はお車・バイク・自転車の運転はお控えください。
+            基本的に鎮静剤・麻酔剤を使用するため、目が覚めるまでベッドで休憩いただいてから、
+            医師が検査結果をご説明します。ポリープを取った場合は病理検査に提出し、
+            良性腫瘍か悪性腫瘍か診断するので後日外来受診が必要です。
+            当日はお車・バイク・自転車の運転はお控えください。
           </p>
         </div>
       </div>
