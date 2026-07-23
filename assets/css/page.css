@@ -298,6 +298,13 @@
   font-family: "Zen Maru Gothic", sans-serif;
 }
 
+/* ステップごとに番号の色を変える場合の配色（薄いグレー背景に映える、青→緑の落ち着いた階調） */
+.exam-flow-number.is-c1 { background: #3f86bf; }
+.exam-flow-number.is-c2 { background: #2f93a3; }
+.exam-flow-number.is-c3 { background: #2f9678; }
+.exam-flow-number.is-c4 { background: #4a9455; }
+.exam-flow-number.is-c5 { background: #6f9838; }
+
 .exam-flow-content h3 {
   margin: 0 0 var(--space-sm);
   text-align: left;
@@ -312,6 +319,12 @@
 .exam-flow-content p {
   margin: 0;
   color: var(--color-text-light);
+}
+
+/* ステップ内の補足注記（「※〜」など） */
+.exam-flow-note {
+  margin-top: var(--space-xs);
+  font-size: var(--font-size-small);
 }
 
 @media (max-width: 480px) {

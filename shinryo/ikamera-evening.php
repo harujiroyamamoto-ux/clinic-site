@@ -41,6 +41,65 @@ include __DIR__ . '/../partials/head.php';
       <li>夕方の空いた時間を利用して受診したい方</li>
     </ul>
 
+    <h2>検査の流れ</h2>
+    <div class="exam-flow">
+      <div class="exam-flow-step">
+        <div class="exam-flow-number is-c1">1</div>
+        <div class="exam-flow-content">
+          <h3>検査前日</h3>
+          <p>通常通りのお食事で問題ありません。</p>
+        </div>
+      </div>
+      <div class="exam-flow-step">
+        <div class="exam-flow-number is-c2">2</div>
+        <div class="exam-flow-content">
+          <h3>検査当日の朝食</h3>
+          <p>
+            8:00までに消化の良い軽めの朝食を済ませてください。
+            お茶や水などの水分摂取は可能です。
+          </p>
+        </div>
+      </div>
+      <div class="exam-flow-step">
+        <div class="exam-flow-number is-c3">3</div>
+        <div class="exam-flow-content">
+          <h3>検査当日の昼食</h3>
+          <p>
+            昼食は取らず、水分とお茶のみとしてください。
+            検査の1時間前からお水やお茶もお控えください。
+          </p>
+        </div>
+      </div>
+      <div class="exam-flow-step">
+        <div class="exam-flow-number is-c4">4</div>
+        <div class="exam-flow-content">
+          <h3>受付</h3>
+          <p>検査の15分前までにご来院ください。</p>
+        </div>
+      </div>
+      <div class="exam-flow-step">
+        <div class="exam-flow-number is-c5">5</div>
+        <div class="exam-flow-content">
+          <h3>検査中</h3>
+          <p>
+            ご希望の方には鎮静剤（静脈麻酔）を使用し、リラックスして検査を受けていただきます。
+          </p>
+        </div>
+      </div>
+      <div class="exam-flow-step">
+        <div class="exam-flow-number">6</div>
+        <div class="exam-flow-content">
+          <h3>結果説明・ご帰宅</h3>
+          <p>
+            鎮静剤（静脈麻酔）を使用された方は15〜30分ほどリカバリールームでお休みいただきます。
+          </p>
+          <p class="exam-flow-note">
+            ※鎮静剤を使用していない方は、すぐにご帰宅可能です。
+          </p>
+        </div>
+      </div>
+    </div>
+
     <div class="notice-box">
       <p>
         鎮静剤・麻酔剤を使用した場合は、当日の自動車・バイク・自転車の運転はお控えください。
