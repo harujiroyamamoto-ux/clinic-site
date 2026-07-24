@@ -11,9 +11,10 @@ $category_labels = [
   'ishokudo' => '食道・胃',
   'daicho' => '大腸',
   'junkanki' => '循環器',
-  'seikatsu' => '糖尿病・脂質異常',
+  'seikatsu' => '糖尿病・内分泌',
   'kokyuki' => '呼吸器',
   'houmon' => '訪問診療',
+  'sonota' => 'その他',
 ];
 
 $category_colors = [
@@ -24,6 +25,7 @@ $category_colors = [
   'seikatsu' => 'accent-amber',
   'kokyuki' => 'accent-sky',
   'houmon' => 'accent-indigo',
+  'sonota' => 'accent-cyan',
 ];
 
 $grouped = [];

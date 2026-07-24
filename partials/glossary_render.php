@@ -43,6 +43,7 @@ $category_colors = [
   'seikatsu' => 'accent-amber',
   'kokyuki' => 'accent-sky',
   'houmon' => 'accent-indigo',
+  'sonota' => 'accent-cyan',
 ];
 $accent_class = $category_colors[$item['category']] ?? '';
 
