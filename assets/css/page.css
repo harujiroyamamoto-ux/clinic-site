@@ -156,6 +156,28 @@ section.content-section {
   margin: var(--space-sm) auto 0;
 }
 
+/* 検査費用の目安の表（3列：検査内容・1割負担・3割負担） */
+table.fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-md) 0;
+}
+
+table.fee-table th,
+table.fee-table td {
+  border: 1px solid var(--color-border);
+  padding: var(--space-sm);
+  text-align: center;
+}
+
+table.fee-table thead th {
+  background: var(--color-primary-light);
+}
+
+table.fee-table td:first-child {
+  text-align: left;
+}
+
 .notice-box {
   background: var(--color-bg-soft);
   border: 1px solid var(--color-border);
