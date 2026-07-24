@@ -197,9 +197,20 @@ include __DIR__ . '/head.php';
     <?php endif; ?>
 
     <div class="cta-box">
-      <h2>関連する診療案内</h2>
-      <a href="<?= htmlspecialchars($related['url']) ?>" class="btn btn-primary"><?= htmlspecialchars($related['label']) ?>を見る</a>
-      <a href="<?= htmlspecialchars($index_url) ?>" class="btn btn-accent"><?= htmlspecialchars($index_label) ?>に戻る</a>
+      <h2><?= $is_symptom ? '気になる症状は、お早めにご相談ください' : '気になる方は、お早めにご相談ください' ?></h2>
+      <p class="cta-box-lead">
+        <?php if ($is_symptom): ?>
+          「これくらいで受診してよいのかな」とためらう方もいらっしゃいますが、
+          早めに調べておくことで安心につながり、必要な場合には早期の治療が可能です。
+          我慢したり自己判断で様子を見たりせず、まずはお気軽にご相談ください。
+        <?php else: ?>
+          「もう少し様子を見ようかな」と迷う方もいらっしゃいますが、
+          早めの受診が、症状を長引かせない・悪化を防ぐことにつながります。
+          気になることがあれば、どうぞお気軽にご相談ください。
+        <?php endif; ?>
+      </p>
+      <a href="tel:0456223331" class="btn btn-accent">📞 電話で相談・予約する（045-622-3331）</a>
+      <a href="<?= htmlspecialchars($related['url']) ?>" class="btn btn-outline-light"><?= htmlspecialchars($related['label']) ?>について見る</a>
     </div>
   </div>
 </section>

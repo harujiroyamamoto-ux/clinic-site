@@ -150,6 +150,18 @@ section:nth-of-type(even) {
   text-decoration: none;
 }
 
+/* 濃い背景（cta-boxなど）の上で使う、白い枠線のボタン */
+.btn-outline-light {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.65);
+}
+
+.btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.14);
+  text-decoration: none;
+}
+
 /* 電話番号（タップで発信） */
 .tel-link {
   font-size: 1.3rem;
