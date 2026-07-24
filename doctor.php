@@ -95,7 +95,7 @@ include __DIR__ . '/partials/head.php';
         <h3>橘田 先生</h3>
       </div>
       <div class="card">
-        <p class="doctor-role">訪問診療</p>
+        <p class="doctor-role">救急</p>
         <h3>池田 先生</h3>
       </div>
     </div>
