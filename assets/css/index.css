@@ -69,33 +69,29 @@
   --feature-color: #8bc34a;
 }
 
-/* 特色カード：写真とテキストを別ブロックとして左右に並べ、交互に反転させる */
+/* 特色カード：写真（上）＋テキスト（下）の縦積みカード。
+   PCでは2×2グリッド、スマホでは1列に並べる */
 .feature-block-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-lg);
 }
 
 .feature-block-card {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  gap: var(--space-lg);
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   padding: var(--space-lg);
 }
 
-/* イラストが縦に大きくなりすぎないよう、写真列を狭めにして高さを抑える */
+/* カードが横幅の半分になった分、写真は横長にして縦幅を抑える */
 .feature-block-photo {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: var(--radius);
-}
-
-.feature-block-reverse .feature-block-photo {
-  order: 2;
 }
 
 .feature-block-text {
@@ -140,16 +136,16 @@
 }
 
 @media (max-width: 768px) {
-  .feature-block-card {
+  /* スマホでは2×2をやめて1列に */
+  .feature-block-list {
     grid-template-columns: 1fr;
+  }
+
+  .feature-block-card {
     padding: var(--space-md);
   }
 
-  .feature-block-reverse .feature-block-photo {
-    order: 0;
-  }
-
-  /* 1カラムになるスマホでは、写真の縦幅が伸びすぎないよう横長気味にする */
+  /* 写真の縦幅が伸びすぎないよう、小さめ・中央寄せにする */
   .feature-block-photo {
     max-width: 220px;
     margin: 0 auto;
