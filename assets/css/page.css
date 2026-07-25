@@ -190,6 +190,77 @@ table.fee-table td:first-child {
   margin-top: 0;
 }
 
+/* 記事末尾の執筆者兼監修者プロフィール */
+.author-profile-block {
+  padding: var(--space-lg) 0 var(--space-xl);
+  background: var(--color-bg);
+}
+
+.author-profile {
+  max-width: 760px;
+  margin: 0 auto;
+  border: 1px solid var(--color-border);
+  border-top: 4px solid var(--color-primary);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+  background: var(--color-bg-soft);
+}
+
+.author-profile-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-xs) var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-md);
+}
+
+.author-profile-role {
+  display: inline-block;
+  font-size: var(--font-size-small);
+  font-weight: bold;
+  color: #fff;
+  background: var(--color-primary);
+  border-radius: 4px;
+  padding: 3px 10px;
+}
+
+.author-profile-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--color-primary-dark);
+}
+
+.author-profile-affil {
+  font-size: var(--font-size-small);
+  color: var(--color-text-light);
+}
+
+.author-profile-subhead {
+  margin: 0 0 var(--space-sm);
+  font-size: 1.05rem;
+  text-align: left;
+  color: var(--color-primary-dark);
+}
+
+.author-profile-list {
+  margin: 0 0 var(--space-md);
+  padding-left: 1.3em;
+  font-size: var(--font-size-small);
+  color: var(--color-text);
+}
+
+.author-profile-list li {
+  margin-bottom: 4px;
+}
+
+.author-profile-note {
+  margin: 0;
+  font-size: var(--font-size-small);
+  color: var(--color-text-light);
+}
+
 /* よくある質問（採用情報ページなど） */
 .faq-item {
   margin-bottom: var(--space-lg);

@@ -216,6 +216,7 @@ include __DIR__ . '/head.php';
   </div>
 </section>
 
+<?php include __DIR__ . '/author_profile.php'; ?>
 <?php include __DIR__ . '/booking_banner.php'; ?>
 <?php include __DIR__ . '/footer.php'; ?>
 </body>

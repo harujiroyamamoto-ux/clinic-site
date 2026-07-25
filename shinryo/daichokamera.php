@@ -195,6 +195,7 @@ include __DIR__ . '/../partials/head.php';
   </div>
 </section>
 
+<?php include __DIR__ . '/../partials/author_profile.php'; ?>
 <?php include __DIR__ . '/../partials/footer.php'; ?>
 </body>
 </html>
