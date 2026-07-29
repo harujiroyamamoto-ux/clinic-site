@@ -412,7 +412,6 @@ table.week-schedule td.closed {
 
 .global-nav a {
   color: var(--color-text);
-  font-weight: bold;
 }
 
 .global-nav a:hover {
@@ -455,7 +454,7 @@ table.week-schedule td.closed {
    フッター
    ============================================ */
 .site-footer {
-  background: var(--color-primary-dark);
+  background: #4a7aa8;
   color: #fff;
   padding: var(--space-lg) 0 var(--space-md);
   margin-top: var(--space-xl);
