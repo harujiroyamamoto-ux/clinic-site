@@ -182,6 +182,16 @@ include __DIR__ . '/head.php';
       </ul>
     <?php endif; ?>
 
+    <?php if (!empty($item['faq'])): ?>
+      <h2>よくあるご質問</h2>
+      <?php foreach ($item['faq'] as $qa): ?>
+        <div class="faq-item">
+          <h3>Q. <?= htmlspecialchars($qa['q']) ?></h3>
+          <p>A. <?= htmlspecialchars($qa['a']) ?></p>
+        </div>
+      <?php endforeach; ?>
+    <?php endif; ?>
+
     <div class="notice-box">
       <p>
         この内容は一般的な情報であり、診断を行うものではありません。正確な診断には受診が必要です。
