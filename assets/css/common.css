@@ -136,7 +136,7 @@ section:nth-of-type(even) {
 }
 
 .btn-primary:hover {
-  background: var(--color-primary-dark);
+  background: #4a7aa8;
   text-decoration: none;
 }
 
@@ -396,7 +396,7 @@ table.week-schedule td.closed {
 .nav-toggle span {
   display: block;
   height: 3px;
-  background: var(--color-primary-dark);
+  background: #4a7aa8;
   border-radius: 2px;
 }
 
