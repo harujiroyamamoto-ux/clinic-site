@@ -324,6 +324,27 @@ table.fee-table td:first-child {
   margin: var(--space-sm);
 }
 
+/* スチールブルー背景内のボタン配色を上書き */
+.cta-box .btn-accent,
+.booking-banner .btn-accent {
+  background: #fff;
+  color: var(--color-primary);
+}
+.cta-box .btn-accent:hover,
+.booking-banner .btn-accent:hover {
+  background: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+}
+.cta-box .btn-primary {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+.cta-box .btn-primary:hover {
+  background: rgba(255, 255, 255, 0.15);
+  text-decoration: none;
+}
+
 .cta-box-lead {
   max-width: 640px;
   margin: 0 auto var(--space-md);
