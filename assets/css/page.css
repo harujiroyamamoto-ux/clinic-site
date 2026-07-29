@@ -178,6 +178,37 @@ table.fee-table td:first-child {
   text-align: left;
 }
 
+/* 地域特化アピールボックス（本牧で○○をお探しの方へ） */
+.local-appeal-box {
+  background: var(--color-primary-light);
+  border-left: 4px solid var(--accent-color, var(--color-primary));
+  border-radius: var(--radius);
+  padding: var(--space-md) var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+.local-appeal-box h2 {
+  text-align: left;
+  font-size: 1.15rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5em;
+}
+.local-appeal-box h2::after {
+  display: none;
+}
+.local-appeal-box p {
+  margin: 0 0 0.6em;
+  font-size: 0.97rem;
+}
+.local-appeal-box ul {
+  margin: 0.4em 0 0;
+  padding-left: 1.5em;
+}
+.local-appeal-box li {
+  margin-bottom: 0.25em;
+  font-size: 0.93rem;
+  color: var(--color-text-light);
+}
+
 .notice-box {
   background: var(--color-bg-soft);
   border: 1px solid var(--color-border);
