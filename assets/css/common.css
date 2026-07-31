@@ -371,8 +371,17 @@ table.week-schedule td.closed {
 }
 
 .site-logo img {
-  height: 120px;
+  height: 65px;
   width: auto;
+}
+
+.header-address {
+  font-style: normal;
+  font-size: 0.82rem;
+  color: var(--color-text-light);
+  margin: 0;
+  flex: 1;
+  text-align: center;
 }
 
 .header-contact {
@@ -446,7 +455,11 @@ table.week-schedule td.closed {
   }
 
   .site-logo img {
-    height: 68px;
+    height: 36px;
+  }
+
+  .header-address {
+    display: none;
   }
 }
 
