@@ -556,3 +556,163 @@ table.fee-table td:first-child {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================
+   コラム（医療コラム一覧・記事）
+   ============================================ */
+
+/* 一覧：カードグリッド */
+.column-card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-lg);
+  margin: var(--space-lg) 0;
+}
+
+.column-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  color: var(--color-text);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.column-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.column-card-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  font-size: var(--font-size-small);
+  color: var(--color-text-light);
+}
+
+.column-category-badge {
+  display: inline-block;
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  border-radius: 4px;
+  padding: 2px 10px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.column-card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--color-primary-dark);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.column-card-lead {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.column-read-more {
+  margin-top: auto;
+  font-size: 0.95rem;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+/* 記事ページ：見出し部分のメタ情報 */
+.column-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-sm);
+  font-size: var(--font-size-small);
+  color: var(--color-text-light);
+}
+
+/* 記事ページ：本文エリア */
+.column-body {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.column-body h2 {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-top: var(--space-lg);
+  padding-bottom: 0;
+}
+
+.column-body h2::after {
+  margin-left: 0;
+}
+
+.column-body h3 {
+  text-align: left;
+  font-size: 1.2rem;
+  margin-top: var(--space-md);
+}
+
+.column-body p {
+  margin-bottom: var(--space-md);
+}
+
+.column-body ul,
+.column-body ol {
+  padding-left: 1.5em;
+  margin: var(--space-xs) 0 var(--space-md);
+}
+
+.column-body li {
+  margin-bottom: var(--space-xs);
+  line-height: 1.75;
+}
+
+/* まとめボックス */
+.column-summary-box {
+  background: var(--color-primary-light);
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--radius);
+  padding: var(--space-md) var(--space-lg);
+  margin: var(--space-lg) 0;
+}
+
+.column-summary-box h3 {
+  text-align: left;
+  margin: 0 0 var(--space-sm);
+  font-size: 1.1rem;
+  color: var(--color-primary-dark);
+}
+
+.column-summary-box h3::after {
+  display: none;
+}
+
+.column-summary-box ul {
+  margin: 0;
+  padding-left: 1.5em;
+}
+
+.column-summary-box li {
+  margin-bottom: var(--space-xs);
+  font-size: 0.97rem;
+}
+
+@media (max-width: 768px) {
+  .column-card-list {
+    grid-template-columns: 1fr;
+  }
+
+  .column-body h2 {
+    font-size: 1.3rem;
+  }
+}

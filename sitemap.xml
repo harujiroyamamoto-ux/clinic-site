@@ -111,4 +111,7 @@
   <url><loc>https://www.yamamoto-naika.com/byomei/basedou-byou.php</loc></url>
   <url><loc>https://www.yamamoto-naika.com/byomei/kiritsusei-teiketsuatsu.php</loc></url>
   <url><loc>https://www.yamamoto-naika.com/byomei/hashimoto-byo.php</loc></url>
+  <url><loc>https://www.yamamoto-naika.com/column/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.yamamoto-naika.com/column/ikamera-chinseizai.php</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.yamamoto-naika.com/column/ketto-shisan-shindan.php</loc><changefreq>monthly</changefreq></url>
 </urlset>

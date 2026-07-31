@@ -70,6 +70,7 @@
         <li><a href="/shinryo/homon.php">訪問診療</a></li>
         <li><a href="/doctor.php">医師紹介</a></li>
         <li><a href="/visit.php">初めての方へ</a></li>
+        <li><a href="/column/">コラム</a></li>
         <li><a href="/access.php">アクセス</a></li>
       </ul>
     </div>
