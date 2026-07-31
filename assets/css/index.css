@@ -166,6 +166,29 @@
   aspect-ratio: 4 / 3;
 }
 
+.greeting-links {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.greeting-link {
+  display: inline-block;
+  padding: 0.45em 1.2em;
+  border: 2px solid var(--color-primary);
+  border-radius: 4px;
+  color: var(--color-primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.greeting-link:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   .greeting-section .container {
     grid-template-columns: 1fr;

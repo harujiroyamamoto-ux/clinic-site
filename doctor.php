@@ -22,7 +22,7 @@ include __DIR__ . '/partials/head.php';
 <section class="content-section">
   <div class="container">
 
-    <div class="doctor-block">
+    <div id="director" class="doctor-block">
       <div class="img-placeholder">院長の写真<br>（準備中）</div>
       <div>
         <p class="doctor-role">院長</p>
@@ -40,7 +40,7 @@ include __DIR__ . '/partials/head.php';
       </div>
     </div>
 
-    <div class="doctor-block">
+    <div id="vice-director" class="doctor-block">
       <div class="img-placeholder">副院長の写真<br>（準備中）</div>
       <div>
         <p class="doctor-role">副院長</p>

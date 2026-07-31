@@ -85,6 +85,10 @@ $shinryo = include __DIR__ . '/data/shinryo.php';
       <p>
         本牧の地で開業35年以上のクリニック。生活習慣病から専門的な内視鏡検査、各種専門外来、訪問診療と幅広い診察を行っています。予防から看取りまで行えるホームドクターに最適なクリニックです。地域の長寿化と発展のため、信頼され頼りにされるクリニックをめざしています。
       </p>
+      <div class="greeting-links">
+        <a href="/doctor.php#director" class="greeting-link">院長挨拶</a>
+        <a href="/doctor.php#vice-director" class="greeting-link">副院長挨拶</a>
+      </div>
     </div>
   </div>
 </section>
