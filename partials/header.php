@@ -3,10 +3,10 @@
     <a href="/" class="site-logo">
       <?php site_image('/assets/images/logo.png', '医療法人社団 山本内科クリニック', '', ['loading' => 'eager']); ?>
     </a>
-    <p class="header-address">〒231-0806 神奈川県横浜市中区本牧町2-364</p>
+    <p class="header-address">〒231-0806 神奈川県横浜市中区本牧町2-364<br>本牧通り「小港」前／駐車場有</p>
     <div class="header-contact">
       <a href="tel:0456223331" class="tel-link">
-        <span class="tel-caption">お電話</span> 045-622-3331
+        <span class="tel-caption">📞</span> 045-622-3331
       </a>
       <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">
         <span></span><span></span><span></span>

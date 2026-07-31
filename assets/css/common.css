@@ -377,7 +377,8 @@ table.week-schedule td.closed {
 
 .header-address {
   font-style: normal;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
   color: var(--color-text-light);
   margin: 0;
   flex: 1;
