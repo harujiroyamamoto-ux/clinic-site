@@ -52,7 +52,7 @@ foreach ($glossary as $item) {
 <section>
   <div class="container">
     <?php foreach ($category_labels as $cat_key => $cat_label): ?>
-      <div class="symptom-category <?= htmlspecialchars($category_colors[$cat_key] ?? '') ?>">
+      <div id="<?= htmlspecialchars($cat_key) ?>" class="symptom-category <?= htmlspecialchars($category_colors[$cat_key] ?? '') ?>">
         <h2><?= htmlspecialchars($cat_label) ?></h2>
         <div class="symptom-tags">
           <?php foreach ($grouped[$cat_key] ?? [] as $item): ?>

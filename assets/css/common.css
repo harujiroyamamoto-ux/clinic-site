@@ -451,6 +451,124 @@ table.week-schedule td.closed {
 }
 
 /* ============================================
+   ドロップダウンナビゲーション
+   ============================================ */
+.has-dropdown {
+  position: relative;
+}
+
+/* .global-nav ul の flex を上書きしてドロップダウン専用スタイルにする */
+.global-nav .nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0;
+  padding: var(--space-xs) 0;
+  border-top: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  background: #fff;
+  min-width: 180px;
+  z-index: 200;
+  margin: 0;
+  list-style: none;
+}
+
+@media (min-width: 769px) {
+  .has-dropdown:hover > .nav-dropdown {
+    display: flex;
+  }
+}
+
+.global-nav .nav-dropdown a {
+  display: block;
+  padding: 10px var(--space-md);
+  white-space: nowrap;
+  color: var(--color-text);
+  font-size: var(--font-size-small);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.global-nav .nav-dropdown li:last-child a {
+  border-bottom: none;
+}
+
+.global-nav .nav-dropdown a:hover {
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+/* モバイル用トグルボタン（デスクトップでは非表示） */
+.nav-dropdown-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: none;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: var(--color-primary-dark);
+    flex-shrink: 0;
+    transition: transform 0.2s;
+    padding: 0;
+  }
+
+  .nav-dropdown-toggle[aria-expanded="true"] {
+    transform: rotate(45deg);
+  }
+
+  /* モバイルではリンクとボタンを横並びに */
+  .has-dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .has-dropdown > a {
+    flex: 1;
+  }
+
+  /* モバイルのアコーディオン：左ボーダー付きのインデント表示 */
+  .global-nav .nav-dropdown {
+    position: static;
+    flex-basis: 100%;
+    border: none;
+    border-left: 3px solid var(--color-primary);
+    border-radius: 0;
+    box-shadow: none;
+    background: var(--color-primary-light);
+    min-width: 0;
+    margin-top: var(--space-xs);
+    margin-left: var(--space-md);
+    padding: var(--space-xs) 0;
+  }
+
+  .has-dropdown.is-open > .nav-dropdown {
+    display: flex;
+  }
+
+  .global-nav .nav-dropdown a {
+    padding: 8px var(--space-sm);
+    white-space: normal;
+    font-size: var(--font-size-small);
+  }
+}
+
+/* ============================================
    フッター
    ============================================ */
 .site-footer {

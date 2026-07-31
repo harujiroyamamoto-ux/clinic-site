@@ -16,10 +16,57 @@
     <div class="container">
       <ul>
         <li><a href="/">ホーム</a></li>
-        <li><a href="/shinryo/index.php">診療案内</a></li>
-        <li><a href="/shinryo/naishikyo.php">胃・大腸カメラ</a></li>
-        <li><a href="/shojo.php">症状から探す</a></li>
-        <li><a href="/byomei.php">病名から探す</a></li>
+        <li class="has-dropdown">
+          <a href="/shinryo/index.php">診療案内</a>
+          <button class="nav-dropdown-toggle" aria-label="診療案内のサブメニュー" aria-expanded="false">+</button>
+          <ul class="nav-dropdown">
+            <li><a href="/shinryo/naika.php">一般内科</a></li>
+            <li><a href="/shinryo/shokaki.php">消化器外来</a></li>
+            <li><a href="/shinryo/naishikyo.php">内視鏡検査</a></li>
+            <li><a href="/shinryo/junkanki.php">循環器外来</a></li>
+            <li><a href="/shinryo/tonyobyo.php">糖尿病外来</a></li>
+            <li><a href="/shinryo/homon.php">訪問診療</a></li>
+            <li><a href="/shinryo/kenshin.php">各種健診・ワクチン</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="/shinryo/naishikyo.php">胃・大腸カメラ</a>
+          <button class="nav-dropdown-toggle" aria-label="胃・大腸カメラのサブメニュー" aria-expanded="false">+</button>
+          <ul class="nav-dropdown">
+            <li><a href="/shinryo/ikamera.php">胃カメラ</a></li>
+            <li><a href="/shinryo/daichokamera.php">大腸カメラ</a></li>
+            <li><a href="/shinryo/ikamera-evening.php">イブニング胃カメラ</a></li>
+            <li><a href="/shinryo/naishikyo-dojitsu.php">胃・大腸同日検査</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="/shojo.php">症状から探す</a>
+          <button class="nav-dropdown-toggle" aria-label="症状から探すのサブメニュー" aria-expanded="false">+</button>
+          <ul class="nav-dropdown">
+            <li><a href="/shojo.php#kaze">かぜ症状</a></li>
+            <li><a href="/shojo.php#ishokudo">食道・胃</a></li>
+            <li><a href="/shojo.php#daicho">大腸</a></li>
+            <li><a href="/shojo.php#junkanki">循環器</a></li>
+            <li><a href="/shojo.php#seikatsu">糖尿病・内分泌</a></li>
+            <li><a href="/shojo.php#kokyuki">呼吸器</a></li>
+            <li><a href="/shojo.php#houmon">訪問診療</a></li>
+            <li><a href="/shojo.php#sonota">その他</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="/byomei.php">病名から探す</a>
+          <button class="nav-dropdown-toggle" aria-label="病名から探すのサブメニュー" aria-expanded="false">+</button>
+          <ul class="nav-dropdown">
+            <li><a href="/byomei.php#kaze">かぜ症状</a></li>
+            <li><a href="/byomei.php#ishokudo">食道・胃</a></li>
+            <li><a href="/byomei.php#daicho">大腸</a></li>
+            <li><a href="/byomei.php#junkanki">循環器</a></li>
+            <li><a href="/byomei.php#seikatsu">糖尿病・内分泌</a></li>
+            <li><a href="/byomei.php#kokyuki">呼吸器</a></li>
+            <li><a href="/byomei.php#houmon">訪問診療</a></li>
+            <li><a href="/byomei.php#sonota">その他</a></li>
+          </ul>
+        </li>
         <li><a href="/shinryo/homon.php">訪問診療</a></li>
         <li><a href="/doctor.php">医師紹介</a></li>
         <li><a href="/visit.php">初めての方へ</a></li>
