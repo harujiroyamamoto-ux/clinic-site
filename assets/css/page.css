@@ -716,3 +716,14 @@ table.fee-table td:first-child {
     font-size: 1.3rem;
   }
 }
+
+/* アンカーリンクでstickyヘッダーに隠れないようオフセット */
+.symptom-category {
+  scroll-margin-top: 250px;
+}
+
+@media (max-width: 768px) {
+  .symptom-category {
+    scroll-margin-top: 110px;
+  }
+}
