@@ -719,7 +719,7 @@ table.fee-table td:first-child {
 
 /* アンカーリンクでstickyヘッダーに隠れないようオフセット */
 .symptom-category {
-  scroll-margin-top: 250px;
+  scroll-margin-top: 300px;
 }
 
 @media (max-width: 768px) {
